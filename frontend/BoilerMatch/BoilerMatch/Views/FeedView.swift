@@ -6,7 +6,6 @@ struct FeedView: View {
     
     let columns = [
         GridItem(.flexible(), spacing: 2),
-        GridItem(.flexible(), spacing: 2),
         GridItem(.flexible(), spacing: 2)
     ]
     
@@ -15,85 +14,56 @@ struct FeedView: View {
             ScrollView {
                 LazyVGrid(columns: columns, spacing: 2) {
                     ForEach(viewModel.feedItems) { item in
-                        FeedItemView(item: item)
-                            .frame(height: geometry.size.width / 3)
+                        FeedItemView(item: item, viewModel: viewModel)
+                            .frame(height: geometry.size.width / 2)
                             .onAppear {
                                 viewModel.loadMoreContentIfNeeded(currentItem: item)
                             }
                     }
                 }
                 .padding(.horizontal, 2)
+                .padding(.top, 32)
+            
             }
             .overlay(
                 VStack {
-                    HeaderView(remainingViews: viewModel.dailyLimit - viewModel.viewCount)
+                    HeaderView(remainingViews: viewModel.remainingViews)
                     Spacer()
                 }
             )
         }
+        .customColorScheme($viewModel.customColorScheme)
     }
 }
 
 struct FeedItemView: View {
     let item: FeedItem
-    @State private var isLiked = false
+    @ObservedObject var viewModel: FeedViewModel
     
     var body: some View {
-        ZStack(alignment: .bottomLeading) {
+        ZStack(alignment: .bottomTrailing) {
             Image(item.imageName)
                 .resizable()
                 .scaledToFill()
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .clipped()
-                .overlay(
-                    RoundedRectangle(cornerRadius: 4)
-                        .stroke(isLiked ? Color.blue : Color.clear, lineWidth: 2)
-                )
-                .onTapGesture(count: 2) {
-                    handleDoubleTap()
+                .onTapGesture {
+                    viewModel.navigateToProfile(item)
                 }
             
-            VStack(alignment: .leading) {
+            HStack {
                 Text(item.name)
+                    .font(.callout)
+                    .foregroundColor(.white)
+                    .padding(.trailing, 4)
+                Text("\(item.age)")
                     .font(.caption)
                     .foregroundColor(.white)
-                    .shadow(color: .black, radius: 2)
-                
-                Text(item.bio)
-                    .font(.caption2)
-                    .foregroundColor(.white)
-                    .lineLimit(1)
-                    .shadow(color: .black, radius: 2)
             }
             .padding(8)
+            .shadow(color: .black, radius: 1)
         }
         .contentShape(Rectangle())
-        .contextMenu {
-            Button(action: { handleLike() }) {
-                Label("Like", systemImage: "heart.fill")
-            }
-            Button(action: { handleDislike() }) {
-                Label("Dislike", systemImage: "xmark.circle.fill")
-            }
-        }
-    }
-    
-    private func handleDoubleTap() {
-        withAnimation {
-            isLiked = true
-            // Send like to view model
-        }
-    }
-    
-    private func handleLike() {
-        withAnimation {
-            isLiked = true
-            // Send like to view model
-        }
-    }
-    
-    private func handleDislike() {
-        // Send dislike to view model
     }
 }
 
@@ -102,21 +72,18 @@ struct HeaderView: View {
     
     var body: some View {
         HStack {
-            Text("BoilerMatch")
-                .font(.title2)
-                .fontWeight(.bold)
-            
             Spacer()
             
             HStack {
                 Image(systemName: "eye.fill")
                 Text("\(remainingViews) left")
             }
-            .padding(8)
+            .padding(0)
             .background(Color(.systemGray5))
             .cornerRadius(8)
         }
-        .padding()
+        .padding(.horizontal)
+        .padding(.bottom, 8)
         .background(.ultraThinMaterial)
     }
 }
@@ -124,5 +91,28 @@ struct HeaderView: View {
 struct FeedView_Previews: PreviewProvider {
     static var previews: some View {
         FeedView()
+    }
+}
+
+enum CustomColorScheme: Int, CaseIterable, Identifiable, Codable {
+    case system = 0
+    case light = 1
+    case dark = 2
+    
+    var id: Int { self.rawValue }
+}
+
+struct CustomColorSchemeViewModifier: ViewModifier {
+    @Binding var customColorScheme: CustomColorScheme
+    
+    func body(content: Content) -> some View {
+        content
+            .preferredColorScheme(customColorScheme == .system ? nil : (customColorScheme == .light ? .light : .dark))
+    }
+}
+
+extension View {
+    func customColorScheme(_ customColorScheme: Binding<CustomColorScheme>) -> some View {
+        self.modifier(CustomColorSchemeViewModifier(customColorScheme: customColorScheme))
     }
 }

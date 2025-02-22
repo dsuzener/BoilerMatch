@@ -3,14 +3,16 @@ import Combine
 
 class FeedViewModel: ObservableObject {
     @Published var feedItems: [FeedItem] = []
-    @Published var viewCount = 0
-    @Published var dailyLimit = 100
+    @Published var remainingViews = 15
+    @Published var customColorScheme: CustomColorScheme = .system
     
     private var currentPage = 0
     private let pageSize = 30
+    private var lastResetTime: Date = Date()
     
     init() {
         loadInitialContent()
+        setupResetTimer()
     }
     
     func loadInitialContent() {
@@ -18,9 +20,8 @@ class FeedViewModel: ObservableObject {
         feedItems = (0..<pageSize).map { index in
             FeedItem(
                 name: "User \(index + 1)",
-                bio: ["CS Student", "Engineer", "Designer", "iOS Dev"].randomElement()!,
-                imageName: "person\(Int.random(in: 1...4))",
-                interests: ["Swift", "C++", "Python", "AI", "ML"].shuffled().prefix(2).map { $0 }
+                age: Int.random(in: 18...65),
+                imageName: "person\(Int.random(in: 1...4))"
             )
         }
     }
@@ -39,9 +40,8 @@ class FeedViewModel: ObservableObject {
         let newItems = (0..<pageSize).map { index in
             FeedItem(
                 name: "User \(currentPage * pageSize + index + 1)",
-                bio: ["New User", "Recent Member", "Active Student"].randomElement()!,
-                imageName: "person\(Int.random(in: 1...4))",
-                interests: ["Sports", "Music", "Travel"].shuffled().prefix(2).map { $0 }
+                age: Int.random(in: 18...65),
+                imageName: "person\(Int.random(in: 1...4))"
             )
         }
         
@@ -49,12 +49,24 @@ class FeedViewModel: ObservableObject {
         feedItems += newItems
     }
     
-    func handleSwipeAction(_ direction: SwipeDirection, for item: FeedItem) {
-        viewCount += 1
-        // Implement actual match logic here
+    func navigateToProfile(_ item: FeedItem) {
+        if remainingViews > 0 {
+            remainingViews -= 1
+            // Implement navigation to user's public profile here
+        }
     }
     
-    enum SwipeDirection {
-        case like, dislike
+    private func setupResetTimer() {
+        Timer.scheduledTimer(withTimeInterval: 60 * 60, repeats: true) { [weak self] _ in
+            self?.checkAndResetViews()
+        }
+    }
+    
+    private func checkAndResetViews() {
+        let currentTime = Date()
+        if currentTime.timeIntervalSince(lastResetTime) >= 12 * 60 * 60 {
+            remainingViews = 15
+            lastResetTime = currentTime
+        }
     }
 }

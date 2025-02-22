@@ -3,7 +3,6 @@ import Foundation
 struct FeedItem: Identifiable {
     let id = UUID()
     let name: String
-    let bio: String
+    let age: Int
     let imageName: String
-    let interests: [String]
 }
