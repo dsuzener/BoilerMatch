@@ -8,7 +8,7 @@ struct ProfileView: View {
     var body: some View {
         VStack(spacing: 20) {
             // User's Primary Profile Image
-            Image("profileImage") // Replace with dynamic user image
+            Image("HotChick") // Placeholder image
                 .resizable()
                 .scaledToFill()
                 .frame(width: 150, height: 150)
@@ -22,7 +22,7 @@ struct ProfileView: View {
             
             Text("Age: 25") // Replace with dynamic user age
                 .font(.subheadline)
-                .foregroundColor(.gray)
+                .foregroundColor(AppColors.coolGray.opacity(0.7))
             
             Text("Loves hiking, coffee, and coding!") // Replace with dynamic bio
                 .font(.body)
@@ -43,6 +43,7 @@ struct ProfileView: View {
                         .background(AppColors.boilermakerGold)
                         .foregroundColor(.white)
                         .cornerRadius(8)
+                        .shadow(color: AppColors.boilermakerGold.opacity(0.5), radius: 4, x: 0, y: 2)
                 }
                 .sheet(isPresented: $showEditProfile) {
                     EditProfileView() // Navigate to Edit Profile screen
@@ -58,6 +59,7 @@ struct ProfileView: View {
                         .background(AppColors.coolGray.opacity(0.3))
                         .foregroundColor(AppColors.black)
                         .cornerRadius(8)
+                        .shadow(color: AppColors.coolGray.opacity(0.5), radius: 4, x: 0, y: 2)
                 }
                 .sheet(isPresented: $showPublicProfile) {
                     PublicProfileView() // Navigate to Public Profile screen
@@ -73,6 +75,7 @@ struct ProfileView: View {
                         .background(Color.red.opacity(0.8))
                         .foregroundColor(.white)
                         .cornerRadius(8)
+                        .shadow(color: Color.red.opacity(0.5), radius: 4, x: 0, y: 2)
                 }
                 .sheet(isPresented: $showSettings) {
                     SettingsView() // Navigate to Settings screen
@@ -82,6 +85,13 @@ struct ProfileView: View {
             Spacer()
         }
         .padding()
+        .background(
+            LinearGradient(
+                gradient: Gradient(colors: [AppColors.coolGray.opacity(0.1), Color.white]),
+                startPoint: .top,
+                endPoint: .bottom
+            )
+        )
         .navigationTitle("Your Profile")
         .navigationBarTitleDisplayMode(.inline)
     }

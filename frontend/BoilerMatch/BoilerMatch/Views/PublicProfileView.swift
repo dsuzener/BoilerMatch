@@ -8,17 +8,17 @@
 import SwiftUI
 
 struct PublicProfileView: View {
-    let images = ["profileImage", "image1", "image2", "image3", "image4"] // Replace with dynamic image array
+    let images = ["HotChick", "HotChick", "HotChick", "HotChick"] // Placeholder images
     
     var body: some View {
         TabView {
             ForEach(images, id: \.self) { image in
-                Image(image) // Replace with dynamic image loading logic
+                Image(image) // Placeholder logic for public profile images
                     .resizable()
                     .scaledToFit()
             }
         }
-        .tabViewStyle(PageTabViewStyle()) // Swipeable carousel
+        .tabViewStyle(PageTabViewStyle()) // Swipeable carousel style
         .navigationTitle("Public Profile")
         .navigationBarTitleDisplayMode(.inline)
     }

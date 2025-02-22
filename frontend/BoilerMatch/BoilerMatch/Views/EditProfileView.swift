@@ -11,7 +11,7 @@ struct EditProfileView: View {
     @State private var name = "John Doe" // Replace with dynamic user data
     @State private var age = "25"
     @State private var bio = "Loves hiking, coffee, and coding!"
-    @State private var images = ["profileImage", "image1", "image2"] // Replace with dynamic image array
+    @State private var images = ["HotChick", "HotChick", "HotChick"] // Placeholder images
     
     var body: some View {
         ScrollView {
@@ -27,7 +27,7 @@ struct EditProfileView: View {
                 TextEditor(text: $bio)
                     .frame(height: 100)
                     .overlay(
-                        RoundedRectangle(cornerRadius: 8).stroke(Color.gray.opacity(0.5))
+                        RoundedRectangle(cornerRadius: 8).stroke(AppColors.coolGray.opacity(0.5))
                     )
                 
                 Divider()
@@ -40,7 +40,7 @@ struct EditProfileView: View {
                     HStack(spacing: 16) {
                         ForEach(images, id: \.self) { image in
                             VStack {
-                                Image(image) // Replace with dynamic image loading logic
+                                Image(image) // Placeholder image logic
                                     .resizable()
                                     .scaledToFill()
                                     .frame(width: 100, height: 100)
