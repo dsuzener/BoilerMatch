@@ -125,7 +125,7 @@ struct HeaderView: View {
             Text("Discover")
                 .font(.largeTitle)
                 .fontWeight(.bold)
-                .foregroundColor(AppColors.black) // Black for header text
+                .foregroundColor(AppColors.mediumBeige) // Black for header text
 
             Spacer()
 
