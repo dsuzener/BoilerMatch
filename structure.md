@@ -114,6 +114,7 @@ Now, let's go through each file and explain its purpose and contents:
 
 ### setup.py
 - Configures the build process for the C++ module
+- Run `python setup.py build_ext --inplace`
 
 ## Frontend (iOS/Swift)
 
