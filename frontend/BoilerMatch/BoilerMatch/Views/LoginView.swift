@@ -1,48 +1,64 @@
 import SwiftUI
 
 struct LoginView: View {
-    @State private var email = ""
+    @AppStorage("isLoggedIn") private var isLoggedIn = false // Persistent login state
+    @State private var username = ""
     @State private var password = ""
-    @State private var isLoginMode = true
     
     var body: some View {
-        VStack {
+        VStack(spacing: 20) {
             Text("BoilerMatch")
                 .font(.largeTitle)
                 .fontWeight(.bold)
-                .padding()
+                .foregroundColor(AppColors.boilermakerGold)
+                .shadow(radius: 2)
             
-            Picker(selection: $isLoginMode, label: Text("Login or Register")) {
-                Text("Login").tag(true)
-                Text("Register").tag(false)
-            }
-            .pickerStyle(SegmentedPickerStyle())
-            .padding()
-            
-            TextField("Email", text: $email)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
+            TextField("Username", text: $username)
                 .padding()
+                .background(Color.white)
+                .cornerRadius(8)
+                .shadow(radius: 4)
             
             SecureField("Password", text: $password)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
+                .background(Color.white)
+                .cornerRadius(8)
+                .shadow(radius: 4)
             
-            Button(action: {
-                // Perform login or registration
-            }) {
-                Text(isLoginMode ? "Login" : "Register")
+            Button(action: logIn) {
+                Text("Log In")
+                    .fontWeight(.bold)
                     .foregroundColor(.white)
-                    .frame(width: 200, height: 50)
-                    .background(Color.blue)
-                    .cornerRadius(10)
+                    .padding()
+                    .frame(maxWidth: .infinity)
+                    .background(AppColors.boilermakerGold)
+                    .cornerRadius(8)
+                    .shadow(radius: 1)
             }
-            .padding()
+            
+            Spacer()
+        }
+        .padding()
+        .padding(.top, 175)
+        .background(
+            LinearGradient(
+                gradient: Gradient(colors: [AppColors.coolGray, Color.white]),
+                startPoint: .top,
+                endPoint: .bottom
+            )
+            .edgesIgnoringSafeArea(.all)
+        )
+    }
+    
+    func logIn() {
+        // Simulate login validation (replace with real logic later)
+        if !username.isEmpty && !password.isEmpty {
+            isLoggedIn = true
         }
     }
 }
 
-struct LoginView_Previews: PreviewProvider {
-    static var previews: some View {
-        LoginView()
-    }
+#Preview {
+    LoginView()
 }
+
