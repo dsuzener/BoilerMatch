@@ -1,10 +1,3 @@
-//
-//  EditProfileView.swift
-//  BoilerMatch
-//
-//  Created by Omniscient on 2/22/25.
-//
-
 import SwiftUI
 
 struct EditProfileView: View {
@@ -17,54 +10,72 @@ struct EditProfileView: View {
         ScrollView {
             VStack(spacing: 20) {
                 
-                // Editable User Information
-                TextField("Name", text: $name)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                
-                TextField("Age", text: $age)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                
-                TextEditor(text: $bio)
-                    .frame(height: 100)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 8).stroke(AppColors.coolGray.opacity(0.5))
-                    )
+                // Editable User Information Section
+                VStack(alignment: .leading, spacing: 10) {
+                    Text("Name")
+                        .font(.headline)
+                    
+                    TextField("Enter your name", text: $name)
+                        .padding()
+                        .background(Color.white)
+                        .cornerRadius(8)
+                        .shadow(radius: 4)
+                    
+                    Text("Age")
+                        .font(.headline)
+
+                    TextField("Enter your age", text: $age)
+                        .padding()
+                        .background(Color.white)
+                        .cornerRadius(8)
+                        .shadow(radius: 4)
+
+                    Text("Bio")
+                        .font(.headline)
+
+                    TextEditor(text: $bio)
+                        .frame(height: 100)
+                        .padding()
+                        .background(Color.white)
+                        .cornerRadius(8)
+                        .shadow(radius: 4)
+                }
                 
                 Divider()
                 
                 // Image Management Section
-                Text("Manage Images")
-                    .font(.headline)
+                VStack(alignment: .leading, spacing: 10) {
+                    Text("Manage Images")
+                        .font(.headline)
 
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(spacing: 16) {
-                        ForEach(images, id: \.self) { image in
-                            VStack {
-                                Image(image) // Placeholder image logic
-                                    .resizable()
-                                    .scaledToFill()
-                                    .frame(width: 100, height: 100)
-                                    .clipShape(RoundedRectangle(cornerRadius: 8))
-                                
-                                Button(action: {
-                                    deleteImage(imageName: image) // Add delete logic here
-                                }) {
-                                    Text("Delete")
-                                        .font(.caption)
-                                        .foregroundColor(.red)
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack(spacing: 16) {
+                            ForEach(images, id: \.self) { image in
+                                VStack {
+                                    Image(image) // Placeholder image logic
+                                        .resizable()
+                                        .scaledToFill()
+                                        .frame(width: 100, height: 100)
+                                        .clipShape(RoundedRectangle(cornerRadius: 8))
+                                    
+                                    Button(action: { deleteImage(imageName: image) }) {
+                                        Text("Delete")
+                                            .font(.caption)
+                                            .foregroundColor(.red)
+                                    }
                                 }
                             }
-                        }
-                        
-                        Button(action: addImage) { // Add upload logic here
-                            VStack {
-                                Image(systemName: "plus.circle.fill")
-                                    .resizable()
-                                    .frame(width: 100, height: 100)
-                                    .foregroundColor(AppColors.boilermakerGold)
 
-                                Text("Add Image")
-                                    .font(.caption)
+                            Button(action: addImage) {
+                                VStack {
+                                    Image(systemName: "plus.circle.fill")
+                                        .resizable()
+                                        .frame(width: 100, height: 100)
+                                        .foregroundColor(AppColors.boilermakerGold)
+
+                                    Text("Add Image")
+                                        .font(.caption)
+                                }
                             }
                         }
                     }
@@ -74,17 +85,24 @@ struct EditProfileView: View {
             }
             .padding()
         }
+        .background(
+            LinearGradient(
+                gradient: Gradient(colors: [AppColors.coolGray, Color.white]),
+                startPoint: .top,
+                endPoint: .bottom
+            )
+        )
         .navigationTitle("Edit Profile")
         .navigationBarTitleDisplayMode(.inline)
     }
 
     func deleteImage(imageName: String) {
-        images.removeAll { $0 == imageName } // Simple delete logic (replace with real implementation).
-    }
+            images.removeAll { $0 == imageName } // Simple delete logic (replace with real implementation).
+        }
 
-    func addImage() {
-        print("Add new image") // Add upload logic here.
-    }
+        func addImage() {
+            print("Add new image") // Add upload logic here.
+        }
 }
 
 #Preview {
