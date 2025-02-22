@@ -5,7 +5,7 @@ struct Match: Codable, Identifiable {
     let user1Id: String
     let user2Id: String
     let createdAt: Date
-    let status: String
+    var status: String
     
     enum CodingKeys: String, CodingKey {
         case id
