@@ -20,15 +20,15 @@ struct MainTabView: View {
                     Label("Matches", systemImage: "heart.fill")
                 }
             
+            StoreView()
+                .tabItem {
+                    Label("Store", systemImage: "cart.fill")
+                }
+            
             ProfileView()
                 .tabItem {
                     Label("Profile", systemImage: "person.crop.circle.fill")
                 }
-            
-//            StoreView()
-//                .tabItem {
-//                    Label("Store", systemImage: "cart.fill")
-//                }
         }
         .accentColor(AppColors.boilermakerGold) // Purdue-themed accent color
     }
