@@ -14,104 +14,103 @@ struct SettingsView: View {
     @State private var maxAge: Double = 30 // Maximum age for range slider
     
     var body: some View {
-        VStack(spacing: 20) {
+        VStack(spacing: 30) {
             // Title
             Text("Settings")
                 .font(.largeTitle)
                 .fontWeight(.bold)
+                .foregroundColor(AppColors.boilermakerGold)
                 .padding(.top, 20)
             
-            Spacer(minLength: 20)
+            Spacer(minLength: 10)
             
             // Gender Preference Picker
-            VStack(alignment: .leading, spacing: 10) {
+            VStack(alignment: .leading, spacing: 15) {
                 Text("Show Me")
                     .font(.headline)
+                    .foregroundColor(AppColors.black)
                 
-                HStack {
-                    Button(action: { genderPreference = "Everyone" }) {
-                        Text("Everyone")
-                            .frame(maxWidth: .infinity)
-                            .padding()
-                            .background(genderPreference == "Everyone" ? AppColors.boilermakerGold : AppColors.coolGray.opacity(0.3))
-                            .foregroundColor(genderPreference == "Everyone" ? .white : AppColors.black)
-                            .cornerRadius(8)
-                    }
-                    
-                    Button(action: { genderPreference = "Men" }) {
-                        Text("Men")
-                            .frame(maxWidth: .infinity)
-                            .padding()
-                            .background(genderPreference == "Men" ? AppColors.boilermakerGold : AppColors.coolGray.opacity(0.3))
-                            .foregroundColor(genderPreference == "Men" ? .white : AppColors.black)
-                            .cornerRadius(8)
-                    }
-                    
-                    Button(action: { genderPreference = "Women" }) {
-                        Text("Women")
-                            .frame(maxWidth: .infinity)
-                            .padding()
-                            .background(genderPreference == "Women" ? AppColors.boilermakerGold : AppColors.coolGray.opacity(0.3))
-                            .foregroundColor(genderPreference == "Women" ? .white : AppColors.black)
-                            .cornerRadius(8)
-                    }
+                HStack(spacing: 10) {
+                    GenderPreferenceButton(label: "Everyone", selected: $genderPreference, value: "Everyone")
+                    GenderPreferenceButton(label: "Men", selected: $genderPreference, value: "Men")
+                    GenderPreferenceButton(label: "Women", selected: $genderPreference, value: "Women")
                 }
             }
             .padding(.horizontal, 20)
             
-            Spacer(minLength: 20)
+            Spacer(minLength: 10)
             
             // Age Range Slider
-            VStack(alignment: .leading, spacing: 10) {
+            VStack(alignment: .leading, spacing: 15) {
                 Text("Age Range")
                     .font(.headline)
+                    .foregroundColor(AppColors.black)
                 
                 Text("\(Int(minAge)) - \(Int(maxAge)) years")
                     .font(.subheadline)
                     .foregroundColor(AppColors.coolGray.opacity(0.7))
                 
-                VStack(spacing: 10) {
+                VStack(spacing: 15) {
                     HStack {
                         Text("Min Age")
-                        Slider(value: $minAge, in: 18...maxAge, step: 1) // Min age slider
-                            .accentColor(AppColors.boilermakerGold)
+                            .font(.subheadline)
+                            .foregroundColor(AppColors.black)
+                        Slider(
+                            value: $minAge,
+                            in: 18...max(maxAge - 1, 19), // Prevent overlap with maxAge
+                            step: 1
+                        )
+                        .accentColor(AppColors.boilermakerGold)
                         Text("\(Int(minAge))")
+                            .fontWeight(.bold)
+                            .foregroundColor(AppColors.boilermakerGold)
                     }
                     
                     HStack {
                         Text("Max Age")
-                        Slider(value: $maxAge, in: minAge...100, step: 1) // Max age slider
-                            .accentColor(AppColors.boilermakerGold)
+                            .font(.subheadline)
+                            .foregroundColor(AppColors.black)
+                        Slider(
+                            value: $maxAge,
+                            in: min(minAge + 1, 99)...100, // Prevent overlap with minAge
+                            step: 1
+                        )
+                        .accentColor(AppColors.boilermakerGold)
                         Text("\(Int(maxAge))")
+                            .fontWeight(.bold)
+                            .foregroundColor(AppColors.boilermakerGold)
                     }
                 }
             }
             .padding(.horizontal, 20)
             
-            Spacer(minLength: 20)
+            Spacer(minLength: 10)
             
             // Logout Button
             Button(action: logOut) {
                 HStack {
                     Image(systemName: "arrow.backward.circle.fill")
+                        .resizable()
+                        .frame(width: 20, height: 20)
                         .foregroundColor(.white)
                     
                     Text("Log Out")
                         .fontWeight(.bold)
                         .foregroundColor(.white)
                 }
-                .frame(maxWidth: .infinity)
                 .padding()
+                .frame(maxWidth: .infinity)
                 .background(Color.red.opacity(0.8))
-                .cornerRadius(8)
+                .cornerRadius(12)
+                .shadow(color: Color.red.opacity(0.5), radius: 4, x: 0, y: 2)
             }
             .padding(.horizontal, 20)
-            
+
             Spacer()
         }
         .background(
             LinearGradient(
-                gradient: Gradient(colors: [AppColors.coolGray.opacity(0.1), Color.white]),
+                gradient: Gradient(colors: [AppColors.coolGray, Color.white]),
                 startPoint: .top,
                 endPoint: .bottom
             )
@@ -121,6 +120,25 @@ struct SettingsView: View {
     
     func logOut() {
         isLoggedIn = false // Reset login state
+    }
+}
+
+// Custom Button for Gender Preferences
+struct GenderPreferenceButton: View {
+    let label: String
+    @Binding var selected: String
+    let value: String
+    
+    var body: some View {
+        Button(action: { selected = value }) {
+            Text(label)
+                .frame(maxWidth: .infinity)
+                .padding()
+                .background(selected == value ? AppColors.boilermakerGold : AppColors.coolGray.opacity(0.3))
+                .foregroundColor(selected == value ? Color.white : AppColors.black)
+                .cornerRadius(8)
+                .shadow(color: selected == value ? AppColors.boilermakerGold.opacity(0.5) : Color.clear, radius: 4, x: 0, y: 2)
+        }
     }
 }
 
