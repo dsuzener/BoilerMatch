@@ -2,52 +2,58 @@ import SwiftUI
 
 struct FeedView: View {
     @StateObject var viewModel = FeedViewModel()
-    @State private var currentIndex: Int = 0
     @State private var isLoading = true
     
     let columns = [
-        GridItem(.flexible(), spacing: 2),
-        GridItem(.flexible(), spacing: 2)
+        GridItem(.flexible(), spacing: 16),
+        GridItem(.flexible(), spacing: 16)
     ]
     
     var body: some View {
         GeometryReader { geometry in
-            ScrollView {
-                LazyVGrid(columns: columns, spacing: 2) {
-                    ForEach(viewModel.feedItems) { item in
-                        FeedItemView(item: item, viewModel: viewModel)
-                            .frame(width: geometry.size.width / 2,
-                                   height: geometry.size.width / 1.5)
-                            .redacted(reason: isLoading ? .placeholder : [])
-                            .onAppear {
-                                DispatchQueue.main.asyncAfter(deadline: .now() + 1.1) {
-                                        isLoading = false
+            ZStack {
+                // Updated background gradient
+                LinearGradient(
+                    gradient: Gradient(colors: [Color.purple.opacity(0.2), Color.blue.opacity(0.1)]),
+                    startPoint: .top,
+                    endPoint: .bottom
+                )
+                .edgesIgnoringSafeArea(.all)
+                
+                ScrollView {
+                    VStack(spacing: 20) {
+                        HeaderView(remainingViews: viewModel.remainingViews)
+                        
+                        LazyVGrid(columns: columns, spacing: 16) {
+                            ForEach(viewModel.feedItems) { item in
+                                FeedItemView(item: item, viewModel: viewModel)
+                                    .frame(height: geometry.size.width / 1.5)
+                                    .redacted(reason: isLoading ? .placeholder : [])
+                                    .onAppear {
+                                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.95) {
+                                            isLoading = false
+                                        }
+                                        viewModel.loadMoreContentIfNeeded(currentItem: item)
                                     }
-                                viewModel.loadMoreContentIfNeeded(currentItem: item)
                             }
+                        }
+                        .padding(.horizontal, 16)
                     }
+                    .padding(.top, 16)
                 }
-//                .padding(.horizontal, 2)
-                .padding(.top, 32)
             }
-            .overlay(
-                VStack {
-                    HeaderView(remainingViews: viewModel.remainingViews)
-                    Spacer()
-                }
-            )
         }
         .customColorScheme($viewModel.customColorScheme)
-//        .background(.black)
     }
 }
 
 struct FeedItemView: View {
     let item: FeedItem
     @ObservedObject var viewModel: FeedViewModel
+    @State private var isLiked = false
     
     var body: some View {
-        ZStack(alignment: .bottomTrailing) {
+        ZStack(alignment: .bottomLeading) {
             AsyncImage(url: URL(string: item.imageName)) { phase in
                 switch phase {
                 case .empty:
@@ -56,46 +62,60 @@ struct FeedItemView: View {
                     image
                         .resizable()
                         .scaledToFill()
-                        .frame(maxWidth: .infinity, maxHeight: .infinity)
-                        .clipped()
                 case .failure:
                     Image("HotChick")
                         .resizable()
                         .scaledToFill()
-//                        .aspectRatio(contentMode: .fill)
-                        .frame(maxWidth: .infinity, maxHeight: .infinity)
-                        .clipped()
                 @unknown default:
                     EmptyView()
                 }
             }
-            .padding(.top, 16)
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .clipShape(RoundedRectangle(cornerRadius: 20))
             .overlay(
+                RoundedRectangle(cornerRadius: 20)
+                    .stroke(Color.white.opacity(0.3), lineWidth: 1)
+            )
+            .shadow(color: Color.black.opacity(0.2), radius: 10, x: 0, y: 5)
+            
+            // Gradient overlay for text readability
+            LinearGradient(
+                gradient: Gradient(colors: [Color.black.opacity(0.7), Color.clear]),
+                startPoint: .bottom,
+                endPoint: .top
+            )
+            .clipShape(RoundedRectangle(cornerRadius: 20))
+            
+            VStack(alignment: .leading) {
+                Text(item.name)
+                    .font(.headline)
+                    .fontWeight(.semibold)
+                
+                Text("\(item.age) years old")
+                    .font(.subheadline)
+                
+                Spacer()
+                
                 HStack {
                     Spacer()
-                    Text(item.name)
-                        .font(.callout)
-                        .padding(.trailing, 4)
-                        .foregroundColor(.black)
-                    Text("\(item.age)")
-                        .font(.caption)
-                        .foregroundColor(.black)
+                    
+                    Button(action: {
+                        isLiked.toggle()
+                    }) {
+                        Image(systemName: isLiked ? "heart.fill" : "heart")
+                            .foregroundColor(isLiked ? Color.red : Color.white)
+                            .font(.title2)
+                            .padding(8)
+                            .background(Circle().fill(Color.black.opacity(0.5)))
+                    }
                 }
-                .padding(.bottom, 32)
-                .padding(.horizontal, 4)
-                .shadow(color: .black, radius: 1)
-                .background(.white.opacity(0.15))
-                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
-                .shadow(color: .white, radius: 4),
-                alignment: .bottomTrailing
-            )
-            .onTapGesture {
-                viewModel.navigateToProfile(item)
             }
-            .contentShape(Rectangle())
+            .padding(12)
+            .foregroundColor(.white)
         }
-        .cornerRadius(8)
-        .shadow(radius: 4)
+        .onTapGesture {
+            viewModel.navigateToProfile(item)
+        }
     }
 }
 
@@ -104,22 +124,34 @@ struct HeaderView: View {
     
     var body: some View {
         HStack {
+            Text("Discover")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+
             Spacer()
-            
-            HStack {
+
+            HStack(spacing: 8) {
                 Image(systemName: "eye.fill")
+                    .foregroundColor(.white)
+
                 Text("\(remainingViews) left")
+                    .fontWeight(.medium)
+                    .foregroundColor(.white)
             }
-            .padding(2)
-            .background(AppColors.mediumBeige)
-            .foregroundColor(.black)
-            .cornerRadius(8)
+            .padding(8)
+            .background(Color.black.opacity(0.3))
+            .cornerRadius(12)
         }
-        .padding(.horizontal)
-        .padding(.bottom, 4)
-        .background(AppColors.lightBeige)
+        .padding(.horizontal, 16)
+        .padding(.vertical, 12)
+        // Add subtle background for header
+        .background(Color.white.opacity(0.1))
+        // Add rounded corners to header background
+        .cornerRadius(16)
     }
 }
+
+
 
 struct FeedView_Previews: PreviewProvider {
     static var previews: some View {
