@@ -3,6 +3,7 @@ import SwiftUI
 struct FeedView: View {
     @StateObject var viewModel = FeedViewModel()
     @State private var currentIndex: Int = 0
+    @State private var isLoading = true
     
     let columns = [
         GridItem(.flexible(), spacing: 2),
@@ -15,15 +16,19 @@ struct FeedView: View {
                 LazyVGrid(columns: columns, spacing: 2) {
                     ForEach(viewModel.feedItems) { item in
                         FeedItemView(item: item, viewModel: viewModel)
-                            .frame(height: geometry.size.width / 2)
+                            .frame(width: geometry.size.width / 2,
+                                   height: geometry.size.width / 1.5)
+                            .redacted(reason: isLoading ? .placeholder : [])
                             .onAppear {
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 1.1) {
+                                        isLoading = false
+                                    }
                                 viewModel.loadMoreContentIfNeeded(currentItem: item)
                             }
                     }
                 }
-                .padding(.horizontal, 2)
+//                .padding(.horizontal, 2)
                 .padding(.top, 32)
-            
             }
             .overlay(
                 VStack {
@@ -33,6 +38,7 @@ struct FeedView: View {
             )
         }
         .customColorScheme($viewModel.customColorScheme)
+//        .background(.black)
     }
 }
 
@@ -42,28 +48,54 @@ struct FeedItemView: View {
     
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
-            Image(item.imageName)
-                .resizable()
-                .scaledToFill()
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .clipped()
-                .onTapGesture {
-                    viewModel.navigateToProfile(item)
+            AsyncImage(url: URL(string: item.imageName)) { phase in
+                switch phase {
+                case .empty:
+                    ProgressView()
+                case .success(let image):
+                    image
+                        .resizable()
+                        .scaledToFill()
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                        .clipped()
+                case .failure:
+                    Image("HotChick")
+                        .resizable()
+                        .scaledToFill()
+//                        .aspectRatio(contentMode: .fill)
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                        .clipped()
+                @unknown default:
+                    EmptyView()
                 }
-            
-            HStack {
-                Text(item.name)
-                    .font(.callout)
-                    .foregroundColor(.white)
-                    .padding(.trailing, 4)
-                Text("\(item.age)")
-                    .font(.caption)
-                    .foregroundColor(.white)
             }
-            .padding(8)
-            .shadow(color: .black, radius: 1)
+            .padding(.top, 16)
+            .overlay(
+                HStack {
+                    Spacer()
+                    Text(item.name)
+                        .font(.callout)
+                        .padding(.trailing, 4)
+                        .foregroundColor(.black)
+                    Text("\(item.age)")
+                        .font(.caption)
+                        .foregroundColor(.black)
+                }
+                .padding(.bottom, 32)
+                .padding(.horizontal, 4)
+                .shadow(color: .black, radius: 1)
+                .background(.white.opacity(0.15))
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
+                .shadow(color: .white, radius: 4),
+                alignment: .bottomTrailing
+            )
+            .onTapGesture {
+                viewModel.navigateToProfile(item)
+            }
+            .contentShape(Rectangle())
         }
-        .contentShape(Rectangle())
+        .cornerRadius(8)
+        .shadow(radius: 4)
     }
 }
 
@@ -78,13 +110,14 @@ struct HeaderView: View {
                 Image(systemName: "eye.fill")
                 Text("\(remainingViews) left")
             }
-            .padding(0)
-            .background(Color(.systemGray5))
+            .padding(2)
+            .background(AppColors.mediumBeige)
+            .foregroundColor(.black)
             .cornerRadius(8)
         }
         .padding(.horizontal)
-        .padding(.bottom, 8)
-        .background(.ultraThinMaterial)
+        .padding(.bottom, 4)
+        .background(AppColors.lightBeige)
     }
 }
 
