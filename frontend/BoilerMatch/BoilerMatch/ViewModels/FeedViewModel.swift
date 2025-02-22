@@ -4,7 +4,6 @@ import Combine
 class FeedViewModel: ObservableObject {
     @Published var feedItems: [FeedItem] = []
     @Published var remainingViews = 15
-    @Published var customColorScheme: CustomColorScheme = .system
     
     private var currentPage = 0
     private let pageSize = 30
