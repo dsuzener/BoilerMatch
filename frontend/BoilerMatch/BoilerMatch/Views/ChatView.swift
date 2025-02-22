@@ -3,9 +3,9 @@ import SwiftUI
 struct ChatView: View {
     @State private var messageText = ""
     @State private var messages: [Message] = [
-        Message(id: "1", senderId: "1", receiverId: "2", content: "Hello!", timestamp: Date().addingTimeInterval(-3600)),
-        Message(id: "2", senderId: "2", receiverId: "1", content: "Hi there!", timestamp: Date().addingTimeInterval(-3500)),
-        Message(id: "3", senderId: "1", receiverId: "2", content: "How are you?", timestamp: Date().addingTimeInterval(-3400))
+        Message(id: "1", senderId: "1", receiverId: "2", content: "Heyy ;)", timestamp: Date().addingTimeInterval(-3600)),
+        Message(id: "2", senderId: "2", receiverId: "1", content: "Hello there.", timestamp: Date().addingTimeInterval(-3500)),
+        Message(id: "3", senderId: "1", receiverId: "2", content: "General Kenobi.", timestamp: Date().addingTimeInterval(-3400))
     ]
     
     var body: some View {
@@ -52,13 +52,27 @@ struct ChatView: View {
             )
             .edgesIgnoringSafeArea(.all)
         )
-        .navigationTitle("Chat")
+        // Custom Navigation Bar
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .principal) {
-                Text("Chat")
-                    .font(.headline)
-                    .foregroundColor(AppColors.black)
+                HStack {
+                    Text("User Name") // Replace with dynamic user name
+                        .font(.title)
+                        .foregroundColor(AppColors.rushGold)
+
+                    Spacer()
+                    
+                    Button(action: {
+                        // Action to close chat
+                    }) {
+                        Image(systemName: "xmark")
+                            .foregroundColor(AppColors.black)
+                            .padding(8)
+                            .background(AppColors.mediumBeige.opacity(0.8))
+                            .clipShape(Circle())
+                    }
+                }
             }
         }
     }
@@ -78,7 +92,7 @@ struct MessageBubble: View {
     
     var body: some View {
         VStack(alignment: isCurrentUser ? .trailing : .leading, spacing: 4) {
-            HStack {
+            HStack(alignment: .bottom) {
                 if isCurrentUser { Spacer() }
                 
                 Text(message.content)
@@ -96,6 +110,8 @@ struct MessageBubble: View {
                 .foregroundColor(AppColors.coolGray.opacity(0.7))
                 .padding(isCurrentUser ? EdgeInsets(top: 0, leading: 0, bottom: 4, trailing: 16) : EdgeInsets(top: 0, leading: 16, bottom: 4, trailing: 0))
         }
+        // Add padding to prevent flush edges
+        .padding(isCurrentUser ? EdgeInsets(top: 0, leading: 50, bottom: 0, trailing: 10) : EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 50))
     }
 }
 
