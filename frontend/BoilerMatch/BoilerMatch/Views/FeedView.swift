@@ -86,28 +86,26 @@ struct FeedItemView: View {
             )
             .clipShape(RoundedRectangle(cornerRadius: 20))
             
-            VStack(alignment: .leading) {
-                Text(item.name)
-                    .font(.headline)
-                    .fontWeight(.semibold)
-                
-                Text("\(item.age) years old")
-                    .font(.subheadline)
+            HStack {
+                VStack(alignment: .leading, spacing: 4) {
+                    Text(item.name)
+                        .font(.headline)
+                        .fontWeight(.semibold)
+                    
+                    Text("\(item.age) years old")
+                        .font(.subheadline)
+                }
                 
                 Spacer()
                 
-                HStack {
-                    Spacer()
-                    
-                    Button(action: {
-                        isLiked.toggle()
-                    }) {
-                        Image(systemName: isLiked ? "heart.fill" : "heart")
-                            .foregroundColor(isLiked ? Color.red : Color.white)
-                            .font(.title2)
-                            .padding(8)
-                            .background(Circle().fill(Color.black.opacity(0.5)))
-                    }
+                Button(action: {
+                    isLiked.toggle()
+                }) {
+                    Image(systemName: isLiked ? "heart.fill" : "heart")
+                        .foregroundColor(isLiked ? Color.red : Color.white)
+                        .font(.title2)
+                        .padding(8)
+                        .background(Circle().fill(Color.black.opacity(0.5)))
                 }
             }
             .padding(12)
