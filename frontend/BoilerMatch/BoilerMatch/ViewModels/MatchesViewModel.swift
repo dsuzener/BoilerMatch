@@ -9,13 +9,13 @@ class MatchesViewModel: ObservableObject {
     
     func fetchMatches(for userId: String) {
         // Simulating API call
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            self.matches = [
-                Match(id: "1", user1Id: userId, user2Id: "2", createdAt: Date(), status: "pending"),
-                Match(id: "2", user1Id: userId, user2Id: "3", createdAt: Date(), status: "accepted"),
-                Match(id: "3", user1Id: userId, user2Id: "4", createdAt: Date(), status: "rejected")
-            ]
-        }
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+//            self.matches = [
+//                Match(id: "1", user1Id: userId, user2Id: "2", createdAt: Date(), status: "pending"),
+//                Match(id: "2", user1Id: userId, user2Id: "3", createdAt: Date(), status: "accepted"),
+//                Match(id: "3", user1Id: userId, user2Id: "4", createdAt: Date(), status: "rejected")
+//            ]
+//        }
     }
     
     func updateMatchStatus(matchId: String, newStatus: String) {

@@ -2,15 +2,15 @@ import Foundation
 
 struct Match: Codable, Identifiable {
     let id: String
-    let user1Id: String
-    let user2Id: String
+    let userId: String
+    let unread: String
     let createdAt: Date
     var status: String
     
     enum CodingKeys: String, CodingKey {
         case id
-        case user1Id = "user1_id"
-        case user2Id = "user2_id"
+        case userId = "user_id"
+        case unread = "no"
         case createdAt = "created_at"
         case status
     }
