@@ -2,9 +2,11 @@ structure.txt
 README.md
 .vscode/*
 
-# OS X temporary files that should never be committed
 # Refer to below for any XCode related .gitignore files/folders:
 # https://stackoverflow.com/questions/49478/git-ignore-file-for-xcode-projects
+frontend/BoilerMatch/BoilerMatch.xcodeproj/project.xcworkspace/xcuserdata/omniscient.xcuserdatad/UserInterfaceState.xcuserstate
+
+# OS X temporary files that should never be committed
 .DS_Store
 .Trashes
 *.swp
