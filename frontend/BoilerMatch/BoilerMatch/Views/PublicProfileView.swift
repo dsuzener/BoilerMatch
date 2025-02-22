@@ -18,6 +18,13 @@ struct PublicProfileView: View {
                     .scaledToFit()
             }
         }
+        .background(
+            LinearGradient(
+                gradient: Gradient(colors: [AppColors.coolGray, Color.white]),
+                startPoint: .top,
+                endPoint: .bottom
+            )
+        )
         .tabViewStyle(PageTabViewStyle()) // Swipeable carousel style
         .navigationTitle("Public Profile")
         .navigationBarTitleDisplayMode(.inline)
