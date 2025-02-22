@@ -1,5 +1,7 @@
 structure.txt
 README.md
+frontend/*
+.vscode/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
