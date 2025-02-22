@@ -10,14 +10,25 @@ struct ChatView: View {
     
     var body: some View {
         VStack {
-            // Messages List
-            ScrollView {
-                VStack(spacing: 10) {
-                    ForEach(messages) { message in
-                        MessageBubble(message: message, isCurrentUser: message.senderId == "1")
+            // Scrollable Messages List
+            ScrollViewReader { proxy in
+                ScrollView {
+                    VStack(spacing: 10) {
+                        ForEach(messages) { message in
+                            MessageBubble(message: message, isCurrentUser: message.senderId == "1")
+                                .id(message.id) // Assign ID for autoscroll
+                        }
+                    }
+                    .padding(.top, 10)
+                }
+                .onChange(of: messages, initial: true) { _, _ in
+                    // Autoscroll to latest message when messages change
+                    if let lastMessage = messages.last {
+                        withAnimation {
+                            proxy.scrollTo(lastMessage.id, anchor: .bottom)
+                        }
                     }
                 }
-                .padding(.top, 10)
             }
             
             // Input Field
@@ -59,7 +70,7 @@ struct ChatView: View {
                 HStack {
                     Text("User Name") // Replace with dynamic user name
                         .font(.title)
-                        .foregroundColor(AppColors.rushGold)
+                        .foregroundColor(AppColors.black)
 
                     Spacer()
                     
@@ -72,9 +83,15 @@ struct ChatView: View {
                             .background(AppColors.mediumBeige.opacity(0.8))
                             .clipShape(Circle())
                     }
+                    .padding(.bottom, 8)
                 }
+                .padding(.bottom, 8)
             }
         }
+        // Set consistent navigation bar background and text color
+        .toolbarBackground(AppColors.coolGray.opacity(0.8), for: .navigationBar) // Set background color
+        .toolbarBackground(.visible, for: .navigationBar)           // Ensure background is always visible
+        .toolbarColorScheme(.dark, for: .navigationBar)             // Set dark mode for text/icons
     }
     
     func sendMessage() {

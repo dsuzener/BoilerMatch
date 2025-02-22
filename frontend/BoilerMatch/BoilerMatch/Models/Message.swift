@@ -1,6 +1,6 @@
 import Foundation
 
-struct Message: Codable, Identifiable {
+struct Message: Codable, Identifiable, Equatable {
     let id: String
     let senderId: String
     let receiverId: String
