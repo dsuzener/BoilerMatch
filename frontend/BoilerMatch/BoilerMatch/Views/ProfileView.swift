@@ -1,62 +1,94 @@
 import SwiftUI
 
 struct ProfileView: View {
-    @State private var name = ""
-    @State private var bio = ""
-    @State private var interests: [String] = []
-    @State private var newInterest = ""
+    @State private var showSettings = false
+    @State private var showEditProfile = false
+    @State private var showPublicProfile = false
     
     var body: some View {
-        NavigationView {
-            Form {
-                Section(header: Text("Basic Info")) {
-                    TextField("Name", text: $name)
-                    TextEditor(text: $bio)
-                        .frame(height: 100)
+        VStack(spacing: 20) {
+            // User's Primary Profile Image
+            Image("profileImage") // Replace with dynamic user image
+                .resizable()
+                .scaledToFill()
+                .frame(width: 150, height: 150)
+                .clipShape(Circle())
+                .shadow(radius: 10)
+            
+            // User Information
+            Text("John Doe") // Replace with dynamic user name
+                .font(.title)
+                .fontWeight(.bold)
+            
+            Text("Age: 25") // Replace with dynamic user age
+                .font(.subheadline)
+                .foregroundColor(.gray)
+            
+            Text("Loves hiking, coffee, and coding!") // Replace with dynamic bio
+                .font(.body)
+                .multilineTextAlignment(.center)
+                .padding(.horizontal)
+            
+            Spacer()
+            
+            // Action Buttons
+            VStack(spacing: 16) {
+                Button(action: {
+                    showEditProfile = true
+                }) {
+                    Text("Edit Profile")
+                        .fontWeight(.bold)
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(AppColors.boilermakerGold)
+                        .foregroundColor(.white)
+                        .cornerRadius(8)
+                }
+                .sheet(isPresented: $showEditProfile) {
+                    EditProfileView() // Navigate to Edit Profile screen
                 }
                 
-                Section(header: Text("Interests")) {
-                    ForEach(interests, id: \.self) { interest in
-                        Text(interest)
-                    }
-                    .onDelete(perform: deleteInterest)
-                    
-                    HStack {
-                        TextField("Add interest", text: $newInterest)
-                        Button(action: addInterest) {
-                            Text("Add")
-                        }
-                    }
+                Button(action: {
+                    showPublicProfile = true
+                }) {
+                    Text("View Public Profile")
+                        .fontWeight(.bold)
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(AppColors.coolGray.opacity(0.3))
+                        .foregroundColor(AppColors.black)
+                        .cornerRadius(8)
+                }
+                .sheet(isPresented: $showPublicProfile) {
+                    PublicProfileView() // Navigate to Public Profile screen
                 }
                 
-                Section {
-                    Button(action: saveProfile) {
-                        Text("Save Profile")
-                    }
+                Button(action: {
+                    showSettings = true
+                }) {
+                    Text("Settings")
+                        .fontWeight(.bold)
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(Color.red.opacity(0.8))
+                        .foregroundColor(.white)
+                        .cornerRadius(8)
+                }
+                .sheet(isPresented: $showSettings) {
+                    SettingsView() // Navigate to Settings screen
                 }
             }
-            .navigationTitle("My Profile")
+            
+            Spacer()
         }
-    }
-    
-    func addInterest() {
-        if !newInterest.isEmpty {
-            interests.append(newInterest)
-            newInterest = ""
-        }
-    }
-    
-    func deleteInterest(at offsets: IndexSet) {
-        interests.remove(atOffsets: offsets)
-    }
-    
-    func saveProfile() {
-        // Save profile logic here
+        .padding()
+        .navigationTitle("Your Profile")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
-struct ProfileView_Previews: PreviewProvider {
-    static var previews: some View {
+#Preview {
+    NavigationView {
         ProfileView()
     }
 }
