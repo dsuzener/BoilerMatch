@@ -90,7 +90,7 @@ struct FeedItemView: View {
             
             HStack {
                 VStack(alignment: .leading, spacing: 4) {
-                    Text(item.name)
+                    Text(item.fullname)
                         .font(.headline)
                         .fontWeight(.semibold)
                         .foregroundColor(AppColors.rushGold) // Rush Gold for name
@@ -104,6 +104,7 @@ struct FeedItemView: View {
                 
                 Button(action: {
                     isLiked.toggle()
+                    sendLikeRequest(receiverUsername: item.name)
                 }) {
                     Image(systemName: isLiked ? "heart.fill" : "heart")
                         .foregroundColor(isLiked ? AppColors.boilermakerGold : Color.white) // Gold when liked
@@ -117,6 +118,44 @@ struct FeedItemView: View {
         .onTapGesture {
             viewModel.navigateToProfile(item)
         }
+    }
+    
+    private func sendLikeRequest(receiverUsername: String) {
+        guard let url = URL(string: "http://localhost:8000/api/like") else {
+            print("Invalid URL")
+            return
+        }
+    
+        guard let username = UserDefaults.standard.string(forKey: "username") else {
+            print("No username found in UserDefaults")
+            return
+        }
+        print(username)
+        print(receiverUsername)
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        
+        request.addValue(username, forHTTPHeaderField: "Sender")
+        request.addValue(receiverUsername, forHTTPHeaderField: "Receiver")
+        
+        URLSession.shared.dataTask(with: request) { data, response, error in
+            if let error = error {
+                print("Error sending like request:", error.localizedDescription)
+                return
+            }
+            
+            guard let httpResponse = response as? HTTPURLResponse else {
+                print("No response from server")
+                return
+            }
+            
+            print("HTTP Response Status Code:", httpResponse.statusCode)
+            
+            if let data = data, let responseString = String(data: data, encoding: .utf8) {
+                print("Response from server:", responseString)
+            }
+        }.resume()
     }
 }
 
