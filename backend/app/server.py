@@ -1,9 +1,11 @@
 # Add this login endpoint above your existing routers
 from fastapi import APIRouter, HTTPException, status
 from auth import hash_password
-from base_models import LoginRequest, SignupRequest
+from base_models import LoginRequest, SignupRequest, Token
+
 from database import db
 from obj import User
+from matching import MatchingService
 
 api_router = APIRouter()
 
@@ -43,3 +45,9 @@ async def signup(user_data: SignupRequest):
     
     db.add_user(new_user)
     return {"token": user_data.username}
+
+@api_router.get("/feed")
+async def feed_users(token: Token):
+    matched_users = MatchingService.find_potential_matches(token.access_token)
+
+    return [user.to_dict for user in matched_users]
