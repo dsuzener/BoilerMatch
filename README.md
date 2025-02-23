@@ -10,8 +10,6 @@ Welcome to **BoilerMatch**, a modern dating app designed to help people connect,
 - [Project Structure](#project-structure)
 - [Setup and Installation](#setup-and-installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ---
 
