@@ -1,12 +1,12 @@
 # Add this login endpoint above your existing routers
 from fastapi import APIRouter, HTTPException, status, Header, Body
-from auth import hash_password
-from base_models import LoginRequest, SignupRequest
 from datetime import datetime
 
 from database import db
-from obj import User, Conversation, Message
+from obj import User, Conversation, Message, Location
 from matching import MatchingService
+from auth import hash_password
+from base_models import LoginRequest, SignupRequest, UserUpdateRequest
 
 api_router = APIRouter()
 
@@ -84,6 +84,8 @@ async def match_request(sender: str = Header(...), receiver: str = Header(...)):
         receiver_obj.matches.append(receiver)
         status = "MATCH!"
 
+    db._save_collection("user", db.users)
+
     return status
 
 @api_router.get("/matches")
@@ -95,6 +97,8 @@ async def matched_users(authorization: str = Header(...)):
     
     # Use the username to find potential matches
     user = db.find_user({"username": username})
+    if not user:
+        raise HTTPException(status_code=404, detail="user not found")
     return MatchingService._matched_users(user)
 
 # Message sending endpoint
@@ -190,3 +194,116 @@ async def get_message_history(
         "limit": limit,
         "offset": offset
     }
+
+from datetime import datetime
+from fastapi import APIRouter, Depends, HTTPException, Header
+from typing import Optional, List, Literal
+from pydantic import BaseModel
+from obj import User, Conversation, Location, MatchPreferences, Settings
+
+# ... [Existing Pydantic models for update requests here] ...
+
+# Update the API router with the corrected endpoint
+@api_router.put("/users/{user_id}/profile")
+async def update_user_profile(
+    update_data: UserUpdateRequest, 
+    username: str = Header(...),
+    user_id: str = Header(...)):
+    if not username:
+        raise HTTPException(status_code=400, detail="Authorization header is missing")
+
+    # Use the username to find potential matches
+    user = db.find_user({"username": username})
+    if not user:
+        raise HTTPException(status_code=404, detail="user not found")
+
+    update_dict = {}
+
+    # Validate and apply username update
+    if update_data.username is not None and update_data.username != user.username:
+        existing_user = db.find_user({"username": update_data.username})
+        if existing_user and existing_user.user_id != user_id:
+            raise HTTPException(status_code=400, detail="Username already taken")
+        user.username = update_data.username
+        update_dict["username"] = update_data.username
+
+    # Validate and apply email update
+    if update_data.email is not None and update_data.email != user.email:
+        existing_user = db.find_user({"email": update_data.email})
+        if existing_user and existing_user.user_id != user_id:
+            raise HTTPException(status_code=400, detail="Email already registered")
+        user.email = update_data.email
+        user.verification_status = False
+        update_dict["email"] = update_data.email
+        update_dict["verification_status"] = False
+
+    # Update top-level fields
+    if update_data.full_name is not None:
+        user.full_name = update_data.full_name
+        update_dict["full_name"] = update_data.full_name
+    if update_data.age is not None:
+        user.age = update_data.age
+        update_dict["age"] = update_data.age
+    if update_data.gender is not None:
+        user.gender = update_data.gender
+        update_dict["gender"] = update_data.gender
+    if update_data.sexual_orientation is not None:
+        user.sexual_orientation = update_data.sexual_orientation
+        update_dict["sexual_orientation"] = update_data.sexual_orientation
+    if update_data.bio is not None:
+        user.bio = update_data.bio
+        update_dict["bio"] = update_data.bio
+    if update_data.profile_pictures is not None:
+        user.profile_pictures = update_data.profile_pictures
+        update_dict["profile_pictures"] = update_data.profile_pictures
+    if update_data.campus_affiliation is not None:
+        user.campus_affiliation = update_data.campus_affiliation
+        update_dict["campus_affiliation"] = update_data.campus_affiliation
+    if update_data.interests is not None:
+        user.interests = update_data.interests
+        update_dict["interests"] = update_data.interests
+
+    # Update location
+    if update_data.location is not None:
+        new_location = Location(
+            latitude=update_data.location.latitude,
+            longitude=update_data.location.longitude
+        )
+        user.location = new_location
+        update_dict["location"] = new_location
+
+    # Update match preferences
+    if update_data.match_preferences is not None:
+        mp_update = update_data.match_preferences
+        current_mp = user.match_preferences
+        new_mp = MatchPreferences(
+            preferred_gender=mp_update.preferred_gender if mp_update.preferred_gender is not None else current_mp.preferred_gender,
+            min_age=mp_update.min_age if mp_update.min_age is not None else current_mp.min_age,
+            max_age=mp_update.max_age if mp_update.max_age is not None else current_mp.max_age,
+            max_distance=mp_update.max_distance if mp_update.max_distance is not None else current_mp.max_distance
+        )
+        user.match_preferences = new_mp
+        update_dict["match_preferences"] = new_mp
+
+    # Update settings
+    if update_data.settings is not None:
+        s_update = update_data.settings
+        current_settings = user.settings
+        new_settings = Settings(
+            notifications_enabled=s_update.notifications_enabled if s_update.notifications_enabled is not None else current_settings.notifications_enabled,
+            theme=s_update.theme if s_update.theme is not None else current_settings.theme,
+            language=s_update.language if s_update.language is not None else current_settings.language
+        )
+        user.settings = new_settings
+        update_dict["settings"] = new_settings
+
+    # Update timestamp
+    user.updated_at = datetime.now().timestamp()
+    update_dict["updated_at"] = user.updated_at
+
+    # Persist changes using the database's update_user method
+    success = db.update_user(user_id, update_dict)
+    if not success:
+        raise HTTPException(status_code=500, detail="Failed to update user profile")
+
+    return user.to_dict()
