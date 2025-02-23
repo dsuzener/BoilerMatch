@@ -4,6 +4,8 @@ struct LoginView: View {
     @AppStorage("isLoggedIn") private var isLoggedIn = false // Persistent login state
     @State private var username = ""
     @State private var password = ""
+    @State private var isLoading = false
+    @State private var errorMessage: String?
     
     var body: some View {
         VStack(spacing: 20) {
@@ -25,15 +27,43 @@ struct LoginView: View {
                 .cornerRadius(8)
                 .shadow(radius: 4)
             
+//            Button(action: logIn) {
+//                Text("Log In")
+//                    .fontWeight(.bold)
+//                    .foregroundColor(.white)
+//                    .padding()
+//                    .frame(maxWidth: .infinity)
+//                    .background(AppColors.boilermakerGold)
+//                    .cornerRadius(8)
+//                    .shadow(radius: 1)
+//            }
+            
             Button(action: logIn) {
-                Text("Log In")
-                    .fontWeight(.bold)
-                    .foregroundColor(.white)
+                if isLoading {
+                    ProgressView()
+                        .progressViewStyle(CircularProgressViewStyle(tint: .white))
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .background(AppColors.boilermakerGold)
+                        .cornerRadius(8)
+                        .shadow(radius: 1)
+                } else {
+                    Text("Log In")
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .background(AppColors.boilermakerGold)
+                        .cornerRadius(8)
+                        .shadow(radius: 1)
+                }
+            }
+            .disabled(isLoading)
+            
+            if let errorMessage = errorMessage {
+                Text(errorMessage)
+                    .foregroundColor(.red)
                     .padding()
-                    .frame(maxWidth: .infinity)
-                    .background(AppColors.boilermakerGold)
-                    .cornerRadius(8)
-                    .shadow(radius: 1)
             }
             
             Spacer()
@@ -51,9 +81,19 @@ struct LoginView: View {
     }
     
     func logIn() {
-        // Simulate login validation (replace with real logic later)
-        if !username.isEmpty && !password.isEmpty {
-            isLoggedIn = true
+        guard !isLoading else { return }
+        isLoading = true
+        errorMessage = nil
+        
+        loginUser(username: username, password: password) { success, error in
+            DispatchQueue.main.async {
+                isLoading = false
+                if success {
+                    isLoggedIn = true
+                } else {
+                    errorMessage = error ?? "Login failed"
+                }
+            }
         }
     }
 }
