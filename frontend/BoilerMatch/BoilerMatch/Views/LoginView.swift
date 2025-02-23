@@ -20,23 +20,14 @@ struct LoginView: View {
                 .background(Color.white)
                 .cornerRadius(8)
                 .shadow(radius: 4)
+                .autocapitalization(.none)
             
             SecureField("Password", text: $password)
                 .padding()
                 .background(Color.white)
                 .cornerRadius(8)
                 .shadow(radius: 4)
-            
-//            Button(action: logIn) {
-//                Text("Log In")
-//                    .fontWeight(.bold)
-//                    .foregroundColor(.white)
-//                    .padding()
-//                    .frame(maxWidth: .infinity)
-//                    .background(AppColors.boilermakerGold)
-//                    .cornerRadius(8)
-//                    .shadow(radius: 1)
-//            }
+                .autocapitalization(.none)
             
             Button(action: logIn) {
                 if isLoading {
