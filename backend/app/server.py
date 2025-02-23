@@ -62,7 +62,6 @@ async def feed_users(authorization: str = Header(...)):
     # Use the username to find potential matches
     user = db.find_user({"username": username})
     matched_users = MatchingService.find_potential_matches(user)
-    print([user.to_dict() for user in matched_users])
     return [user.to_dict() for user in matched_users]
 
 @api_router.get("/matches")
