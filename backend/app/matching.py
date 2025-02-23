@@ -20,8 +20,8 @@ class MatchingService:
             if not MatchingService._passes_age_filter(user, candidate):
                 continue
                 
-            if not MatchingService._passes_distance_filter(user, candidate):
-                continue
+            # if not MatchingService._passes_distance_filter(user, candidate):
+            #     continue
                 
             if candidate.account_status != "Active":
                 continue

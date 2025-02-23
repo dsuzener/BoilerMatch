@@ -35,14 +35,14 @@ class MockDatabase:
 
     def add_user(self, user: User):
         self.users.append(user)
-        self._save_collection("users", self.users)
+        self._save_collection("user", self.users)
 
     def update_user(self, user_id: str, update_data: Dict) -> bool:
         for user in self.users:
             if user.user_id == user_id:
                 for key, value in update_data.items():
                     setattr(user, key, value)
-                self._save_collection("users", self.users)
+                self._save_collection("user", self.users)
                 return True
         return False
 

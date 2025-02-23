@@ -196,7 +196,7 @@ async def get_message_history(
     }
 
 # user update
-@api_router.put("/users/{user_id}/profile")
+@api_router.put("/update")
 async def update_user_profile(
     update_data: UserUpdateRequest, 
     username: str = Header(...),
