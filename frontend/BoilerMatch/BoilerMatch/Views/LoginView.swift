@@ -66,9 +66,12 @@ struct LoginView: View {
                         .foregroundColor(AppColors.boilermakerGold)
                         .padding()
                         .frame(maxWidth: .infinity)
-                        .background(Color.white)
+                        .background(
+                            RoundedRectangle(cornerRadius: 8) // Use RoundedRectangle for the background
+                                .fill(Color.white) // Fill it with white color
+                        )
                         .overlay(
-                            RoundedRectangle(cornerRadius: 8)
+                            RoundedRectangle(cornerRadius: 8) // Ensure overlay matches the background's shape
                                 .stroke(AppColors.boilermakerGold, lineWidth: 2)
                         )
                         .shadow(radius: 1)

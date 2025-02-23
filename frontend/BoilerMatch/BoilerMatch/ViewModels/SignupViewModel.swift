@@ -1,5 +1,5 @@
 //
-//  LoginViewModel.swift
+//  SignupViewModel.swift
 //  BoilerMatch
 //
 //  Created by Omniscient on 2/22/25.
@@ -7,14 +7,15 @@
 
 import Foundation
 
-func loginUser(username: String, password: String, completion: @escaping (Bool, String?) -> Void) {
-    guard let url = URL(string: "http://localhost:8000/api/login") else {
+func signUpUser(username: String, email: String, password: String, completion: @escaping (Bool, String?) -> Void) {
+    guard let url = URL(string: "http://localhost:8000/api/signup") else {
         completion(false, "Invalid URL")
         return
     }
     
     let parameters: [String: Any] = [
         "username": username,
+        "email": email,
         "password": password
     ]
     
@@ -25,7 +26,7 @@ func loginUser(username: String, password: String, completion: @escaping (Bool, 
     do {
         request.httpBody = try JSONSerialization.data(withJSONObject: parameters)
     } catch {
-        completion(false, "Failed to encode credentials")
+        completion(false, "Failed to encode user details")
         return
     }
     
@@ -45,25 +46,14 @@ func loginUser(username: String, password: String, completion: @escaping (Bool, 
         }
         
         switch httpResponse.statusCode {
-        case 200:
-            guard let data = data,
-                  let json = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
-                  let token = json["token"] as? String else {
-                DispatchQueue.main.async {
-                    completion(false, "Invalid response format")
-                }
-                return
-            }
-            
-            // Save token to Keychain (simplified example)
-            UserDefaults.standard.set(token, forKey: "authToken")
+        case 201: // HTTP 201 Created
             DispatchQueue.main.async {
                 completion(true, nil)
             }
             
-        case 401:
+        case 400:
             DispatchQueue.main.async {
-                completion(false, "Invalid credentials")
+                completion(false, "Invalid input or user already exists")
             }
             
         default:
