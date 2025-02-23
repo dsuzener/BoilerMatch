@@ -28,15 +28,16 @@ struct ProfileView: View {
                         .shadow(radius: 10)
                     
                     // User Information
-                    Text("John Doe") // Replace with dynamic user name
+                    Text(UserDefaults.standard.string(forKey: "username")!) // Replace with dynamic user name
                         .font(.title)
                         .fontWeight(.bold)
                     
-                    Text("Age: 25") // Replace with dynamic user age
+                    let age = UserDefaults.standard.object(forKey: "age") as? Int
+                    Text(age != nil ? "\(age!)" : "Age not set")
                         .font(.subheadline)
                         .foregroundColor(AppColors.coolGray.opacity(0.7))
                     
-                    Text("Loves hiking, coffee, and coding!") // Replace with dynamic bio
+                    Text(UserDefaults.standard.string(forKey: "bio")!) // Replace with dynamic bio
                         .font(.body)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal)
@@ -64,7 +65,7 @@ struct ProfileView: View {
                     action: { showPublicProfile = true }
                 )
                 .sheet(isPresented: $showPublicProfile) {
-                    PublicProfileView() // Navigate to Public Profile screen
+                    PublicProfileView(profileName: UserDefaults.standard.string(forKey: "username")!, bio: UserDefaults.standard.string(forKey: "bio")!) // Navigate to Public Profile screen
                 }
                 
                 ProfileActionButton(

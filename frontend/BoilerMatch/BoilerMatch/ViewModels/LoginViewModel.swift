@@ -18,8 +18,6 @@ func loginUser(username: String, password: String, completion: @escaping (Bool, 
         "password": password
     ]
     
-    UserDefaults.standard.set(username, forKey: "username")
-    
     var request = URLRequest(url: url)
     request.httpMethod = "POST"
     request.addValue("application/json", forHTTPHeaderField: "Content-Type")
@@ -48,19 +46,30 @@ func loginUser(username: String, password: String, completion: @escaping (Bool, 
         
         switch httpResponse.statusCode {
         case 200:
-            guard let data = data,
-                  let json = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
-                  let token = json["token"] as? String else {
+            guard let data = data else {
                 DispatchQueue.main.async {
-                    completion(false, "Invalid response format")
+                    completion(false, "No data received from server")
                 }
                 return
             }
             
-            // Save token to Keychain (simplified example)
-            UserDefaults.standard.set(token, forKey: "authToken")
-            DispatchQueue.main.async {
-                completion(true, nil)
+            do {
+                // Decode the JSON response into a User object
+                let user = try JSONDecoder().decode(FeedItem.self, from: data)
+                
+                // Save the username to UserDefaults for later use
+                UserDefaults.standard.set(user.name, forKey: "username")
+                UserDefaults.standard.set(user.bio, forKey: "bio")
+                UserDefaults.standard.register(defaults: ["age": 0])
+                UserDefaults.standard.set(user.age, forKey: "age")
+                
+                DispatchQueue.main.async {
+                    completion(true, "Success!") // Login successful with user object
+                }
+            } catch {
+                DispatchQueue.main.async {
+                    completion(false, "Failed to decode server response: \(error.localizedDescription)")
+                }
             }
             
         case 401:

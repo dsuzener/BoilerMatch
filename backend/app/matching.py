@@ -75,4 +75,9 @@ class MatchingService:
     
     @staticmethod
     def _matched_users(user: User) -> List[User]:
-        return [db.find_user(user).to_dict() for user in user.matches]
+        return [
+            db.find_user(user) if isinstance(user, dict) else {"username": user}
+            for user in user.matches
+        ]
+
+        # return [db.find_user(user).to_dict() for user in user.matches]

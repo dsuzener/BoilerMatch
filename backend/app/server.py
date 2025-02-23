@@ -13,8 +13,9 @@ api_router = APIRouter()
 @api_router.post("/login")
 async def login(credentials: LoginRequest):
     print(f"Login attempt: {credentials.username} / {credentials.password}")
-    if db.find_user({"username": credentials.username, "password_hash": credentials.password}):
-        return {"token": credentials.username}
+    user = db.find_user({"username": credentials.username, "password_hash": credentials.password})
+    if user:
+        return user.to_dict()
 
     raise HTTPException(
         status_code=status.HTTP_401_UNAUTHORIZED,

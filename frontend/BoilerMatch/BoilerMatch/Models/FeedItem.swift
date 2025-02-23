@@ -5,12 +5,14 @@ struct FeedItem: Identifiable, Decodable {
     let name: String
     let fullname: String
     let age: Int
+    let bio: String
     let imageName: String
 
     private enum CodingKeys: String, CodingKey {
         case username = "username"
         case fullName = "full_name"
         case age
+        case bio = "bio"
         case profilePictures = "profile_pictures"
     }
 
@@ -21,6 +23,9 @@ struct FeedItem: Identifiable, Decodable {
         // Map full_name to name
         self.fullname = try container.decode(String.self, forKey: .fullName)
         self.name = try container.decode(String.self, forKey: .username)
+        
+        // map bio directly
+        self.bio = try container.decode(String.self, forKey: .bio)
         
         // Map age directly
         self.age = try container.decode(Int.self, forKey: .age)

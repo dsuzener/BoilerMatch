@@ -50,7 +50,7 @@ struct LoginView: View {
                             .shadow(radius: 1)
                     }
                 }
-                .disabled(isLoading)
+                .disabled(isLoading || username.isEmpty || password.isEmpty) // Disable button if loading or fields are empty
                 
                 if let errorMessage = errorMessage {
                     Text(errorMessage)
@@ -101,7 +101,7 @@ struct LoginView: View {
             DispatchQueue.main.async {
                 isLoading = false
                 if success {
-                    isLoggedIn = true
+                    isLoggedIn = true // Mark the user as logged in
                 } else {
                     errorMessage = error ?? "Login failed"
                 }

@@ -1,11 +1,11 @@
 import SwiftUI
 
 struct EditProfileView: View {
-    @State private var name = "John Doe" // Replace with dynamic user data
-    @State private var age = "25"
-    @State private var bio = "Loves hiking, coffee, and coding!"
+    @State private var name = UserDefaults.standard.string(forKey: "name") ?? ""
+    @State private var age = UserDefaults.standard.string(forKey: "age") ?? ""
+    @State private var bio = UserDefaults.standard.string(forKey: "bio") ?? ""
     @State private var images = ["HotChick", "HotChick", "HotChick"] // Placeholder images
-    
+
     var body: some View {
         ScrollView {
             VStack(spacing: 20) {
@@ -20,8 +20,13 @@ struct EditProfileView: View {
                         .background(Color.white)
                         .cornerRadius(8)
                         .shadow(radius: 4)
+                        .onChange(of: name, initial: true) { oldValue, newValue in
+                            print("Name changed from \(oldValue) to \(newValue)")
+                            // Save updated name to UserDefaults
+                            UserDefaults.standard.set(newValue, forKey: "name")
+                        }
                     
-                    Text("Age")
+                    Text(age.isEmpty ? "Age not set" : "Age:")
                         .font(.headline)
 
                     TextField("Enter your age", text: $age)
@@ -29,6 +34,12 @@ struct EditProfileView: View {
                         .background(Color.white)
                         .cornerRadius(8)
                         .shadow(radius: 4)
+                        .keyboardType(.numberPad)
+                        .onChange(of: age, initial: true) { oldValue, newValue in
+                            print("Age changed from \(oldValue) to \(newValue)")
+                            // Save updated age to UserDefaults
+                            UserDefaults.standard.set(newValue, forKey: "age")
+                        }
 
                     Text("Bio")
                         .font(.headline)
@@ -39,6 +50,11 @@ struct EditProfileView: View {
                         .background(Color.white)
                         .cornerRadius(8)
                         .shadow(radius: 4)
+                        .onChange(of: bio, initial: true) { oldValue, newValue in
+                            print("Bio changed from \(oldValue) to \(newValue)")
+                            // Save updated bio to UserDefaults
+                            UserDefaults.standard.set(newValue, forKey: "bio")
+                        }
                 }
                 
                 Divider()
@@ -97,12 +113,12 @@ struct EditProfileView: View {
     }
 
     func deleteImage(imageName: String) {
-            images.removeAll { $0 == imageName } // Simple delete logic (replace with real implementation).
-        }
+        images.removeAll { $0 == imageName } // Simple delete logic (replace with real implementation).
+    }
 
-        func addImage() {
-            print("Add new image") // Add upload logic here.
-        }
+    func addImage() {
+        print("Add new image") // Add upload logic here.
+    }
 }
 
 #Preview {

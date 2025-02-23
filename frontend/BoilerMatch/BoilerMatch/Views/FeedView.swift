@@ -51,6 +51,7 @@ struct FeedItemView: View {
     @ObservedObject var viewModel: FeedViewModel
     @State private var isLiked = false
     @State private var hasSentLike = false // Tracks if the like request has been sent
+    @State private var showPublicProfile = false // Tracks if the PublicProfileView should be shown
     
     var body: some View {
         ZStack(alignment: .bottomLeading) {
@@ -122,8 +123,13 @@ struct FeedItemView: View {
             }
             .padding(12)
         }
+        // Add tap gesture to show the public profile view as a sheet
         .onTapGesture {
-            viewModel.navigateToProfile(item)
+            showPublicProfile = true
+        }
+        // Present the PublicProfileView as a sheet when showPublicProfile is true
+        .sheet(isPresented: $showPublicProfile) {
+            PublicProfileView(profileName: item.fullname, bio: item.bio) // Pass the user's name to PublicProfileView
         }
     }
     
