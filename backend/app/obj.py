@@ -1,6 +1,6 @@
 from datetime import datetime
 from typing import List, Dict
-
+from pydantic import BaseModel
 
 # Enums (mapped to strings for JSON compatibility)
 class Gender:
@@ -205,9 +205,29 @@ class User:
             "chat_history_ids": self.chat_history_ids
         }
 
-# onversation Class
+class Message(BaseModel):
+    sender: str
+    content: str
+    timestamp: datetime = datetime.now()
+
+    def to_dict(self):
+        return {
+            "sender": self.sender,
+            "content": self.content,
+            "timestamp": self.timestamp.isoformat()
+        }
+
+    @classmethod
+    def from_dict(cls, data: dict):
+        return cls(
+            sender=data["sender"],
+            content=data["content"],
+            timestamp=datetime.fromisoformat(data["timestamp"])
+        )
+
+# conversation Class
 class Conversation:
-    def __init__(self, chat_id: str, participants: List[str], messages: List[Dict]):
+    def __init__(self, chat_id: str, participants: List[str], messages: List[Message]):
         self.chat_id = chat_id
         self.participants = participants
         self.messages = messages
@@ -217,12 +237,12 @@ class Conversation:
         return cls(
             data["chat_id"],
             data["participants"],
-            data["messages"]
+            [Message.from_dict(msg) for msg in data["messages"]]
         )
 
     def to_dict(self) -> Dict:
         return {
             "chat_id": self.chat_id,
             "participants": self.participants,
-            "messages": self.messages
+            "messages": [msg.to_dict() for msg in self.messages]
         }
