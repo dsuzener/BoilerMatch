@@ -63,3 +63,14 @@ async def feed_users(authorization: str = Header(...)):
     user = db.find_user({"username": username})
     matched_users = MatchingService.find_potential_matches(user)
     return [user.to_dict for user in matched_users]
+
+@api_router.get("/matches")
+async def matched_users(authorization: str = Header(...)):
+    # The `authorization` header contains the username
+    username = authorization  # Extract username from the Authorization header
+    if not username:
+        raise HTTPException(status_code=400, detail="Authorization header is missing")
+    
+    # Use the username to find potential matches
+    user = db.find_user({"username": username})
+    return MatchingService._matched_users(user)

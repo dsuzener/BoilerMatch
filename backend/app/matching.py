@@ -70,3 +70,7 @@ class MatchingService:
             user.match_preferences.max_distance,
             candidate.match_preferences.max_distance
         )
+    
+    @staticmethod
+    def _matched_users(user: User) -> List[User]:
+        return [db.find_user(user) for user in user.matches]
