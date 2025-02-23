@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi import WebSocket, WebSocketDisconnect
 import os
-import datetime
+from datetime import datetime 
 import uvicorn
 
 from server import router as api_router
@@ -114,4 +114,4 @@ async def websocket_endpoint(websocket: WebSocket, user_id: str):
 
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="127.0.0.1", port=8000)

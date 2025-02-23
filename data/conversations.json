@@ -1,0 +1,16 @@
+[
+  {
+    "chat_id": "0",
+    "participants": [
+      "system",
+      "0"
+    ],
+    "messages": [
+      {
+        "sender": "system",
+        "content": "Welcome to BoilerMatch!",
+        "timestamp": "2025-02-22T21:59:10.749291"
+      }
+    ]
+  }
+]

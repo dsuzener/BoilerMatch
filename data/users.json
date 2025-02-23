@@ -1,0 +1,197 @@
+[
+  {
+    "user_id": "0",
+    "username": "admin",
+    "email": "admin@boilermatch.com",
+    "password_hash": "$2b$12$in7ys8kycriSEOZcB5s09e590XtR75./hJXN8tkLVoDdVH8BM9sIa",
+    "verification_status": true,
+    "full_name": "",
+    "age": 0,
+    "gender": "Unspecified",
+    "sexual_orientation": "Unspecified",
+    "bio": "",
+    "profile_pictures": [],
+    "location": {
+      "latitude": 0.0,
+      "longitude": 0.0
+    },
+    "campus_affiliation": "Purdue University",
+    "interests": [],
+    "match_preferences": {
+      "preferred_gender": "Unspecified",
+      "min_age": 18,
+      "max_age": 100,
+      "max_distance": 10.0
+    },
+    "gem_balance": 0,
+    "last_active": 1740279505.507533,
+    "account_status": "Active",
+    "created_at": 1740279505.507541,
+    "updated_at": 1740279505.507543,
+    "settings": {
+      "notifications_enabled": true,
+      "theme": "light",
+      "language": "en"
+    },
+    "matches": [],
+    "liked_profiles": [],
+    "disliked_profiles": [],
+    "chat_history_ids": []
+  },
+  {
+    "user_id": "1",
+    "username": "user1",
+    "email": "user1@purdue.edu",
+    "password_hash": "$2b$12$91z/XDgnBTyxFzQlMS8gOuwlJujK75/0Zow.QqQrSMDJ1MrIgSBxm",
+    "verification_status": false,
+    "full_name": "",
+    "age": 0,
+    "gender": "Unspecified",
+    "sexual_orientation": "Unspecified",
+    "bio": "",
+    "profile_pictures": [],
+    "location": {
+      "latitude": 0.0,
+      "longitude": 0.0
+    },
+    "campus_affiliation": "Purdue University",
+    "interests": [],
+    "match_preferences": {
+      "preferred_gender": "Unspecified",
+      "min_age": 18,
+      "max_age": 100,
+      "max_distance": 10.0
+    },
+    "gem_balance": 0,
+    "last_active": 1740279550.986146,
+    "account_status": "Active",
+    "created_at": 1740279550.986152,
+    "updated_at": 1740279550.986153,
+    "settings": {
+      "notifications_enabled": true,
+      "theme": "light",
+      "language": "en"
+    },
+    "matches": [],
+    "liked_profiles": [],
+    "disliked_profiles": [],
+    "chat_history_ids": []
+  },
+  {
+    "user_id": "2",
+    "username": "user2",
+    "email": "user2@purdue.edu",
+    "password_hash": "$2b$12$1pIn/vZFF07ujAb2p2TsQ.VKq6mtbPzLKEr9YMZ3tv1upVM10/8um",
+    "verification_status": false,
+    "full_name": "",
+    "age": 0,
+    "gender": "Unspecified",
+    "sexual_orientation": "Unspecified",
+    "bio": "",
+    "profile_pictures": [],
+    "location": {
+      "latitude": 0.0,
+      "longitude": 0.0
+    },
+    "campus_affiliation": "Purdue University",
+    "interests": [],
+    "match_preferences": {
+      "preferred_gender": "Unspecified",
+      "min_age": 18,
+      "max_age": 100,
+      "max_distance": 10.0
+    },
+    "gem_balance": 0,
+    "last_active": 1740279551.198727,
+    "account_status": "Active",
+    "created_at": 1740279551.198732,
+    "updated_at": 1740279551.198733,
+    "settings": {
+      "notifications_enabled": true,
+      "theme": "light",
+      "language": "en"
+    },
+    "matches": [],
+    "liked_profiles": [],
+    "disliked_profiles": [],
+    "chat_history_ids": []
+  },
+  {
+    "user_id": "3",
+    "username": "user3",
+    "email": "user3@purdue.edu",
+    "password_hash": "$2b$12$bMus42xrd.xlDj2KrW6tguerZxb5WF3O42G7/wEH3I/zLQS3.EUqq",
+    "verification_status": false,
+    "full_name": "",
+    "age": 0,
+    "gender": "Unspecified",
+    "sexual_orientation": "Unspecified",
+    "bio": "",
+    "profile_pictures": [],
+    "location": {
+      "latitude": 0.0,
+      "longitude": 0.0
+    },
+    "campus_affiliation": "Purdue University",
+    "interests": [],
+    "match_preferences": {
+      "preferred_gender": "Unspecified",
+      "min_age": 18,
+      "max_age": 100,
+      "max_distance": 10.0
+    },
+    "gem_balance": 0,
+    "last_active": 1740279551.411033,
+    "account_status": "Active",
+    "created_at": 1740279551.411037,
+    "updated_at": 1740279551.411037,
+    "settings": {
+      "notifications_enabled": true,
+      "theme": "light",
+      "language": "en"
+    },
+    "matches": [],
+    "liked_profiles": [],
+    "disliked_profiles": [],
+    "chat_history_ids": []
+  },
+  {
+    "user_id": "4",
+    "username": "user4",
+    "email": "user4@purdue.edu",
+    "password_hash": "$2b$12$bSviZXRsCl4Mrqp2q/Jk7OiqLNVq1c0fY0.jF089LLIPjtAtXhROm",
+    "verification_status": false,
+    "full_name": "",
+    "age": 0,
+    "gender": "Unspecified",
+    "sexual_orientation": "Unspecified",
+    "bio": "",
+    "profile_pictures": [],
+    "location": {
+      "latitude": 0.0,
+      "longitude": 0.0
+    },
+    "campus_affiliation": "Purdue University",
+    "interests": [],
+    "match_preferences": {
+      "preferred_gender": "Unspecified",
+      "min_age": 18,
+      "max_age": 100,
+      "max_distance": 10.0
+    },
+    "gem_balance": 0,
+    "last_active": 1740279551.623598,
+    "account_status": "Active",
+    "created_at": 1740279551.623601,
+    "updated_at": 1740279551.623602,
+    "settings": {
+      "notifications_enabled": true,
+      "theme": "light",
+      "language": "en"
+    },
+    "matches": [],
+    "liked_profiles": [],
+    "disliked_profiles": [],
+    "chat_history_ids": []
+  }
+]

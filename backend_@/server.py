@@ -10,7 +10,7 @@ from database import db  # Import mock database
 from services.matching import MatchingService
 from services.conversation import ConversationService
 # Import existing auth functions
-from .auth import (
+from auth import (
     get_password_hash,
     verify_password,
     create_access_token,

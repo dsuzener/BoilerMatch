@@ -1,9 +1,9 @@
 from fastapi import HTTPException, Depends
 from fastapi.security import OAuth2PasswordBearer
-from jose import JWTError, jwt
 from passlib.context import CryptContext
 from datetime import datetime, timedelta
 from typing import Optional
+from jwt import jwt
 
 
 # This would typically be stored securely and not in the code
@@ -42,7 +42,7 @@ async def get_current_user(token: str = Depends(oauth2_scheme)):
         email: str = payload.get("sub")
         if email is None:
             raise credentials_exception
-    except JWTError:
+    except Exception:
         raise credentials_exception
     # In a real application, you would fetch the user from the database here
     # For our mock setup, we'll just return the email
