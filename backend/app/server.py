@@ -54,8 +54,6 @@ async def signup(user_data: SignupRequest):
 
 from fastapi import APIRouter, Depends, Header, HTTPException
 
-api_router = APIRouter()
-
 @api_router.get("/feed")
 async def feed_users(authorization: str = Header(...)):
     # The `authorization` header contains the username
