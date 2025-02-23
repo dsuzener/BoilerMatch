@@ -50,6 +50,7 @@ struct FeedItemView: View {
     let item: FeedItem
     @ObservedObject var viewModel: FeedViewModel
     @State private var isLiked = false
+    @State private var hasSentLike = false // Tracks if the like request has been sent
     
     var body: some View {
         ZStack(alignment: .bottomLeading) {
@@ -103,7 +104,12 @@ struct FeedItemView: View {
                 Spacer()
                 
                 Button(action: {
-                    isLiked.toggle()
+                    if !hasSentLike { // Prevent sending multiple likes
+                        isLiked = true
+                        hasSentLike = true
+                        sendLikeRequest(receiverUsername: item.name)
+                    }
+//                    isLiked.toggle()
                     sendLikeRequest(receiverUsername: item.name)
                 }) {
                     Image(systemName: isLiked ? "heart.fill" : "heart")
@@ -112,6 +118,7 @@ struct FeedItemView: View {
                         .padding(8)
                         .background(Circle().fill(Color.black.opacity(0.5)))
                 }
+                .disabled(hasSentLike)
             }
             .padding(12)
         }
