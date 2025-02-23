@@ -1,5 +1,3 @@
-Certainly. Here's the entire codebase structure for the BoilerMatch dating app, followed by detailed explanations for each file:
-
 ```
 BoilerMatch/
 ├── backend/
