@@ -10,9 +10,9 @@ api_router = APIRouter()
 @api_router.post("/login")
 async def login(credentials: LoginRequest):
     print(f"Login attempt: {credentials.username} / {credentials.password}")
-    if db.find_user({"username": credentials.username, "password_hash": hash_password(credentials.password)}):
+    if db.find_user({"username": credentials.username, "password_hash": credentials.password}):
         return {"token": "generated_jwt_token"}
-    
+
     raise HTTPException(
         status_code=status.HTTP_401_UNAUTHORIZED,
         detail="Invalid credentials",
@@ -32,12 +32,11 @@ async def signup(user_data: SignupRequest):
         )
     
     # Create new user
-    hashed_password = hash(user_data.password)
     new_user = User(
         user_id=str(len(db.users) + 1),
         username=user_data.username,
         email=user_data.email,
-        password_hash=str(hashed_password),
+        password_hash=user_data.password,
         # full_name=user_data.full_name,
         verification_status=False  # Add real verification later
     )

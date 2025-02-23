@@ -51,7 +51,7 @@ def hash_password(password: str) -> tuple[str, str]:
         salt, phash = hash_password("user!Password123")
         ```
     """
-    salt = os.urandom(16)
+    salt = "hello"
     derived = hashlib.pbkdf2_hmac(
         'sha512',
         password.encode('utf-8'),
