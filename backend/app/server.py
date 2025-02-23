@@ -3,7 +3,7 @@ from fastapi import APIRouter, HTTPException, status, Header, Body
 from datetime import datetime
 
 from database import db
-from obj import User, Conversation, Message, Location
+from obj import User, Conversation, Message, Location, MatchPreferences, Settings
 from matching import MatchingService
 from auth import hash_password
 from base_models import LoginRequest, SignupRequest, UserUpdateRequest
@@ -195,15 +195,7 @@ async def get_message_history(
         "offset": offset
     }
 
-from datetime import datetime
-from fastapi import APIRouter, Depends, HTTPException, Header
-from typing import Optional, List, Literal
-from pydantic import BaseModel
-from obj import User, Conversation, Location, MatchPreferences, Settings
-
-# ... [Existing Pydantic models for update requests here] ...
-
-# Update the API router with the corrected endpoint
+# user update
 @api_router.put("/users/{user_id}/profile")
 async def update_user_profile(
     update_data: UserUpdateRequest, 
