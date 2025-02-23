@@ -11,8 +11,8 @@ class MatchingService:
         candidates = []
         
         for candidate in db.users:
-            if candidate.user_id == user.user_id:
-                continue  # Skip self
+            if candidate.user_id == user.user_id or candidate.user_id in user.matches:
+                continue  # Skip self or matched user
             
             # Basic filters
             if not MatchingService._passes_gender_filter(user, candidate):
