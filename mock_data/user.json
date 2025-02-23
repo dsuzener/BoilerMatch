@@ -4637,9 +4637,12 @@
       },
       {
         "username": "edwin27"
-      }
+      },
+      "s",
+      "s"
     ],
     "liked_profiles": [
+      "s"
     ],
     "disliked_profiles": [],
     "chat_history_ids": []
@@ -4690,8 +4693,46 @@
       "language": "fr"
     },
     "matches": [],
-    "liked_profiles": [
-    ],
+    "liked_profiles": [],
+    "disliked_profiles": [],
+    "chat_history_ids": []
+  },
+  {
+    "user_id": "101",
+    "username": "testUser",
+    "email": "test@gmail.com",
+    "password_hash": "password",
+    "verification_status": false,
+    "full_name": "",
+    "age": 0,
+    "gender": "Unspecified",
+    "sexual_orientation": "Unspecified",
+    "bio": "",
+    "profile_pictures": [],
+    "location": {
+      "latitude": 0.0,
+      "longitude": 0.0
+    },
+    "campus_affiliation": "",
+    "interests": [],
+    "match_preferences": {
+      "preferred_gender": "Unspecified",
+      "min_age": 18,
+      "max_age": 100,
+      "max_distance": 10.0
+    },
+    "gem_balance": 0,
+    "last_active": 1740316303.107959,
+    "account_status": "Active",
+    "created_at": 1740316303.107975,
+    "updated_at": 1740316303.107977,
+    "settings": {
+      "notifications_enabled": true,
+      "theme": "light",
+      "language": "en"
+    },
+    "matches": [],
+    "liked_profiles": [],
     "disliked_profiles": [],
     "chat_history_ids": []
   }
