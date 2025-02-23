@@ -1,4 +1,3 @@
-# Add Pydantic model for login data
 from pydantic import BaseModel
 
 class LoginRequest(BaseModel):
@@ -9,3 +8,8 @@ class SignupRequest(BaseModel):
     username: str
     email: str
     password: str
+
+class Token(BaseModel):
+    access_token: str
+    token_type: str
+    request: str
