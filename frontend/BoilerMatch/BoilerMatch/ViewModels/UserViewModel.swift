@@ -3,33 +3,22 @@ import Combine
 
 class UserViewModel: ObservableObject {
     @Published var currentUser: User?
-    @Published var isAuthenticated = false
-    @Published var errorMessage: String?
+    @Published var isLoading = false
+    @Published var error: String?
     
     private var cancellables = Set<AnyCancellable>()
     
     func login(email: String, password: String) {
-        // Simulating API call
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            if email == "test@example.com" && password == "password" {
-                self.currentUser = User(id: "1", email: email, name: "Test User", createdAt: Date())
-                self.isAuthenticated = true
-            } else {
-                self.errorMessage = "Invalid credentials"
+        isLoading = true
+        AuthenticationService.shared.login(email: email, password: password)
+            .sink { [weak self] completion in
+                self?.isLoading = false
+                if case .failure(let error) = completion {
+                    self?.error = error.errorDescription
+                }
+            } receiveValue: { [weak self] user in
+                self?.currentUser = user
             }
-        }
-    }
-    
-    func register(email: String, name: String, password: String) {
-        // Simulating API call
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            self.currentUser = User(id: UUID().uuidString, email: email, name: name, createdAt: Date())
-            self.isAuthenticated = true
-        }
-    }
-    
-    func logout() {
-        self.currentUser = nil
-        self.isAuthenticated = false
+            .store(in: &cancellables)
     }
 }
