@@ -1,5 +1,4 @@
 from typing import List
-
 from database import db
 from obj import User, Gender
 
@@ -9,7 +8,7 @@ class MatchingService:
     def find_potential_matches(user: User, limit: int = 50) -> List[User]:
         """Core matching algorithm implementation"""
         candidates = []
-        
+
         for candidate in db.users:
             if candidate.user_id == user.user_id:
                 continue  # Skip self
@@ -18,17 +17,17 @@ class MatchingService:
             if not MatchingService._passes_gender_filter(user, candidate):
                 continue
                 
-            if not MatchingService._passes_age_filter(user, candidate):
-                continue
+            # if not MatchingService._passes_age_filter(user, candidate):
+            #     continue
                 
-            if not MatchingService._passes_distance_filter(user, candidate):
-                continue
+            # if not MatchingService._passes_distance_filter(user, candidate):
+            #     continue
                 
             candidates.append(candidate)
             
             if len(candidates) >= limit:
                 break
-                
+        
         # Add scoring/ranking logic here
         return sorted(candidates, key=lambda x: x.last_active, reverse=True)
 

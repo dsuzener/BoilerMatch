@@ -59,8 +59,11 @@ struct FeedItemView: View {
                     ProgressView()
                 case .success(let image):
                     image
-                        .resizable()
-                        .scaledToFill()
+                    .resizable()
+                    .scaledToFill()
+                    .aspectRatio(3 / 2, contentMode: .fill) // Maintain a consistent aspect ratio
+                    .frame(width: 180, height: 60) // Example size
+                    .clipped() // Crop overflowing parts
                 case .failure:
                     Image("HotChick")
                         .resizable()

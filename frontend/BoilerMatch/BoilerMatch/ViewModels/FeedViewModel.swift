@@ -15,14 +15,7 @@ class FeedViewModel: ObservableObject {
     }
     
     func loadInitialContent() {
-        // Load mock data
-        feedItems = (0..<pageSize).map { index in
-            FeedItem(
-                name: "User \(index + 1)",
-                age: Int.random(in: 18...65),
-                imageName: "person\(Int.random(in: 1...4))"
-            )
-        }
+        fetchFeedItems() // Fetch initial feed items from the server
     }
     
     func loadMoreContentIfNeeded(currentItem: FeedItem) {
@@ -35,17 +28,7 @@ class FeedViewModel: ObservableObject {
     }
     
     private func loadMoreContent() {
-        // Simulate pagination
-        let newItems = (0..<pageSize).map { index in
-            FeedItem(
-                name: "User \(currentPage * pageSize + index + 1)",
-                age: Int.random(in: 18...65),
-                imageName: "person\(Int.random(in: 1...4))"
-            )
-        }
-        
-        currentPage += 1
-        feedItems += newItems
+        fetchFeedItems() // Fetch more feed items (pagination can be added if needed)
     }
     
     func navigateToProfile(_ item: FeedItem) {
@@ -67,5 +50,72 @@ class FeedViewModel: ObservableObject {
             remainingViews = 15
             lastResetTime = currentTime
         }
+    }
+    
+    private func fetchFeedItems() {
+        guard let url = URL(string: "http://localhost:8000/api/feed") else {
+            print("Invalid URL")
+            return
+        }
+        
+        // Retrieve the username (acting as the token)
+        guard let username = UserDefaults.standard.string(forKey: "username") else {
+            print("No username found in UserDefaults")
+            return
+        }
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        request.addValue(username, forHTTPHeaderField: "Authorization")
+        
+        print("Sending request to \(url) with Authorization header: \(username)")
+        
+        URLSession.shared.dataTask(with: request) { [weak self] data, response, error in
+            if let error = error {
+                DispatchQueue.main.async {
+                    print("Error fetching feed items: \(error.localizedDescription)")
+                }
+                return
+            }
+            
+            guard let httpResponse = response as? HTTPURLResponse else {
+                DispatchQueue.main.async {
+                    print("No response from server")
+                }
+                return
+            }
+            
+            print("HTTP Response Status Code: \(httpResponse.statusCode)")
+            
+            guard httpResponse.statusCode == 200 else {
+                DispatchQueue.main.async {
+                    print("Server returned an error: \(httpResponse.statusCode)")
+                }
+                return
+            }
+            
+            guard let data = data else {
+                DispatchQueue.main.async {
+                    print("No data received from server")
+                }
+                return
+            }
+            
+            if let jsonString = String(data: data, encoding: .utf8) {
+                print("Raw JSON Response: \(jsonString)")
+            }
+            
+            do {
+                let decodedItems = try JSONDecoder().decode([FeedItem].self, from: data)
+                DispatchQueue.main.async {
+                    self?.feedItems += decodedItems
+                    print("Successfully fetched feed items")
+                }
+            } catch {
+                DispatchQueue.main.async {
+                    print("Failed to decode feed items: \(error.localizedDescription)")
+                }
+            }
+        }.resume()
     }
 }

@@ -19,6 +19,8 @@ func signUpUser(username: String, email: String, password: String, completion: @
         "password": password
     ]
     
+    UserDefaults.standard.set(username, forKey: "username")
+    
     var request = URLRequest(url: url)
     request.httpMethod = "POST"
     request.addValue("application/json", forHTTPHeaderField: "Content-Type")

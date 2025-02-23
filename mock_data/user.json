@@ -4562,9 +4562,9 @@
     },
     {
         "user_id": "user_99",
-        "username": "sellersdavid",
+        "username": "s",
         "email": "pretttyp99@purdue.edu",
-        "password_hash": "hashed_password_1",
+        "password_hash": "h",
         "verification_status": false,
         "full_name": "PrettyPete_99",
         "age": 33,

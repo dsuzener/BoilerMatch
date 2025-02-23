@@ -6,11 +6,11 @@ from obj import User, Conversation
 
 class MockDatabase:
     def __init__(self):
-        self.data_dir = "data"
+        self.data_dir = "mock_data"
         os.makedirs(self.data_dir, exist_ok=True)
         
         # Initialize collections
-        self.users: List[User] = self._load_collection("users", User)
+        self.users: List[User] = self._load_collection("user", User)
         self.conversations: List[Conversation] = self._load_collection("conversations", Conversation)
 
     def _load_collection(self, collection_name: str, model_class: Any) -> List[Any]:
