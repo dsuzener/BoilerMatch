@@ -13,33 +13,63 @@ func loginUser(username: String, password: String, completion: @escaping (Bool, 
         return
     }
     
-    let parameters = ["username": username, "password": password]
+    let parameters: [String: Any] = [
+        "username": username,
+        "password": password
+    ]
+    
     var request = URLRequest(url: url)
     request.httpMethod = "POST"
     request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-    request.httpBody = try? JSONSerialization.data(withJSONObject: parameters)
+    
+    do {
+        request.httpBody = try JSONSerialization.data(withJSONObject: parameters)
+    } catch {
+        completion(false, "Failed to encode credentials")
+        return
+    }
     
     URLSession.shared.dataTask(with: request) { data, response, error in
         if let error = error {
-            completion(false, error.localizedDescription)
+            DispatchQueue.main.async {
+                completion(false, error.localizedDescription)
+            }
             return
         }
         
-        guard let httpResponse = response as? HTTPURLResponse,
-              (200...299).contains(httpResponse.statusCode) else {
-            completion(false, "Server error")
+        guard let httpResponse = response as? HTTPURLResponse else {
+            DispatchQueue.main.async {
+                completion(false, "No server response")
+            }
             return
         }
         
-        // Assuming the server sends back a JSON with a token or success message
-        if let data = data,
-           let json = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
-           let token = json["token"] as? String {
-            // Save the token securely (you might want to use Keychain for this)
+        switch httpResponse.statusCode {
+        case 200:
+            guard let data = data,
+                  let json = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
+                  let token = json["token"] as? String else {
+                DispatchQueue.main.async {
+                    completion(false, "Invalid response format")
+                }
+                return
+            }
+            
+            // Save token to Keychain (simplified example)
             UserDefaults.standard.set(token, forKey: "authToken")
-            completion(true, nil)
-        } else {
-            completion(false, "Invalid server response")
+            DispatchQueue.main.async {
+                completion(true, nil)
+            }
+            
+        case 401:
+            DispatchQueue.main.async {
+                completion(false, "Invalid credentials")
+            }
+            
+        default:
+            DispatchQueue.main.async {
+                completion(false, "Server error: \(httpResponse.statusCode)")
+            }
         }
     }.resume()
 }
