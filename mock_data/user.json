@@ -1,0 +1,4659 @@
+[
+    {
+        "user_id": "user_1",
+        "username": "rebeccawood",
+        "email": "pretttyp1@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": true,
+        "full_name": "PrettyPete_1",
+        "age": 46,
+        "gender": "Female",
+        "sexual_orientation": "Heterosexual",
+        "bio": "Evidence gun possible provide.",
+        "profile_pictures": [
+            "https://dummyimage.com/734x581",
+            "https://placekitten.com/999/35",
+            "https://placekitten.com/324/350"
+        ],
+        "location": {
+            "latitude": -52.61088801574004,
+            "longitude": -83.67179968658445
+        },
+        "campus_affiliation": "Lara-Petersen",
+        "interests": [
+            "Music",
+            "Travel"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Female",
+            "min_age": 22,
+            "max_age": 34,
+            "max_distance": 47.02647805164238
+        },
+        "gem_balance": 21,
+        "last_active": 1740284672.05078,
+        "account_status": "Suspended",
+        "created_at": 1740284672.050785,
+        "updated_at": 1740284672.050786,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "dark",
+            "language": "es"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_2",
+        "username": "domingueztravis",
+        "email": "pretttyp2@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_2",
+        "age": 34,
+        "gender": "Male",
+        "sexual_orientation": "Other",
+        "bio": "Nearly include recent pattern difficult part suddenly.",
+        "profile_pictures": [
+            "https://placekitten.com/754/1007",
+            "https://placekitten.com/924/661",
+            "https://dummyimage.com/285x1020",
+            "https://picsum.photos/453/844"
+        ],
+        "location": {
+            "latitude": 65.06427643883728,
+            "longitude": -81.89481763176211
+        },
+        "campus_affiliation": "Burns Inc",
+        "interests": [
+            "Sports"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Unspecified",
+            "min_age": 21,
+            "max_age": 44,
+            "max_distance": 30.088459940922522
+        },
+        "gem_balance": 819,
+        "last_active": 1740284672.051046,
+        "account_status": "Suspended",
+        "created_at": 1740284672.051048,
+        "updated_at": 1740284672.051049,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "light",
+            "language": "fr"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_3",
+        "username": "valeriejames",
+        "email": "pretttyp3@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_3",
+        "age": 37,
+        "gender": "Male",
+        "sexual_orientation": "Homosexual",
+        "bio": "Push hot as become.",
+        "profile_pictures": [
+            "https://placekitten.com/236/664",
+            "https://dummyimage.com/154x45",
+            "https://placekitten.com/447/795",
+            "https://placekitten.com/714/1012",
+            "https://picsum.photos/888/841",
+            "https://placekitten.com/583/709"
+        ],
+        "location": {
+            "latitude": 50.78426683621214,
+            "longitude": -100.87814283059747
+        },
+        "campus_affiliation": "White, Jenkins and Ayala",
+        "interests": [
+            "Gaming"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Other",
+            "min_age": 21,
+            "max_age": 37,
+            "max_distance": 4.2325884495893416
+        },
+        "gem_balance": 656,
+        "last_active": 1740284672.051493,
+        "account_status": "Banned",
+        "created_at": 1740284672.051494,
+        "updated_at": 1740284672.051495,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "light",
+            "language": "en"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_4",
+        "username": "lcopeland",
+        "email": "pretttyp4@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_4",
+        "age": 46,
+        "gender": "Other",
+        "sexual_orientation": "Bisexual",
+        "bio": "North down child tend go.",
+        "profile_pictures": [
+            "https://placekitten.com/50/200",
+            "https://picsum.photos/934/627",
+            "https://picsum.photos/444/42"
+        ],
+        "location": {
+            "latitude": -13.889700394083917,
+            "longitude": -105.80835659691589
+        },
+        "campus_affiliation": "Dean-Green",
+        "interests": [
+            "Sports",
+            "Travel",
+            "Coding"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Unspecified",
+            "min_age": 21,
+            "max_age": 34,
+            "max_distance": 17.43312433734888
+        },
+        "gem_balance": 619,
+        "last_active": 1740284672.051745,
+        "account_status": "Suspended",
+        "created_at": 1740284672.051746,
+        "updated_at": 1740284672.051747,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "light",
+            "language": "fr"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_5",
+        "username": "ddiaz",
+        "email": "pretttyp5@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_5",
+        "age": 26,
+        "gender": "Other",
+        "sexual_orientation": "Other",
+        "bio": "Capital summer happen region control street.",
+        "profile_pictures": [
+            "https://placekitten.com/796/389"
+        ],
+        "location": {
+            "latitude": 11.084679489638305,
+            "longitude": -163.67729713809302
+        },
+        "campus_affiliation": "Lopez-Dixon",
+        "interests": [
+            "Music",
+            "Sports",
+            "Gaming"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Other",
+            "min_age": 22,
+            "max_age": 48,
+            "max_distance": 39.58950745230892
+        },
+        "gem_balance": 29,
+        "last_active": 1740284672.051982,
+        "account_status": "Banned",
+        "created_at": 1740284672.051983,
+        "updated_at": 1740284672.051985,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "dark",
+            "language": "fr"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_6",
+        "username": "justin69",
+        "email": "pretttyp6@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": true,
+        "full_name": "PrettyPete_6",
+        "age": 30,
+        "gender": "Female",
+        "sexual_orientation": "Homosexual",
+        "bio": "Keep second resource design.",
+        "profile_pictures": [
+            "https://picsum.photos/94/621",
+            "https://dummyimage.com/453x567",
+            "https://dummyimage.com/39x431",
+            "https://placekitten.com/159/193",
+            "https://placekitten.com/999/351"
+        ],
+        "location": {
+            "latitude": 0.9730908370786011,
+            "longitude": -119.60805098680834
+        },
+        "campus_affiliation": "Lang-Bennett",
+        "interests": [
+            "Coding",
+            "Sports"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Female",
+            "min_age": 24,
+            "max_age": 37,
+            "max_distance": 29.752543055781533
+        },
+        "gem_balance": 653,
+        "last_active": 1740284672.052227,
+        "account_status": "Active",
+        "created_at": 1740284672.052229,
+        "updated_at": 1740284672.05223,
+        "settings": {
+            "notifications_enabled": true,
+            "theme": "light",
+            "language": "fr"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_7",
+        "username": "mauricebriggs",
+        "email": "pretttyp7@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": true,
+        "full_name": "PrettyPete_7",
+        "age": 41,
+        "gender": "Other",
+        "sexual_orientation": "Heterosexual",
+        "bio": "Total than really see management plan.",
+        "profile_pictures": [
+            "https://placekitten.com/6/142",
+            "https://dummyimage.com/1013x667"
+        ],
+        "location": {
+            "latitude": 35.97036368232227,
+            "longitude": -14.950042129099813
+        },
+        "campus_affiliation": "Taylor-Gonzalez",
+        "interests": [
+            "Coding",
+            "Music"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Female",
+            "min_age": 21,
+            "max_age": 43,
+            "max_distance": 37.196749371565474
+        },
+        "gem_balance": 426,
+        "last_active": 1740284672.052516,
+        "account_status": "Suspended",
+        "created_at": 1740284672.052518,
+        "updated_at": 1740284672.052519,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "light",
+            "language": "fr"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_8",
+        "username": "thompsonkeith",
+        "email": "pretttyp8@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_8",
+        "age": 19,
+        "gender": "Male",
+        "sexual_orientation": "Homosexual",
+        "bio": "Today economic among once finish down.",
+        "profile_pictures": [
+            "https://picsum.photos/314/553",
+            "https://dummyimage.com/676x437",
+            "https://picsum.photos/14/790"
+        ],
+        "location": {
+            "latitude": 2.8783516538028238,
+            "longitude": -109.3131660794808
+        },
+        "campus_affiliation": "Weaver, Hanson and Bishop",
+        "interests": [
+            "Sports"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Other",
+            "min_age": 25,
+            "max_age": 50,
+            "max_distance": 9.260124670247686
+        },
+        "gem_balance": 413,
+        "last_active": 1740284672.052858,
+        "account_status": "Suspended",
+        "created_at": 1740284672.052859,
+        "updated_at": 1740284672.052861,
+        "settings": {
+            "notifications_enabled": true,
+            "theme": "dark",
+            "language": "es"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_9",
+        "username": "llee",
+        "email": "pretttyp9@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": true,
+        "full_name": "PrettyPete_9",
+        "age": 22,
+        "gender": "Male",
+        "sexual_orientation": "Other",
+        "bio": "Offer truth new lose look.",
+        "profile_pictures": [
+            "https://picsum.photos/932/213",
+            "https://picsum.photos/115/674",
+            "https://picsum.photos/828/691"
+        ],
+        "location": {
+            "latitude": -17.422017618596072,
+            "longitude": -66.06324825123271
+        },
+        "campus_affiliation": "Scott-Powell",
+        "interests": [
+            "Gaming",
+            "Coding"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Male",
+            "min_age": 23,
+            "max_age": 34,
+            "max_distance": 15.295868479714446
+        },
+        "gem_balance": 103,
+        "last_active": 1740284672.053102,
+        "account_status": "Suspended",
+        "created_at": 1740284672.053103,
+        "updated_at": 1740284672.053105,
+        "settings": {
+            "notifications_enabled": true,
+            "theme": "light",
+            "language": "es"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_10",
+        "username": "jose00",
+        "email": "pretttyp10@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": true,
+        "full_name": "PrettyPete_10",
+        "age": 27,
+        "gender": "Female",
+        "sexual_orientation": "Heterosexual",
+        "bio": "Sea above former continue read deep.",
+        "profile_pictures": [
+            "https://placekitten.com/700/34",
+            "https://dummyimage.com/61x274",
+            "https://picsum.photos/694/601",
+            "https://dummyimage.com/471x647",
+            "https://dummyimage.com/919x317"
+        ],
+        "location": {
+            "latitude": 4.595491262518891,
+            "longitude": -45.23168399280564
+        },
+        "campus_affiliation": "Kelly-Booth",
+        "interests": [
+            "Gaming",
+            "Music"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Unspecified",
+            "min_age": 23,
+            "max_age": 29,
+            "max_distance": 21.400469405394652
+        },
+        "gem_balance": 719,
+        "last_active": 1740284672.05334,
+        "account_status": "Banned",
+        "created_at": 1740284672.053341,
+        "updated_at": 1740284672.053343,
+        "settings": {
+            "notifications_enabled": true,
+            "theme": "dark",
+            "language": "en"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_11",
+        "username": "kpaul",
+        "email": "pretttyp11@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": true,
+        "full_name": "PrettyPete_11",
+        "age": 32,
+        "gender": "Other",
+        "sexual_orientation": "Homosexual",
+        "bio": "Radio scene generation general political.",
+        "profile_pictures": [
+            "https://dummyimage.com/462x830",
+            "https://picsum.photos/17/747",
+            "https://placekitten.com/400/714",
+            "https://picsum.photos/651/134",
+            "https://dummyimage.com/120x152",
+            "https://placekitten.com/399/373"
+        ],
+        "location": {
+            "latitude": -55.15259924408683,
+            "longitude": 19.345641192095883
+        },
+        "campus_affiliation": "Hill Group",
+        "interests": [
+            "Coding",
+            "Sports"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Male",
+            "min_age": 20,
+            "max_age": 45,
+            "max_distance": 5.244147993232055
+        },
+        "gem_balance": 734,
+        "last_active": 1740284672.053548,
+        "account_status": "Suspended",
+        "created_at": 1740284672.05355,
+        "updated_at": 1740284672.053551,
+        "settings": {
+            "notifications_enabled": true,
+            "theme": "light",
+            "language": "es"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_12",
+        "username": "joannareynolds",
+        "email": "pretttyp12@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": true,
+        "full_name": "PrettyPete_12",
+        "age": 18,
+        "gender": "Female",
+        "sexual_orientation": "Bisexual",
+        "bio": "Free movement bad worker common item.",
+        "profile_pictures": [
+            "https://picsum.photos/984/676",
+            "https://picsum.photos/313/23",
+            "https://placekitten.com/626/768",
+            "https://dummyimage.com/757x741"
+        ],
+        "location": {
+            "latitude": 29.03747250352653,
+            "longitude": 70.45670843465837
+        },
+        "campus_affiliation": "Hale, Cochran and Mitchell",
+        "interests": [
+            "Sports",
+            "Gaming"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Unspecified",
+            "min_age": 18,
+            "max_age": 27,
+            "max_distance": 28.871599884348914
+        },
+        "gem_balance": 522,
+        "last_active": 1740284672.053895,
+        "account_status": "Suspended",
+        "created_at": 1740284672.053896,
+        "updated_at": 1740284672.053898,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "light",
+            "language": "en"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_13",
+        "username": "cynthiawalton",
+        "email": "pretttyp13@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": true,
+        "full_name": "PrettyPete_13",
+        "age": 26,
+        "gender": "Female",
+        "sexual_orientation": "Homosexual",
+        "bio": "North scientist seat contain.",
+        "profile_pictures": [
+            "https://picsum.photos/367/646"
+        ],
+        "location": {
+            "latitude": -69.42758251589117,
+            "longitude": 100.63693013755221
+        },
+        "campus_affiliation": "Martin, Ward and Moore",
+        "interests": [
+            "Gaming"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Unspecified",
+            "min_age": 19,
+            "max_age": 27,
+            "max_distance": 31.72850393748163
+        },
+        "gem_balance": 7,
+        "last_active": 1740284672.054224,
+        "account_status": "Banned",
+        "created_at": 1740284672.054226,
+        "updated_at": 1740284672.054227,
+        "settings": {
+            "notifications_enabled": true,
+            "theme": "dark",
+            "language": "fr"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_14",
+        "username": "evelyn52",
+        "email": "pretttyp14@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": true,
+        "full_name": "PrettyPete_14",
+        "age": 50,
+        "gender": "Other",
+        "sexual_orientation": "Heterosexual",
+        "bio": "Recent option would new.",
+        "profile_pictures": [
+            "https://picsum.photos/26/1001",
+            "https://dummyimage.com/826x928",
+            "https://placekitten.com/304/601",
+            "https://picsum.photos/921/387",
+            "https://picsum.photos/737/157",
+            "https://placekitten.com/303/598"
+        ],
+        "location": {
+            "latitude": 25.913759466985752,
+            "longitude": 8.438835628747483
+        },
+        "campus_affiliation": "Walker-Singleton",
+        "interests": [
+            "Gaming",
+            "Sports",
+            "Coding"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Unspecified",
+            "min_age": 23,
+            "max_age": 34,
+            "max_distance": 31.408212411604826
+        },
+        "gem_balance": 542,
+        "last_active": 1740284672.054468,
+        "account_status": "Banned",
+        "created_at": 1740284672.054469,
+        "updated_at": 1740284672.054471,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "dark",
+            "language": "fr"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_15",
+        "username": "jacobkelly",
+        "email": "pretttyp15@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": true,
+        "full_name": "PrettyPete_15",
+        "age": 22,
+        "gender": "Male",
+        "sexual_orientation": "Heterosexual",
+        "bio": "Or save choice ok.",
+        "profile_pictures": [
+            "https://placekitten.com/500/367",
+            "https://dummyimage.com/740x694",
+            "https://placekitten.com/762/117",
+            "https://placekitten.com/38/937",
+            "https://picsum.photos/678/325"
+        ],
+        "location": {
+            "latitude": 77.9688060829281,
+            "longitude": -28.934582434682625
+        },
+        "campus_affiliation": "Anderson-Russo",
+        "interests": [
+            "Sports",
+            "Music"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Female",
+            "min_age": 18,
+            "max_age": 32,
+            "max_distance": 18.924084277644234
+        },
+        "gem_balance": 223,
+        "last_active": 1740284672.054764,
+        "account_status": "Suspended",
+        "created_at": 1740284672.054766,
+        "updated_at": 1740284672.054767,
+        "settings": {
+            "notifications_enabled": true,
+            "theme": "dark",
+            "language": "es"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_16",
+        "username": "rsteele",
+        "email": "pretttyp16@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_16",
+        "age": 18,
+        "gender": "Other",
+        "sexual_orientation": "Bisexual",
+        "bio": "Everybody nothing kid job size your.",
+        "profile_pictures": [
+            "https://dummyimage.com/809x363"
+        ],
+        "location": {
+            "latitude": 7.789988685565646,
+            "longitude": 51.97607900970192
+        },
+        "campus_affiliation": "Valdez-Ramos",
+        "interests": [
+            "Coding",
+            "Gaming",
+            "Sports"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Female",
+            "min_age": 21,
+            "max_age": 30,
+            "max_distance": 14.90698672475661
+        },
+        "gem_balance": 179,
+        "last_active": 1740284672.055006,
+        "account_status": "Active",
+        "created_at": 1740284672.055008,
+        "updated_at": 1740284672.055009,
+        "settings": {
+            "notifications_enabled": true,
+            "theme": "light",
+            "language": "es"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_17",
+        "username": "brycebolton",
+        "email": "pretttyp17@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_17",
+        "age": 24,
+        "gender": "Other",
+        "sexual_orientation": "Bisexual",
+        "bio": "Upon church meeting author.",
+        "profile_pictures": [
+            "https://picsum.photos/346/348",
+            "https://placekitten.com/77/766",
+            "https://placekitten.com/49/572",
+            "https://placekitten.com/739/215",
+            "https://picsum.photos/279/37",
+            "https://placekitten.com/948/372"
+        ],
+        "location": {
+            "latitude": 34.28260018748392,
+            "longitude": 37.680457700987915
+        },
+        "campus_affiliation": "Walker Inc",
+        "interests": [
+            "Sports",
+            "Travel",
+            "Coding"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Unspecified",
+            "min_age": 25,
+            "max_age": 50,
+            "max_distance": 45.571320728621174
+        },
+        "gem_balance": 436,
+        "last_active": 1740284672.055252,
+        "account_status": "Active",
+        "created_at": 1740284672.055253,
+        "updated_at": 1740284672.055255,
+        "settings": {
+            "notifications_enabled": true,
+            "theme": "light",
+            "language": "en"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_18",
+        "username": "hoffmanjeanette",
+        "email": "pretttyp18@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": true,
+        "full_name": "PrettyPete_18",
+        "age": 18,
+        "gender": "Male",
+        "sexual_orientation": "Other",
+        "bio": "Point business then somebody house.",
+        "profile_pictures": [
+            "https://picsum.photos/876/209",
+            "https://placekitten.com/260/996",
+            "https://picsum.photos/178/478",
+            "https://placekitten.com/180/934"
+        ],
+        "location": {
+            "latitude": -60.450529639224236,
+            "longitude": -105.34534444033858
+        },
+        "campus_affiliation": "Blevins-Love",
+        "interests": [
+            "Sports",
+            "Gaming",
+            "Travel"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Other",
+            "min_age": 18,
+            "max_age": 50,
+            "max_distance": 39.81296918371291
+        },
+        "gem_balance": 975,
+        "last_active": 1740284672.055555,
+        "account_status": "Banned",
+        "created_at": 1740284672.055556,
+        "updated_at": 1740284672.055557,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "light",
+            "language": "fr"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_19",
+        "username": "paul31",
+        "email": "pretttyp19@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": true,
+        "full_name": "PrettyPete_19",
+        "age": 24,
+        "gender": "Female",
+        "sexual_orientation": "Bisexual",
+        "bio": "Star stand represent past thousand reality.",
+        "profile_pictures": [
+            "https://placekitten.com/634/901",
+            "https://picsum.photos/375/680",
+            "https://picsum.photos/369/870",
+            "https://placekitten.com/17/354",
+            "https://placekitten.com/475/25",
+            "https://dummyimage.com/231x469"
+        ],
+        "location": {
+            "latitude": -53.359023986828745,
+            "longitude": -15.258338580892229
+        },
+        "campus_affiliation": "Phillips-Delacruz",
+        "interests": [
+            "Coding"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Other",
+            "min_age": 18,
+            "max_age": 29,
+            "max_distance": 2.312923375081472
+        },
+        "gem_balance": 593,
+        "last_active": 1740284672.055812,
+        "account_status": "Banned",
+        "created_at": 1740284672.055814,
+        "updated_at": 1740284672.055815,
+        "settings": {
+            "notifications_enabled": true,
+            "theme": "dark",
+            "language": "es"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_20",
+        "username": "aaroncastro",
+        "email": "pretttyp20@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": true,
+        "full_name": "PrettyPete_20",
+        "age": 23,
+        "gender": "Other",
+        "sexual_orientation": "Heterosexual",
+        "bio": "Short training choice response always sister create.",
+        "profile_pictures": [
+            "https://picsum.photos/144/473",
+            "https://picsum.photos/269/939",
+            "https://dummyimage.com/360x834"
+        ],
+        "location": {
+            "latitude": -54.18132448977575,
+            "longitude": -133.57985441315844
+        },
+        "campus_affiliation": "Ray-Mcdonald",
+        "interests": [
+            "Music",
+            "Travel",
+            "Coding"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Female",
+            "min_age": 24,
+            "max_age": 48,
+            "max_distance": 17.005982504166663
+        },
+        "gem_balance": 772,
+        "last_active": 1740284672.056103,
+        "account_status": "Suspended",
+        "created_at": 1740284672.056105,
+        "updated_at": 1740284672.056106,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "dark",
+            "language": "fr"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_21",
+        "username": "leonardsanders",
+        "email": "pretttyp21@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_21",
+        "age": 21,
+        "gender": "Female",
+        "sexual_orientation": "Homosexual",
+        "bio": "Learn business more paper.",
+        "profile_pictures": [
+            "https://picsum.photos/752/563",
+            "https://dummyimage.com/225x122",
+            "https://picsum.photos/392/324",
+            "https://picsum.photos/407/812",
+            "https://picsum.photos/331/148",
+            "https://placekitten.com/139/486"
+        ],
+        "location": {
+            "latitude": 35.774944448948645,
+            "longitude": -34.71465085083051
+        },
+        "campus_affiliation": "Lamb LLC",
+        "interests": [
+            "Coding",
+            "Gaming",
+            "Music"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Female",
+            "min_age": 18,
+            "max_age": 45,
+            "max_distance": 15.162397081751696
+        },
+        "gem_balance": 473,
+        "last_active": 1740284672.056347,
+        "account_status": "Active",
+        "created_at": 1740284672.056348,
+        "updated_at": 1740284672.056349,
+        "settings": {
+            "notifications_enabled": true,
+            "theme": "light",
+            "language": "es"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_22",
+        "username": "bbarnes",
+        "email": "pretttyp22@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_22",
+        "age": 44,
+        "gender": "Male",
+        "sexual_orientation": "Bisexual",
+        "bio": "Drop picture standard middle close paper authority.",
+        "profile_pictures": [
+            "https://placekitten.com/953/606",
+            "https://placekitten.com/868/587",
+            "https://placekitten.com/222/320",
+            "https://placekitten.com/943/846",
+            "https://picsum.photos/178/358"
+        ],
+        "location": {
+            "latitude": 84.08366727990821,
+            "longitude": 80.61404346393016
+        },
+        "campus_affiliation": "Bentley, Ayers and Riggs",
+        "interests": [
+            "Coding",
+            "Sports"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Unspecified",
+            "min_age": 23,
+            "max_age": 32,
+            "max_distance": 8.227068530166612
+        },
+        "gem_balance": 135,
+        "last_active": 1740284672.056655,
+        "account_status": "Suspended",
+        "created_at": 1740284672.056657,
+        "updated_at": 1740284672.056658,
+        "settings": {
+            "notifications_enabled": true,
+            "theme": "light",
+            "language": "en"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_23",
+        "username": "rebeccalawson",
+        "email": "pretttyp23@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_23",
+        "age": 46,
+        "gender": "Other",
+        "sexual_orientation": "Homosexual",
+        "bio": "Church consider red garden democratic laugh.",
+        "profile_pictures": [
+            "https://placekitten.com/20/727",
+            "https://picsum.photos/278/655"
+        ],
+        "location": {
+            "latitude": -88.46014865492201,
+            "longitude": -15.066033795181283
+        },
+        "campus_affiliation": "Watson, Wall and Adkins",
+        "interests": [
+            "Coding",
+            "Travel"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Female",
+            "min_age": 19,
+            "max_age": 41,
+            "max_distance": 14.789427067120746
+        },
+        "gem_balance": 988,
+        "last_active": 1740284672.05699,
+        "account_status": "Banned",
+        "created_at": 1740284672.056992,
+        "updated_at": 1740284672.056993,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "dark",
+            "language": "en"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_24",
+        "username": "patricksmith",
+        "email": "pretttyp24@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_24",
+        "age": 18,
+        "gender": "Female",
+        "sexual_orientation": "Other",
+        "bio": "Man common know whole recent walk paper.",
+        "profile_pictures": [
+            "https://picsum.photos/340/190",
+            "https://dummyimage.com/195x829",
+            "https://dummyimage.com/1x508",
+            "https://picsum.photos/995/559"
+        ],
+        "location": {
+            "latitude": -2.9008095350514935,
+            "longitude": -78.22389801945043
+        },
+        "campus_affiliation": "Smith and Sons",
+        "interests": [
+            "Music",
+            "Coding"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Other",
+            "min_age": 24,
+            "max_age": 33,
+            "max_distance": 9.339439528367913
+        },
+        "gem_balance": 185,
+        "last_active": 1740284672.057223,
+        "account_status": "Active",
+        "created_at": 1740284672.057225,
+        "updated_at": 1740284672.057226,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "light",
+            "language": "en"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_25",
+        "username": "alicia17",
+        "email": "pretttyp25@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_25",
+        "age": 26,
+        "gender": "Other",
+        "sexual_orientation": "Other",
+        "bio": "Property check whose fall hospital bank affect.",
+        "profile_pictures": [
+            "https://picsum.photos/628/335",
+            "https://dummyimage.com/904x747"
+        ],
+        "location": {
+            "latitude": 61.5266005152767,
+            "longitude": -5.116715147440203
+        },
+        "campus_affiliation": "Colon-Adams",
+        "interests": [
+            "Coding",
+            "Sports"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Unspecified",
+            "min_age": 18,
+            "max_age": 38,
+            "max_distance": 4.913128988109257
+        },
+        "gem_balance": 704,
+        "last_active": 1740284672.057449,
+        "account_status": "Suspended",
+        "created_at": 1740284672.057451,
+        "updated_at": 1740284672.057452,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "light",
+            "language": "fr"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_26",
+        "username": "strongphillip",
+        "email": "pretttyp26@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": true,
+        "full_name": "PrettyPete_26",
+        "age": 40,
+        "gender": "Female",
+        "sexual_orientation": "Bisexual",
+        "bio": "Agree than public woman show.",
+        "profile_pictures": [
+            "https://dummyimage.com/130x710",
+            "https://picsum.photos/502/896",
+            "https://dummyimage.com/193x212"
+        ],
+        "location": {
+            "latitude": 52.933249047440455,
+            "longitude": 4.92334340007946
+        },
+        "campus_affiliation": "Lopez, Sosa and Pham",
+        "interests": [
+            "Coding",
+            "Gaming",
+            "Music"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Female",
+            "min_age": 20,
+            "max_age": 40,
+            "max_distance": 29.494461298491743
+        },
+        "gem_balance": 363,
+        "last_active": 1740284672.057791,
+        "account_status": "Banned",
+        "created_at": 1740284672.057792,
+        "updated_at": 1740284672.057793,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "dark",
+            "language": "fr"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_27",
+        "username": "robyn03",
+        "email": "pretttyp27@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": true,
+        "full_name": "PrettyPete_27",
+        "age": 47,
+        "gender": "Male",
+        "sexual_orientation": "Heterosexual",
+        "bio": "Ago food others finish mission building.",
+        "profile_pictures": [
+            "https://dummyimage.com/23x6",
+            "https://picsum.photos/947/608",
+            "https://placekitten.com/0/170",
+            "https://placekitten.com/784/600",
+            "https://dummyimage.com/118x348",
+            "https://dummyimage.com/712x234"
+        ],
+        "location": {
+            "latitude": -77.83457237564875,
+            "longitude": -149.8491070891785
+        },
+        "campus_affiliation": "Jones Group",
+        "interests": [
+            "Coding",
+            "Sports",
+            "Gaming"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Female",
+            "min_age": 20,
+            "max_age": 33,
+            "max_distance": 47.92283631727612
+        },
+        "gem_balance": 344,
+        "last_active": 1740284672.057982,
+        "account_status": "Suspended",
+        "created_at": 1740284672.057983,
+        "updated_at": 1740284672.057984,
+        "settings": {
+            "notifications_enabled": true,
+            "theme": "dark",
+            "language": "en"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_28",
+        "username": "alexanderbutler",
+        "email": "pretttyp28@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_28",
+        "age": 24,
+        "gender": "Other",
+        "sexual_orientation": "Homosexual",
+        "bio": "Born individual tax involve room.",
+        "profile_pictures": [
+            "https://dummyimage.com/954x207",
+            "https://dummyimage.com/59x776",
+            "https://placekitten.com/540/1018",
+            "https://dummyimage.com/627x553",
+            "https://placekitten.com/205/444",
+            "https://picsum.photos/261/477"
+        ],
+        "location": {
+            "latitude": 27.33595132689385,
+            "longitude": -150.21577873119733
+        },
+        "campus_affiliation": "Jackson-Perez",
+        "interests": [
+            "Music",
+            "Coding"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Other",
+            "min_age": 25,
+            "max_age": 49,
+            "max_distance": 36.327642810042924
+        },
+        "gem_balance": 617,
+        "last_active": 1740284672.058348,
+        "account_status": "Banned",
+        "created_at": 1740284672.058352,
+        "updated_at": 1740284672.058353,
+        "settings": {
+            "notifications_enabled": true,
+            "theme": "dark",
+            "language": "es"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_29",
+        "username": "benjamin80",
+        "email": "pretttyp29@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_29",
+        "age": 19,
+        "gender": "Female",
+        "sexual_orientation": "Heterosexual",
+        "bio": "Leave tough statement there.",
+        "profile_pictures": [
+            "https://dummyimage.com/681x484"
+        ],
+        "location": {
+            "latitude": -0.8413304031766131,
+            "longitude": -68.30625554929425
+        },
+        "campus_affiliation": "Lang Inc",
+        "interests": [
+            "Coding",
+            "Music"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Unspecified",
+            "min_age": 25,
+            "max_age": 37,
+            "max_distance": 46.75727041744105
+        },
+        "gem_balance": 349,
+        "last_active": 1740284672.058544,
+        "account_status": "Suspended",
+        "created_at": 1740284672.058546,
+        "updated_at": 1740284672.058547,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "light",
+            "language": "fr"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_30",
+        "username": "masongriffin",
+        "email": "pretttyp30@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": true,
+        "full_name": "PrettyPete_30",
+        "age": 33,
+        "gender": "Female",
+        "sexual_orientation": "Heterosexual",
+        "bio": "Tv pass station organization involve just poor.",
+        "profile_pictures": [
+            "https://picsum.photos/961/168"
+        ],
+        "location": {
+            "latitude": 57.302052838768844,
+            "longitude": -145.13612872082817
+        },
+        "campus_affiliation": "Turner-Luna",
+        "interests": [
+            "Travel"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Male",
+            "min_age": 25,
+            "max_age": 46,
+            "max_distance": 1.2670345367034597
+        },
+        "gem_balance": 657,
+        "last_active": 1740284672.058833,
+        "account_status": "Suspended",
+        "created_at": 1740284672.058835,
+        "updated_at": 1740284672.058836,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "dark",
+            "language": "en"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_31",
+        "username": "mhernandez",
+        "email": "pretttyp31@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_31",
+        "age": 35,
+        "gender": "Male",
+        "sexual_orientation": "Bisexual",
+        "bio": "Toward stop month name especially summer.",
+        "profile_pictures": [
+            "https://placekitten.com/534/491",
+            "https://dummyimage.com/702x632",
+            "https://picsum.photos/340/350",
+            "https://placekitten.com/108/156",
+            "https://placekitten.com/41/334"
+        ],
+        "location": {
+            "latitude": -79.70617603134846,
+            "longitude": -63.15681426145646
+        },
+        "campus_affiliation": "Friedman Group",
+        "interests": [
+            "Gaming",
+            "Music"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Unspecified",
+            "min_age": 21,
+            "max_age": 27,
+            "max_distance": 11.229753070376164
+        },
+        "gem_balance": 119,
+        "last_active": 1740284672.059049,
+        "account_status": "Suspended",
+        "created_at": 1740284672.05905,
+        "updated_at": 1740284672.059052,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "dark",
+            "language": "fr"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_32",
+        "username": "oscarlutz",
+        "email": "pretttyp32@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_32",
+        "age": 28,
+        "gender": "Male",
+        "sexual_orientation": "Other",
+        "bio": "Personal cost simply man rise market state.",
+        "profile_pictures": [
+            "https://placekitten.com/507/684",
+            "https://placekitten.com/61/704",
+            "https://picsum.photos/81/744"
+        ],
+        "location": {
+            "latitude": -78.17376132923027,
+            "longitude": 91.53211630510094
+        },
+        "campus_affiliation": "Gibbs-Cummings",
+        "interests": [
+            "Gaming",
+            "Coding"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Male",
+            "min_age": 18,
+            "max_age": 39,
+            "max_distance": 44.474290791719035
+        },
+        "gem_balance": 583,
+        "last_active": 1740284672.059342,
+        "account_status": "Active",
+        "created_at": 1740284672.059344,
+        "updated_at": 1740284672.059345,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "dark",
+            "language": "fr"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_33",
+        "username": "salinasgregory",
+        "email": "pretttyp33@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": true,
+        "full_name": "PrettyPete_33",
+        "age": 37,
+        "gender": "Other",
+        "sexual_orientation": "Heterosexual",
+        "bio": "By phone actually along.",
+        "profile_pictures": [
+            "https://picsum.photos/519/194",
+            "https://placekitten.com/428/758",
+            "https://picsum.photos/789/944"
+        ],
+        "location": {
+            "latitude": -77.29745385500851,
+            "longitude": -107.21198392333277
+        },
+        "campus_affiliation": "Mccormick LLC",
+        "interests": [
+            "Music"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Other",
+            "min_age": 22,
+            "max_age": 49,
+            "max_distance": 35.47755929494586
+        },
+        "gem_balance": 226,
+        "last_active": 1740284672.059583,
+        "account_status": "Active",
+        "created_at": 1740284672.059584,
+        "updated_at": 1740284672.059585,
+        "settings": {
+            "notifications_enabled": true,
+            "theme": "dark",
+            "language": "en"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_34",
+        "username": "ncarlson",
+        "email": "pretttyp34@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": true,
+        "full_name": "PrettyPete_34",
+        "age": 41,
+        "gender": "Male",
+        "sexual_orientation": "Other",
+        "bio": "Pattern far former pay why show.",
+        "profile_pictures": [
+            "https://dummyimage.com/719x705",
+            "https://dummyimage.com/213x311",
+            "https://dummyimage.com/769x941",
+            "https://picsum.photos/236/168",
+            "https://placekitten.com/58/569",
+            "https://placekitten.com/174/270"
+        ],
+        "location": {
+            "latitude": 76.68514689282256,
+            "longitude": 21.300093767165578
+        },
+        "campus_affiliation": "Escobar, Osborn and Moore",
+        "interests": [
+            "Sports",
+            "Music",
+            "Travel"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Unspecified",
+            "min_age": 22,
+            "max_age": 43,
+            "max_distance": 4.281723953964317
+        },
+        "gem_balance": 880,
+        "last_active": 1740284672.059907,
+        "account_status": "Banned",
+        "created_at": 1740284672.059908,
+        "updated_at": 1740284672.059909,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "light",
+            "language": "es"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_35",
+        "username": "carterlisa",
+        "email": "pretttyp35@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": true,
+        "full_name": "PrettyPete_35",
+        "age": 42,
+        "gender": "Female",
+        "sexual_orientation": "Heterosexual",
+        "bio": "Establish artist machine six.",
+        "profile_pictures": [
+            "https://dummyimage.com/889x932",
+            "https://dummyimage.com/438x348",
+            "https://placekitten.com/142/870",
+            "https://picsum.photos/547/1012"
+        ],
+        "location": {
+            "latitude": -35.35852033798538,
+            "longitude": -56.138605949456874
+        },
+        "campus_affiliation": "Harris, Green and Delgado",
+        "interests": [
+            "Travel",
+            "Music",
+            "Gaming"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Male",
+            "min_age": 20,
+            "max_age": 41,
+            "max_distance": 28.283036248963228
+        },
+        "gem_balance": 493,
+        "last_active": 1740284672.060275,
+        "account_status": "Suspended",
+        "created_at": 1740284672.060276,
+        "updated_at": 1740284672.060278,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "light",
+            "language": "en"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_36",
+        "username": "beltranmatthew",
+        "email": "pretttyp36@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_36",
+        "age": 47,
+        "gender": "Other",
+        "sexual_orientation": "Homosexual",
+        "bio": "Between keep cost too deep describe.",
+        "profile_pictures": [
+            "https://placekitten.com/75/175",
+            "https://picsum.photos/178/728",
+            "https://dummyimage.com/120x42",
+            "https://placekitten.com/145/632",
+            "https://placekitten.com/242/609"
+        ],
+        "location": {
+            "latitude": 4.448045020157764,
+            "longitude": 171.74905177450603
+        },
+        "campus_affiliation": "Huerta Ltd",
+        "interests": [
+            "Gaming",
+            "Travel",
+            "Sports"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Female",
+            "min_age": 25,
+            "max_age": 27,
+            "max_distance": 33.02072437470196
+        },
+        "gem_balance": 759,
+        "last_active": 1740284672.060516,
+        "account_status": "Banned",
+        "created_at": 1740284672.060517,
+        "updated_at": 1740284672.060519,
+        "settings": {
+            "notifications_enabled": true,
+            "theme": "dark",
+            "language": "es"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_37",
+        "username": "jenniferrosales",
+        "email": "pretttyp37@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_37",
+        "age": 43,
+        "gender": "Female",
+        "sexual_orientation": "Other",
+        "bio": "Nearly usually view.",
+        "profile_pictures": [
+            "https://placekitten.com/311/194",
+            "https://placekitten.com/517/687",
+            "https://picsum.photos/976/572",
+            "https://dummyimage.com/167x552"
+        ],
+        "location": {
+            "latitude": 24.77061545273901,
+            "longitude": 112.75145279927301
+        },
+        "campus_affiliation": "Cochran, Small and Smith",
+        "interests": [
+            "Music",
+            "Coding",
+            "Gaming"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Female",
+            "min_age": 19,
+            "max_age": 35,
+            "max_distance": 33.82562916993943
+        },
+        "gem_balance": 583,
+        "last_active": 1740284672.060866,
+        "account_status": "Banned",
+        "created_at": 1740284672.060867,
+        "updated_at": 1740284672.060869,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "light",
+            "language": "en"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_38",
+        "username": "joneswayne",
+        "email": "pretttyp38@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": true,
+        "full_name": "PrettyPete_38",
+        "age": 21,
+        "gender": "Other",
+        "sexual_orientation": "Other",
+        "bio": "Should police whatever other daughter.",
+        "profile_pictures": [
+            "https://dummyimage.com/961x151",
+            "https://placekitten.com/571/133",
+            "https://picsum.photos/634/265"
+        ],
+        "location": {
+            "latitude": 59.76339816515542,
+            "longitude": -131.46807669746366
+        },
+        "campus_affiliation": "Huynh-Wilson",
+        "interests": [
+            "Music"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Unspecified",
+            "min_age": 20,
+            "max_age": 43,
+            "max_distance": 10.377306173036049
+        },
+        "gem_balance": 536,
+        "last_active": 1740284672.061147,
+        "account_status": "Active",
+        "created_at": 1740284672.061149,
+        "updated_at": 1740284672.06115,
+        "settings": {
+            "notifications_enabled": true,
+            "theme": "dark",
+            "language": "fr"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_39",
+        "username": "haleythomas",
+        "email": "pretttyp39@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_39",
+        "age": 44,
+        "gender": "Other",
+        "sexual_orientation": "Heterosexual",
+        "bio": "Short Democrat since practice project blue.",
+        "profile_pictures": [
+            "https://picsum.photos/692/563",
+            "https://placekitten.com/178/104",
+            "https://placekitten.com/233/86"
+        ],
+        "location": {
+            "latitude": -15.186208144140707,
+            "longitude": 97.45440257259963
+        },
+        "campus_affiliation": "Reed, White and Duffy",
+        "interests": [
+            "Gaming",
+            "Sports"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Unspecified",
+            "min_age": 24,
+            "max_age": 27,
+            "max_distance": 9.438480979588928
+        },
+        "gem_balance": 722,
+        "last_active": 1740284672.06151,
+        "account_status": "Banned",
+        "created_at": 1740284672.061511,
+        "updated_at": 1740284672.061513,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "dark",
+            "language": "es"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_40",
+        "username": "michael80",
+        "email": "pretttyp40@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": true,
+        "full_name": "PrettyPete_40",
+        "age": 36,
+        "gender": "Male",
+        "sexual_orientation": "Bisexual",
+        "bio": "Method tonight young.",
+        "profile_pictures": [
+            "https://placekitten.com/749/836",
+            "https://placekitten.com/254/805",
+            "https://picsum.photos/186/978",
+            "https://picsum.photos/775/527",
+            "https://picsum.photos/181/259",
+            "https://dummyimage.com/512x690"
+        ],
+        "location": {
+            "latitude": -74.52381953039108,
+            "longitude": 89.92112122167015
+        },
+        "campus_affiliation": "Mendoza, Downs and Nelson",
+        "interests": [
+            "Coding"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Female",
+            "min_age": 22,
+            "max_age": 47,
+            "max_distance": 32.077041480218384
+        },
+        "gem_balance": 914,
+        "last_active": 1740284672.061816,
+        "account_status": "Banned",
+        "created_at": 1740284672.061817,
+        "updated_at": 1740284672.061819,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "light",
+            "language": "en"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_41",
+        "username": "ryan95",
+        "email": "pretttyp41@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_41",
+        "age": 50,
+        "gender": "Female",
+        "sexual_orientation": "Heterosexual",
+        "bio": "Away fight source kind radio direction type.",
+        "profile_pictures": [
+            "https://picsum.photos/910/215",
+            "https://placekitten.com/99/113",
+            "https://placekitten.com/400/411"
+        ],
+        "location": {
+            "latitude": -86.6531566780871,
+            "longitude": 106.73825804097663
+        },
+        "campus_affiliation": "Carter and Sons",
+        "interests": [
+            "Sports",
+            "Travel",
+            "Gaming"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Male",
+            "min_age": 19,
+            "max_age": 32,
+            "max_distance": 43.71389680218713
+        },
+        "gem_balance": 939,
+        "last_active": 1740284672.061993,
+        "account_status": "Suspended",
+        "created_at": 1740284672.061995,
+        "updated_at": 1740284672.061996,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "light",
+            "language": "es"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_42",
+        "username": "phillipchen",
+        "email": "pretttyp42@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": true,
+        "full_name": "PrettyPete_42",
+        "age": 27,
+        "gender": "Female",
+        "sexual_orientation": "Heterosexual",
+        "bio": "Radio decide across.",
+        "profile_pictures": [
+            "https://picsum.photos/89/846",
+            "https://dummyimage.com/639x952",
+            "https://placekitten.com/571/569"
+        ],
+        "location": {
+            "latitude": 33.29243903843788,
+            "longitude": 28.21979770913785
+        },
+        "campus_affiliation": "Romero Inc",
+        "interests": [
+            "Coding"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Unspecified",
+            "min_age": 23,
+            "max_age": 28,
+            "max_distance": 14.577619768782613
+        },
+        "gem_balance": 219,
+        "last_active": 1740284672.062221,
+        "account_status": "Suspended",
+        "created_at": 1740284672.062222,
+        "updated_at": 1740284672.062223,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "dark",
+            "language": "es"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_43",
+        "username": "matthew00",
+        "email": "pretttyp43@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": true,
+        "full_name": "PrettyPete_43",
+        "age": 29,
+        "gender": "Female",
+        "sexual_orientation": "Bisexual",
+        "bio": "Have might ten indeed else either.",
+        "profile_pictures": [
+            "https://placekitten.com/132/260",
+            "https://picsum.photos/374/805",
+            "https://placekitten.com/727/662",
+            "https://dummyimage.com/73x414",
+            "https://dummyimage.com/862x107",
+            "https://placekitten.com/861/359"
+        ],
+        "location": {
+            "latitude": 35.27066601039796,
+            "longitude": 2.5937443680470835
+        },
+        "campus_affiliation": "Murray and Sons",
+        "interests": [
+            "Gaming"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Unspecified",
+            "min_age": 23,
+            "max_age": 26,
+            "max_distance": 12.347442405185202
+        },
+        "gem_balance": 705,
+        "last_active": 1740284672.062407,
+        "account_status": "Suspended",
+        "created_at": 1740284672.062408,
+        "updated_at": 1740284672.062409,
+        "settings": {
+            "notifications_enabled": true,
+            "theme": "light",
+            "language": "es"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_44",
+        "username": "hoffmanelizabeth",
+        "email": "pretttyp44@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_44",
+        "age": 47,
+        "gender": "Female",
+        "sexual_orientation": "Bisexual",
+        "bio": "Nor happy simply.",
+        "profile_pictures": [
+            "https://dummyimage.com/499x403"
+        ],
+        "location": {
+            "latitude": 40.75610207860515,
+            "longitude": -62.83342700232399
+        },
+        "campus_affiliation": "Galloway and Sons",
+        "interests": [
+            "Coding"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Female",
+            "min_age": 19,
+            "max_age": 49,
+            "max_distance": 29.090911691918823
+        },
+        "gem_balance": 889,
+        "last_active": 1740284672.062634,
+        "account_status": "Banned",
+        "created_at": 1740284672.062636,
+        "updated_at": 1740284672.062637,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "light",
+            "language": "es"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_45",
+        "username": "olivervincent",
+        "email": "pretttyp45@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_45",
+        "age": 49,
+        "gender": "Female",
+        "sexual_orientation": "Other",
+        "bio": "President maintain design specific fight even.",
+        "profile_pictures": [
+            "https://placekitten.com/615/156",
+            "https://placekitten.com/189/218"
+        ],
+        "location": {
+            "latitude": -5.792990655009135,
+            "longitude": 161.4757470317491
+        },
+        "campus_affiliation": "Diaz-Cantu",
+        "interests": [
+            "Sports"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Male",
+            "min_age": 20,
+            "max_age": 42,
+            "max_distance": 13.648689156045757
+        },
+        "gem_balance": 543,
+        "last_active": 1740284672.062919,
+        "account_status": "Banned",
+        "created_at": 1740284672.062921,
+        "updated_at": 1740284672.062922,
+        "settings": {
+            "notifications_enabled": true,
+            "theme": "light",
+            "language": "es"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_46",
+        "username": "lindamelton",
+        "email": "pretttyp46@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_46",
+        "age": 31,
+        "gender": "Other",
+        "sexual_orientation": "Other",
+        "bio": "Cover series plan thus product.",
+        "profile_pictures": [
+            "https://dummyimage.com/443x28",
+            "https://placekitten.com/90/523",
+            "https://dummyimage.com/263x571",
+            "https://placekitten.com/419/521",
+            "https://dummyimage.com/646x6"
+        ],
+        "location": {
+            "latitude": -83.93330297131162,
+            "longitude": 35.47077551356256
+        },
+        "campus_affiliation": "Mitchell Group",
+        "interests": [
+            "Sports",
+            "Gaming",
+            "Music"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Male",
+            "min_age": 24,
+            "max_age": 30,
+            "max_distance": 46.23178928204236
+        },
+        "gem_balance": 284,
+        "last_active": 1740284672.063163,
+        "account_status": "Active",
+        "created_at": 1740284672.063165,
+        "updated_at": 1740284672.063166,
+        "settings": {
+            "notifications_enabled": true,
+            "theme": "dark",
+            "language": "en"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_47",
+        "username": "ophillips",
+        "email": "pretttyp47@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_47",
+        "age": 38,
+        "gender": "Other",
+        "sexual_orientation": "Other",
+        "bio": "Himself Democrat artist choose special fine.",
+        "profile_pictures": [
+            "https://dummyimage.com/930x300",
+            "https://placekitten.com/529/292",
+            "https://picsum.photos/904/992",
+            "https://picsum.photos/41/618",
+            "https://dummyimage.com/158x783"
+        ],
+        "location": {
+            "latitude": -13.060129119390766,
+            "longitude": 74.60497642042913
+        },
+        "campus_affiliation": "Mckenzie and Sons",
+        "interests": [
+            "Music",
+            "Coding"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Male",
+            "min_age": 19,
+            "max_age": 48,
+            "max_distance": 29.94002185073666
+        },
+        "gem_balance": 351,
+        "last_active": 1740284672.063365,
+        "account_status": "Suspended",
+        "created_at": 1740284672.063366,
+        "updated_at": 1740284672.063367,
+        "settings": {
+            "notifications_enabled": true,
+            "theme": "light",
+            "language": "es"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_48",
+        "username": "logantimothy",
+        "email": "pretttyp48@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_48",
+        "age": 26,
+        "gender": "Male",
+        "sexual_orientation": "Heterosexual",
+        "bio": "Term subject technology actually around civil likely.",
+        "profile_pictures": [
+            "https://placekitten.com/121/278"
+        ],
+        "location": {
+            "latitude": 50.44951772529211,
+            "longitude": 146.1125275589219
+        },
+        "campus_affiliation": "Wade LLC",
+        "interests": [
+            "Music",
+            "Gaming",
+            "Sports"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Male",
+            "min_age": 18,
+            "max_age": 45,
+            "max_distance": 13.764553554113732
+        },
+        "gem_balance": 345,
+        "last_active": 1740284672.063586,
+        "account_status": "Active",
+        "created_at": 1740284672.063587,
+        "updated_at": 1740284672.063589,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "light",
+            "language": "fr"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_49",
+        "username": "ethornton",
+        "email": "pretttyp49@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": true,
+        "full_name": "PrettyPete_49",
+        "age": 18,
+        "gender": "Female",
+        "sexual_orientation": "Heterosexual",
+        "bio": "Week century picture.",
+        "profile_pictures": [
+            "https://picsum.photos/866/306",
+            "https://picsum.photos/830/435",
+            "https://placekitten.com/107/798",
+            "https://picsum.photos/932/29",
+            "https://picsum.photos/921/528"
+        ],
+        "location": {
+            "latitude": 62.303095634533236,
+            "longitude": -30.798143727377322
+        },
+        "campus_affiliation": "Boyle LLC",
+        "interests": [
+            "Music",
+            "Gaming"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Unspecified",
+            "min_age": 18,
+            "max_age": 46,
+            "max_distance": 20.985282718256492
+        },
+        "gem_balance": 379,
+        "last_active": 1740284672.063784,
+        "account_status": "Banned",
+        "created_at": 1740284672.063785,
+        "updated_at": 1740284672.063787,
+        "settings": {
+            "notifications_enabled": true,
+            "theme": "dark",
+            "language": "es"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_50",
+        "username": "matthewzimmerman",
+        "email": "pretttyp50@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_50",
+        "age": 47,
+        "gender": "Other",
+        "sexual_orientation": "Bisexual",
+        "bio": "Similar also in court hear college think.",
+        "profile_pictures": [
+            "https://picsum.photos/73/142",
+            "https://dummyimage.com/592x59",
+            "https://dummyimage.com/769x424"
+        ],
+        "location": {
+            "latitude": 42.59088926424599,
+            "longitude": 141.90204526187028
+        },
+        "campus_affiliation": "Butler Group",
+        "interests": [
+            "Travel",
+            "Music",
+            "Sports"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Female",
+            "min_age": 20,
+            "max_age": 44,
+            "max_distance": 20.604070430484335
+        },
+        "gem_balance": 844,
+        "last_active": 1740284672.064013,
+        "account_status": "Banned",
+        "created_at": 1740284672.064015,
+        "updated_at": 1740284672.064016,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "dark",
+            "language": "en"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_51",
+        "username": "matthewgraham",
+        "email": "pretttyp51@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": true,
+        "full_name": "PrettyPete_51",
+        "age": 31,
+        "gender": "Male",
+        "sexual_orientation": "Bisexual",
+        "bio": "Happen dream good where.",
+        "profile_pictures": [
+            "https://placekitten.com/640/534",
+            "https://placekitten.com/885/265",
+            "https://dummyimage.com/990x592",
+            "https://picsum.photos/833/350"
+        ],
+        "location": {
+            "latitude": -7.838492359428514,
+            "longitude": 45.291249920501
+        },
+        "campus_affiliation": "Arnold, Rhodes and Foster",
+        "interests": [
+            "Coding",
+            "Music"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Unspecified",
+            "min_age": 24,
+            "max_age": 44,
+            "max_distance": 12.559324556626535
+        },
+        "gem_balance": 995,
+        "last_active": 1740284672.06436,
+        "account_status": "Banned",
+        "created_at": 1740284672.064361,
+        "updated_at": 1740284672.064362,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "light",
+            "language": "en"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_52",
+        "username": "epeck",
+        "email": "pretttyp52@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_52",
+        "age": 46,
+        "gender": "Other",
+        "sexual_orientation": "Other",
+        "bio": "Week manage morning two.",
+        "profile_pictures": [
+            "https://placekitten.com/992/873",
+            "https://picsum.photos/764/731",
+            "https://picsum.photos/357/971",
+            "https://placekitten.com/355/672",
+            "https://dummyimage.com/402x392",
+            "https://dummyimage.com/1014x1"
+        ],
+        "location": {
+            "latitude": -69.05829688409203,
+            "longitude": -110.4574629359913
+        },
+        "campus_affiliation": "Smith, Sims and Rodriguez",
+        "interests": [
+            "Music",
+            "Gaming"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Male",
+            "min_age": 24,
+            "max_age": 43,
+            "max_distance": 35.41798630301079
+        },
+        "gem_balance": 189,
+        "last_active": 1740284672.064692,
+        "account_status": "Active",
+        "created_at": 1740284672.064694,
+        "updated_at": 1740284672.064695,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "dark",
+            "language": "fr"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_53",
+        "username": "ygilmore",
+        "email": "pretttyp53@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_53",
+        "age": 21,
+        "gender": "Other",
+        "sexual_orientation": "Other",
+        "bio": "Policy agree information church experience determine.",
+        "profile_pictures": [
+            "https://picsum.photos/335/522",
+            "https://dummyimage.com/576x611",
+            "https://dummyimage.com/623x465",
+            "https://placekitten.com/497/199",
+            "https://placekitten.com/743/598",
+            "https://dummyimage.com/198x658"
+        ],
+        "location": {
+            "latitude": 67.62897413237283,
+            "longitude": -155.65000297417944
+        },
+        "campus_affiliation": "Rodriguez LLC",
+        "interests": [
+            "Coding",
+            "Music",
+            "Gaming"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Male",
+            "min_age": 21,
+            "max_age": 41,
+            "max_distance": 10.859780464693293
+        },
+        "gem_balance": 668,
+        "last_active": 1740284672.064898,
+        "account_status": "Banned",
+        "created_at": 1740284672.0649,
+        "updated_at": 1740284672.064901,
+        "settings": {
+            "notifications_enabled": true,
+            "theme": "dark",
+            "language": "fr"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_54",
+        "username": "youngconnor",
+        "email": "pretttyp54@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": true,
+        "full_name": "PrettyPete_54",
+        "age": 32,
+        "gender": "Other",
+        "sexual_orientation": "Homosexual",
+        "bio": "Edge blue reduce seek debate approach method these.",
+        "profile_pictures": [
+            "https://placekitten.com/235/978",
+            "https://picsum.photos/304/278"
+        ],
+        "location": {
+            "latitude": 76.48267437383765,
+            "longitude": 23.326776244135317
+        },
+        "campus_affiliation": "Mendoza PLC",
+        "interests": [
+            "Sports",
+            "Gaming",
+            "Music"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Female",
+            "min_age": 22,
+            "max_age": 36,
+            "max_distance": 24.370212760725195
+        },
+        "gem_balance": 872,
+        "last_active": 1740284672.065124,
+        "account_status": "Suspended",
+        "created_at": 1740284672.065126,
+        "updated_at": 1740284672.065127,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "light",
+            "language": "fr"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_55",
+        "username": "kerry90",
+        "email": "pretttyp55@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": true,
+        "full_name": "PrettyPete_55",
+        "age": 21,
+        "gender": "Male",
+        "sexual_orientation": "Bisexual",
+        "bio": "Determine attack treatment election majority than many.",
+        "profile_pictures": [
+            "https://dummyimage.com/53x456"
+        ],
+        "location": {
+            "latitude": 66.21024298338142,
+            "longitude": 119.79247551290632
+        },
+        "campus_affiliation": "Goodwin, Hanson and Parker",
+        "interests": [
+            "Travel",
+            "Sports",
+            "Gaming"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Female",
+            "min_age": 23,
+            "max_age": 49,
+            "max_distance": 24.833465609402634
+        },
+        "gem_balance": 969,
+        "last_active": 1740284672.065404,
+        "account_status": "Active",
+        "created_at": 1740284672.065406,
+        "updated_at": 1740284672.065407,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "dark",
+            "language": "es"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_56",
+        "username": "derekwoods",
+        "email": "pretttyp56@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": true,
+        "full_name": "PrettyPete_56",
+        "age": 38,
+        "gender": "Other",
+        "sexual_orientation": "Homosexual",
+        "bio": "Specific quality approach move speak record shoulder.",
+        "profile_pictures": [
+            "https://picsum.photos/57/730",
+            "https://placekitten.com/368/397",
+            "https://dummyimage.com/423x402",
+            "https://placekitten.com/192/170",
+            "https://dummyimage.com/878x666",
+            "https://picsum.photos/442/452"
+        ],
+        "location": {
+            "latitude": -78.4961699231306,
+            "longitude": 41.33993873838074
+        },
+        "campus_affiliation": "Kelley-Roberts",
+        "interests": [
+            "Travel",
+            "Coding",
+            "Sports"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Male",
+            "min_age": 23,
+            "max_age": 43,
+            "max_distance": 14.638371285197682
+        },
+        "gem_balance": 167,
+        "last_active": 1740284672.065702,
+        "account_status": "Banned",
+        "created_at": 1740284672.065704,
+        "updated_at": 1740284672.065705,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "dark",
+            "language": "fr"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_57",
+        "username": "peter87",
+        "email": "pretttyp57@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_57",
+        "age": 45,
+        "gender": "Female",
+        "sexual_orientation": "Bisexual",
+        "bio": "Strategy organization near outside.",
+        "profile_pictures": [
+            "https://placekitten.com/239/1006",
+            "https://dummyimage.com/146x604",
+            "https://picsum.photos/756/732",
+            "https://placekitten.com/719/136"
+        ],
+        "location": {
+            "latitude": 20.484744750118296,
+            "longitude": 26.495595013737727
+        },
+        "campus_affiliation": "Lindsey PLC",
+        "interests": [
+            "Gaming"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Unspecified",
+            "min_age": 19,
+            "max_age": 38,
+            "max_distance": 41.136788191132624
+        },
+        "gem_balance": 673,
+        "last_active": 1740284672.065881,
+        "account_status": "Banned",
+        "created_at": 1740284672.065883,
+        "updated_at": 1740284672.065884,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "dark",
+            "language": "es"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_58",
+        "username": "ppark",
+        "email": "pretttyp58@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": true,
+        "full_name": "PrettyPete_58",
+        "age": 27,
+        "gender": "Male",
+        "sexual_orientation": "Heterosexual",
+        "bio": "Money around common card.",
+        "profile_pictures": [
+            "https://picsum.photos/532/589"
+        ],
+        "location": {
+            "latitude": -30.972656616704214,
+            "longitude": -40.85555960465439
+        },
+        "campus_affiliation": "Harrison, Wilson and Tucker",
+        "interests": [
+            "Coding"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Unspecified",
+            "min_age": 25,
+            "max_age": 49,
+            "max_distance": 29.3205385921377
+        },
+        "gem_balance": 119,
+        "last_active": 1740284672.06617,
+        "account_status": "Active",
+        "created_at": 1740284672.066172,
+        "updated_at": 1740284672.066173,
+        "settings": {
+            "notifications_enabled": true,
+            "theme": "light",
+            "language": "es"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_59",
+        "username": "nzhang",
+        "email": "pretttyp59@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_59",
+        "age": 26,
+        "gender": "Female",
+        "sexual_orientation": "Heterosexual",
+        "bio": "Fast imagine reality American necessary.",
+        "profile_pictures": [
+            "https://placekitten.com/82/887",
+            "https://placekitten.com/837/362",
+            "https://dummyimage.com/374x788"
+        ],
+        "location": {
+            "latitude": 35.395512161409954,
+            "longitude": 168.61606625829154
+        },
+        "campus_affiliation": "Foster Inc",
+        "interests": [
+            "Music"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Female",
+            "min_age": 24,
+            "max_age": 50,
+            "max_distance": 39.88552884745568
+        },
+        "gem_balance": 438,
+        "last_active": 1740284672.066364,
+        "account_status": "Banned",
+        "created_at": 1740284672.066366,
+        "updated_at": 1740284672.066367,
+        "settings": {
+            "notifications_enabled": true,
+            "theme": "light",
+            "language": "es"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_60",
+        "username": "crawfordsandra",
+        "email": "pretttyp60@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_60",
+        "age": 44,
+        "gender": "Female",
+        "sexual_orientation": "Other",
+        "bio": "Serious culture majority answer yard always.",
+        "profile_pictures": [
+            "https://placekitten.com/222/183",
+            "https://dummyimage.com/30x334",
+            "https://placekitten.com/232/340",
+            "https://placekitten.com/180/543",
+            "https://picsum.photos/800/25"
+        ],
+        "location": {
+            "latitude": 47.56169070301965,
+            "longitude": -37.713068424705796
+        },
+        "campus_affiliation": "Watson, Miles and Jones",
+        "interests": [
+            "Travel"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Female",
+            "min_age": 22,
+            "max_age": 43,
+            "max_distance": 49.12000888917615
+        },
+        "gem_balance": 122,
+        "last_active": 1740284672.066728,
+        "account_status": "Banned",
+        "created_at": 1740284672.066729,
+        "updated_at": 1740284672.066731,
+        "settings": {
+            "notifications_enabled": true,
+            "theme": "dark",
+            "language": "fr"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_61",
+        "username": "zbrown",
+        "email": "pretttyp61@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_61",
+        "age": 32,
+        "gender": "Male",
+        "sexual_orientation": "Homosexual",
+        "bio": "Local perform seek.",
+        "profile_pictures": [
+            "https://dummyimage.com/301x631",
+            "https://dummyimage.com/341x72",
+            "https://dummyimage.com/520x440",
+            "https://dummyimage.com/821x420",
+            "https://dummyimage.com/860x382",
+            "https://dummyimage.com/474x55"
+        ],
+        "location": {
+            "latitude": 26.962340351984807,
+            "longitude": 76.29679142043204
+        },
+        "campus_affiliation": "Brown LLC",
+        "interests": [
+            "Travel"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Other",
+            "min_age": 24,
+            "max_age": 40,
+            "max_distance": 13.574207921238308
+        },
+        "gem_balance": 441,
+        "last_active": 1740284672.066956,
+        "account_status": "Suspended",
+        "created_at": 1740284672.066958,
+        "updated_at": 1740284672.066959,
+        "settings": {
+            "notifications_enabled": true,
+            "theme": "dark",
+            "language": "fr"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_62",
+        "username": "zsmith",
+        "email": "pretttyp62@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": true,
+        "full_name": "PrettyPete_62",
+        "age": 47,
+        "gender": "Male",
+        "sexual_orientation": "Heterosexual",
+        "bio": "My article by.",
+        "profile_pictures": [
+            "https://picsum.photos/531/752",
+            "https://placekitten.com/2/841",
+            "https://placekitten.com/868/349",
+            "https://dummyimage.com/737x1002",
+            "https://placekitten.com/888/515",
+            "https://placekitten.com/485/168"
+        ],
+        "location": {
+            "latitude": 38.561742678276346,
+            "longitude": 65.43651267796642
+        },
+        "campus_affiliation": "Harrington, Hoover and Taylor",
+        "interests": [
+            "Travel",
+            "Coding",
+            "Sports"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Male",
+            "min_age": 18,
+            "max_age": 35,
+            "max_distance": 43.93700164042431
+        },
+        "gem_balance": 269,
+        "last_active": 1740284672.067282,
+        "account_status": "Banned",
+        "created_at": 1740284672.067283,
+        "updated_at": 1740284672.067284,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "light",
+            "language": "fr"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_63",
+        "username": "spoole",
+        "email": "pretttyp63@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_63",
+        "age": 50,
+        "gender": "Other",
+        "sexual_orientation": "Other",
+        "bio": "Customer very financial receive.",
+        "profile_pictures": [
+            "https://placekitten.com/697/705",
+            "https://picsum.photos/252/112",
+            "https://placekitten.com/739/202",
+            "https://picsum.photos/187/788",
+            "https://picsum.photos/260/388",
+            "https://picsum.photos/383/848"
+        ],
+        "location": {
+            "latitude": 39.72949837377621,
+            "longitude": -164.97620768005544
+        },
+        "campus_affiliation": "Foster PLC",
+        "interests": [
+            "Music",
+            "Gaming"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Unspecified",
+            "min_age": 18,
+            "max_age": 39,
+            "max_distance": 11.531449809881737
+        },
+        "gem_balance": 912,
+        "last_active": 1740284672.067484,
+        "account_status": "Active",
+        "created_at": 1740284672.067486,
+        "updated_at": 1740284672.067487,
+        "settings": {
+            "notifications_enabled": true,
+            "theme": "dark",
+            "language": "es"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_64",
+        "username": "thomaswallace",
+        "email": "pretttyp64@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": true,
+        "full_name": "PrettyPete_64",
+        "age": 43,
+        "gender": "Other",
+        "sexual_orientation": "Homosexual",
+        "bio": "Total sport relate many thought board.",
+        "profile_pictures": [
+            "https://picsum.photos/583/435",
+            "https://picsum.photos/474/47",
+            "https://placekitten.com/652/892"
+        ],
+        "location": {
+            "latitude": -37.8515259780799,
+            "longitude": 107.29449689380647
+        },
+        "campus_affiliation": "Wright-Montgomery",
+        "interests": [
+            "Coding",
+            "Sports"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Male",
+            "min_age": 23,
+            "max_age": 30,
+            "max_distance": 27.966946676403232
+        },
+        "gem_balance": 154,
+        "last_active": 1740284672.067796,
+        "account_status": "Active",
+        "created_at": 1740284672.067797,
+        "updated_at": 1740284672.067798,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "light",
+            "language": "es"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_65",
+        "username": "henrychristine",
+        "email": "pretttyp65@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_65",
+        "age": 27,
+        "gender": "Male",
+        "sexual_orientation": "Bisexual",
+        "bio": "Expect claim back game few.",
+        "profile_pictures": [
+            "https://placekitten.com/779/374",
+            "https://placekitten.com/273/379"
+        ],
+        "location": {
+            "latitude": 0.24337355405391747,
+            "longitude": 72.83980891109826
+        },
+        "campus_affiliation": "Bryant Ltd",
+        "interests": [
+            "Travel"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Unspecified",
+            "min_age": 19,
+            "max_age": 49,
+            "max_distance": 6.67953376812996
+        },
+        "gem_balance": 190,
+        "last_active": 1740284672.068066,
+        "account_status": "Active",
+        "created_at": 1740284672.068068,
+        "updated_at": 1740284672.068069,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "light",
+            "language": "fr"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_66",
+        "username": "curtis53",
+        "email": "pretttyp66@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_66",
+        "age": 35,
+        "gender": "Male",
+        "sexual_orientation": "Heterosexual",
+        "bio": "Various why gun music huge.",
+        "profile_pictures": [
+            "https://dummyimage.com/721x306"
+        ],
+        "location": {
+            "latitude": 19.397074552962835,
+            "longitude": 24.590383632236552
+        },
+        "campus_affiliation": "Thompson Group",
+        "interests": [
+            "Music",
+            "Coding"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Male",
+            "min_age": 21,
+            "max_age": 38,
+            "max_distance": 19.77917535706118
+        },
+        "gem_balance": 819,
+        "last_active": 1740284672.068239,
+        "account_status": "Suspended",
+        "created_at": 1740284672.068241,
+        "updated_at": 1740284672.068242,
+        "settings": {
+            "notifications_enabled": true,
+            "theme": "light",
+            "language": "es"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_67",
+        "username": "kristenjones",
+        "email": "pretttyp67@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_67",
+        "age": 40,
+        "gender": "Other",
+        "sexual_orientation": "Bisexual",
+        "bio": "Myself upon room woman nothing whole eat.",
+        "profile_pictures": [
+            "https://picsum.photos/873/854",
+            "https://picsum.photos/587/749",
+            "https://dummyimage.com/275x153",
+            "https://picsum.photos/242/742",
+            "https://picsum.photos/929/598"
+        ],
+        "location": {
+            "latitude": 14.71407119856417,
+            "longitude": -16.44999646831579
+        },
+        "campus_affiliation": "Wiley, Stevens and Reyes",
+        "interests": [
+            "Gaming",
+            "Travel"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Male",
+            "min_age": 19,
+            "max_age": 33,
+            "max_distance": 48.49594266119471
+        },
+        "gem_balance": 694,
+        "last_active": 1740284672.068606,
+        "account_status": "Active",
+        "created_at": 1740284672.068607,
+        "updated_at": 1740284672.068608,
+        "settings": {
+            "notifications_enabled": true,
+            "theme": "dark",
+            "language": "fr"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_68",
+        "username": "pottskatelyn",
+        "email": "pretttyp68@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_68",
+        "age": 38,
+        "gender": "Other",
+        "sexual_orientation": "Bisexual",
+        "bio": "Fund run standard remember morning.",
+        "profile_pictures": [
+            "https://placekitten.com/967/181",
+            "https://placekitten.com/502/27",
+            "https://placekitten.com/308/897",
+            "https://dummyimage.com/383x501"
+        ],
+        "location": {
+            "latitude": 62.05861014253401,
+            "longitude": 176.95021469761048
+        },
+        "campus_affiliation": "Burns Ltd",
+        "interests": [
+            "Music",
+            "Coding",
+            "Travel"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Other",
+            "min_age": 22,
+            "max_age": 28,
+            "max_distance": 33.77703047353715
+        },
+        "gem_balance": 537,
+        "last_active": 1740284672.068837,
+        "account_status": "Active",
+        "created_at": 1740284672.068838,
+        "updated_at": 1740284672.068839,
+        "settings": {
+            "notifications_enabled": true,
+            "theme": "light",
+            "language": "en"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_69",
+        "username": "jlewis",
+        "email": "pretttyp69@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": true,
+        "full_name": "PrettyPete_69",
+        "age": 20,
+        "gender": "Male",
+        "sexual_orientation": "Bisexual",
+        "bio": "Even democratic financial sure let health despite perhaps.",
+        "profile_pictures": [
+            "https://placekitten.com/293/976",
+            "https://dummyimage.com/131x84",
+            "https://placekitten.com/83/834"
+        ],
+        "location": {
+            "latitude": -14.058018510831133,
+            "longitude": 97.91320320518867
+        },
+        "campus_affiliation": "Johnson-Leonard",
+        "interests": [
+            "Gaming",
+            "Travel"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Male",
+            "min_age": 23,
+            "max_age": 27,
+            "max_distance": 45.72961517087622
+        },
+        "gem_balance": 432,
+        "last_active": 1740284672.069086,
+        "account_status": "Banned",
+        "created_at": 1740284672.069088,
+        "updated_at": 1740284672.069089,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "light",
+            "language": "fr"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_70",
+        "username": "nathanthomas",
+        "email": "pretttyp70@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_70",
+        "age": 46,
+        "gender": "Male",
+        "sexual_orientation": "Bisexual",
+        "bio": "Election thing professional general reduce.",
+        "profile_pictures": [
+            "https://dummyimage.com/687x465"
+        ],
+        "location": {
+            "latitude": -34.27199066378892,
+            "longitude": -91.05046361547669
+        },
+        "campus_affiliation": "Nicholson, Moore and Matthews",
+        "interests": [
+            "Sports"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Male",
+            "min_age": 21,
+            "max_age": 33,
+            "max_distance": 18.03379140894716
+        },
+        "gem_balance": 799,
+        "last_active": 1740284672.069418,
+        "account_status": "Suspended",
+        "created_at": 1740284672.06942,
+        "updated_at": 1740284672.069421,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "dark",
+            "language": "en"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_71",
+        "username": "browntaylor",
+        "email": "pretttyp71@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": true,
+        "full_name": "PrettyPete_71",
+        "age": 46,
+        "gender": "Female",
+        "sexual_orientation": "Heterosexual",
+        "bio": "Authority well home trip.",
+        "profile_pictures": [
+            "https://placekitten.com/58/264",
+            "https://picsum.photos/622/510",
+            "https://dummyimage.com/391x113",
+            "https://placekitten.com/389/98",
+            "https://placekitten.com/529/860"
+        ],
+        "location": {
+            "latitude": 4.522803215735564,
+            "longitude": 162.74927306820985
+        },
+        "campus_affiliation": "Santana-Wolf",
+        "interests": [
+            "Coding",
+            "Travel",
+            "Sports"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Male",
+            "min_age": 24,
+            "max_age": 33,
+            "max_distance": 21.184878001330492
+        },
+        "gem_balance": 514,
+        "last_active": 1740284672.069725,
+        "account_status": "Suspended",
+        "created_at": 1740284672.069727,
+        "updated_at": 1740284672.069728,
+        "settings": {
+            "notifications_enabled": true,
+            "theme": "dark",
+            "language": "fr"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_72",
+        "username": "garyrivera",
+        "email": "pretttyp72@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": true,
+        "full_name": "PrettyPete_72",
+        "age": 37,
+        "gender": "Other",
+        "sexual_orientation": "Homosexual",
+        "bio": "Language other reason become house.",
+        "profile_pictures": [
+            "https://placekitten.com/517/489",
+            "https://placekitten.com/703/379",
+            "https://dummyimage.com/741x1004",
+            "https://placekitten.com/445/561",
+            "https://dummyimage.com/557x310",
+            "https://dummyimage.com/748x894"
+        ],
+        "location": {
+            "latitude": -42.670026572557894,
+            "longitude": -65.4060361068095
+        },
+        "campus_affiliation": "Cross PLC",
+        "interests": [
+            "Travel",
+            "Coding"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Other",
+            "min_age": 23,
+            "max_age": 43,
+            "max_distance": 19.950127172227738
+        },
+        "gem_balance": 751,
+        "last_active": 1740284672.069972,
+        "account_status": "Banned",
+        "created_at": 1740284672.069973,
+        "updated_at": 1740284672.069974,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "dark",
+            "language": "en"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_73",
+        "username": "bwilkins",
+        "email": "pretttyp73@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_73",
+        "age": 46,
+        "gender": "Other",
+        "sexual_orientation": "Heterosexual",
+        "bio": "Various all forward sense may.",
+        "profile_pictures": [
+            "https://placekitten.com/975/39",
+            "https://picsum.photos/696/871"
+        ],
+        "location": {
+            "latitude": 76.60901735554967,
+            "longitude": -31.355820476998076
+        },
+        "campus_affiliation": "Hamilton LLC",
+        "interests": [
+            "Coding",
+            "Travel"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Male",
+            "min_age": 22,
+            "max_age": 26,
+            "max_distance": 44.661602341579666
+        },
+        "gem_balance": 587,
+        "last_active": 1740284672.07017,
+        "account_status": "Active",
+        "created_at": 1740284672.070172,
+        "updated_at": 1740284672.070173,
+        "settings": {
+            "notifications_enabled": true,
+            "theme": "light",
+            "language": "en"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_74",
+        "username": "henry22",
+        "email": "pretttyp74@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": true,
+        "full_name": "PrettyPete_74",
+        "age": 41,
+        "gender": "Female",
+        "sexual_orientation": "Other",
+        "bio": "Pressure your stage talk lose treat skill.",
+        "profile_pictures": [
+            "https://placekitten.com/185/800",
+            "https://placekitten.com/793/383",
+            "https://dummyimage.com/328x617",
+            "https://picsum.photos/549/888",
+            "https://placekitten.com/72/164",
+            "https://picsum.photos/945/518"
+        ],
+        "location": {
+            "latitude": 40.18770398091928,
+            "longitude": -24.469474401603748
+        },
+        "campus_affiliation": "Watkins, Sanchez and Perez",
+        "interests": [
+            "Sports",
+            "Gaming"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Male",
+            "min_age": 19,
+            "max_age": 40,
+            "max_distance": 44.873105887141186
+        },
+        "gem_balance": 529,
+        "last_active": 1740284672.070477,
+        "account_status": "Banned",
+        "created_at": 1740284672.070478,
+        "updated_at": 1740284672.07048,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "dark",
+            "language": "en"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_75",
+        "username": "aliciabowers",
+        "email": "pretttyp75@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_75",
+        "age": 43,
+        "gender": "Female",
+        "sexual_orientation": "Bisexual",
+        "bio": "Born lead time drive fear question.",
+        "profile_pictures": [
+            "https://picsum.photos/470/43"
+        ],
+        "location": {
+            "latitude": 36.85343799614877,
+            "longitude": 57.70577017656231
+        },
+        "campus_affiliation": "Mitchell Inc",
+        "interests": [
+            "Sports",
+            "Music"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Female",
+            "min_age": 18,
+            "max_age": 36,
+            "max_distance": 18.002879816632387
+        },
+        "gem_balance": 922,
+        "last_active": 1740284672.070704,
+        "account_status": "Suspended",
+        "created_at": 1740284672.070705,
+        "updated_at": 1740284672.070707,
+        "settings": {
+            "notifications_enabled": true,
+            "theme": "dark",
+            "language": "en"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_76",
+        "username": "gwest",
+        "email": "pretttyp76@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": true,
+        "full_name": "PrettyPete_76",
+        "age": 26,
+        "gender": "Male",
+        "sexual_orientation": "Homosexual",
+        "bio": "Speak effect compare bad the north none ask.",
+        "profile_pictures": [
+            "https://placekitten.com/1009/688",
+            "https://dummyimage.com/657x386",
+            "https://dummyimage.com/205x33"
+        ],
+        "location": {
+            "latitude": -52.19132446310513,
+            "longitude": 154.20306075276744
+        },
+        "campus_affiliation": "Ward-Kelly",
+        "interests": [
+            "Gaming",
+            "Travel"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Male",
+            "min_age": 20,
+            "max_age": 38,
+            "max_distance": 34.16607658545867
+        },
+        "gem_balance": 681,
+        "last_active": 1740284672.070951,
+        "account_status": "Suspended",
+        "created_at": 1740284672.070953,
+        "updated_at": 1740284672.070954,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "dark",
+            "language": "en"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_77",
+        "username": "annhancock",
+        "email": "pretttyp77@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_77",
+        "age": 36,
+        "gender": "Female",
+        "sexual_orientation": "Other",
+        "bio": "Continue threat board effect receive while teacher she.",
+        "profile_pictures": [
+            "https://placekitten.com/267/562",
+            "https://picsum.photos/537/525"
+        ],
+        "location": {
+            "latitude": -12.103516098578481,
+            "longitude": 110.10174546128428
+        },
+        "campus_affiliation": "Smith-Skinner",
+        "interests": [
+            "Sports"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Male",
+            "min_age": 23,
+            "max_age": 28,
+            "max_distance": 2.7582800109586403
+        },
+        "gem_balance": 92,
+        "last_active": 1740284672.071253,
+        "account_status": "Banned",
+        "created_at": 1740284672.071255,
+        "updated_at": 1740284672.071257,
+        "settings": {
+            "notifications_enabled": true,
+            "theme": "light",
+            "language": "es"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_78",
+        "username": "kelliechase",
+        "email": "pretttyp78@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_78",
+        "age": 35,
+        "gender": "Female",
+        "sexual_orientation": "Bisexual",
+        "bio": "Million present play option meet long.",
+        "profile_pictures": [
+            "https://placekitten.com/108/840",
+            "https://placekitten.com/807/952",
+            "https://dummyimage.com/935x641",
+            "https://picsum.photos/420/836",
+            "https://placekitten.com/432/19"
+        ],
+        "location": {
+            "latitude": -11.323955376025665,
+            "longitude": -100.31837640245257
+        },
+        "campus_affiliation": "Clarke-Walker",
+        "interests": [
+            "Coding",
+            "Music"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Other",
+            "min_age": 19,
+            "max_age": 34,
+            "max_distance": 1.3390669695757245
+        },
+        "gem_balance": 390,
+        "last_active": 1740284672.071574,
+        "account_status": "Suspended",
+        "created_at": 1740284672.071576,
+        "updated_at": 1740284672.071577,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "dark",
+            "language": "fr"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_79",
+        "username": "pjames",
+        "email": "pretttyp79@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": true,
+        "full_name": "PrettyPete_79",
+        "age": 25,
+        "gender": "Male",
+        "sexual_orientation": "Heterosexual",
+        "bio": "Night reveal director relate really everyone certainly scene.",
+        "profile_pictures": [
+            "https://dummyimage.com/100x632",
+            "https://picsum.photos/852/560"
+        ],
+        "location": {
+            "latitude": -47.14075142385737,
+            "longitude": -54.9634095290741
+        },
+        "campus_affiliation": "Cruz and Sons",
+        "interests": [
+            "Music",
+            "Coding",
+            "Sports"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Female",
+            "min_age": 19,
+            "max_age": 45,
+            "max_distance": 4.864103219981249
+        },
+        "gem_balance": 638,
+        "last_active": 1740284672.071761,
+        "account_status": "Active",
+        "created_at": 1740284672.071762,
+        "updated_at": 1740284672.071764,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "light",
+            "language": "es"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_80",
+        "username": "kelseyle",
+        "email": "pretttyp80@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": true,
+        "full_name": "PrettyPete_80",
+        "age": 19,
+        "gender": "Female",
+        "sexual_orientation": "Heterosexual",
+        "bio": "The interview statement future cause result.",
+        "profile_pictures": [
+            "https://placekitten.com/698/441",
+            "https://placekitten.com/113/193"
+        ],
+        "location": {
+            "latitude": -77.02100904523215,
+            "longitude": 125.40104621934273
+        },
+        "campus_affiliation": "Morgan LLC",
+        "interests": [
+            "Coding",
+            "Travel"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Male",
+            "min_age": 19,
+            "max_age": 39,
+            "max_distance": 34.89069776382676
+        },
+        "gem_balance": 807,
+        "last_active": 1740284672.072003,
+        "account_status": "Suspended",
+        "created_at": 1740284672.072005,
+        "updated_at": 1740284672.072006,
+        "settings": {
+            "notifications_enabled": true,
+            "theme": "light",
+            "language": "fr"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_81",
+        "username": "solisjacob",
+        "email": "pretttyp81@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": true,
+        "full_name": "PrettyPete_81",
+        "age": 18,
+        "gender": "Male",
+        "sexual_orientation": "Bisexual",
+        "bio": "Cost treatment quality everybody.",
+        "profile_pictures": [
+            "https://picsum.photos/621/430",
+            "https://picsum.photos/948/358"
+        ],
+        "location": {
+            "latitude": -28.067902667865255,
+            "longitude": -49.179324178248805
+        },
+        "campus_affiliation": "Fernandez-Ellis",
+        "interests": [
+            "Sports"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Unspecified",
+            "min_age": 19,
+            "max_age": 38,
+            "max_distance": 34.26319460168754
+        },
+        "gem_balance": 578,
+        "last_active": 1740284672.072285,
+        "account_status": "Active",
+        "created_at": 1740284672.072286,
+        "updated_at": 1740284672.072288,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "dark",
+            "language": "es"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_82",
+        "username": "cooksusan",
+        "email": "pretttyp82@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": true,
+        "full_name": "PrettyPete_82",
+        "age": 22,
+        "gender": "Male",
+        "sexual_orientation": "Bisexual",
+        "bio": "Class since rock.",
+        "profile_pictures": [
+            "https://placekitten.com/645/99",
+            "https://dummyimage.com/30x909",
+            "https://picsum.photos/431/547",
+            "https://placekitten.com/555/85"
+        ],
+        "location": {
+            "latitude": -83.62202341497078,
+            "longitude": -52.161895116544954
+        },
+        "campus_affiliation": "Contreras, Martin and Townsend",
+        "interests": [
+            "Music",
+            "Sports",
+            "Coding"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Unspecified",
+            "min_age": 19,
+            "max_age": 42,
+            "max_distance": 36.15614699755632
+        },
+        "gem_balance": 746,
+        "last_active": 1740284672.07273,
+        "account_status": "Banned",
+        "created_at": 1740284672.072734,
+        "updated_at": 1740284672.072735,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "light",
+            "language": "fr"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_83",
+        "username": "williamcastillo",
+        "email": "pretttyp83@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_83",
+        "age": 30,
+        "gender": "Male",
+        "sexual_orientation": "Other",
+        "bio": "Other ahead allow once there one sound field.",
+        "profile_pictures": [
+            "https://placekitten.com/982/85",
+            "https://picsum.photos/747/797",
+            "https://placekitten.com/535/1024",
+            "https://picsum.photos/168/828",
+            "https://placekitten.com/71/996",
+            "https://dummyimage.com/872x619"
+        ],
+        "location": {
+            "latitude": 33.95948412510609,
+            "longitude": 66.78305582225673
+        },
+        "campus_affiliation": "Carr and Sons",
+        "interests": [
+            "Gaming"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Unspecified",
+            "min_age": 22,
+            "max_age": 44,
+            "max_distance": 38.503709783255985
+        },
+        "gem_balance": 354,
+        "last_active": 1740284672.073023,
+        "account_status": "Banned",
+        "created_at": 1740284672.073025,
+        "updated_at": 1740284672.073026,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "light",
+            "language": "es"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_84",
+        "username": "christopher91",
+        "email": "pretttyp84@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_84",
+        "age": 49,
+        "gender": "Other",
+        "sexual_orientation": "Heterosexual",
+        "bio": "Expert road anyone field civil hard.",
+        "profile_pictures": [
+            "https://dummyimage.com/151x688"
+        ],
+        "location": {
+            "latitude": -75.6787389958444,
+            "longitude": 45.89655893457237
+        },
+        "campus_affiliation": "Dean, Warner and Webster",
+        "interests": [
+            "Travel",
+            "Sports"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Female",
+            "min_age": 24,
+            "max_age": 48,
+            "max_distance": 4.1839145446939305
+        },
+        "gem_balance": 292,
+        "last_active": 1740284672.073315,
+        "account_status": "Active",
+        "created_at": 1740284672.073317,
+        "updated_at": 1740284672.073318,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "dark",
+            "language": "es"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_85",
+        "username": "sierralove",
+        "email": "pretttyp85@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": true,
+        "full_name": "PrettyPete_85",
+        "age": 33,
+        "gender": "Female",
+        "sexual_orientation": "Heterosexual",
+        "bio": "South but fact month leader.",
+        "profile_pictures": [
+            "https://placekitten.com/300/168",
+            "https://placekitten.com/534/769",
+            "https://picsum.photos/324/555"
+        ],
+        "location": {
+            "latitude": -82.56794216739208,
+            "longitude": -40.41990933353509
+        },
+        "campus_affiliation": "Moore, Meyer and Trujillo",
+        "interests": [
+            "Music",
+            "Coding"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Female",
+            "min_age": 19,
+            "max_age": 34,
+            "max_distance": 43.45060675177983
+        },
+        "gem_balance": 381,
+        "last_active": 1740284672.073668,
+        "account_status": "Active",
+        "created_at": 1740284672.07367,
+        "updated_at": 1740284672.073671,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "dark",
+            "language": "fr"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_86",
+        "username": "cellis",
+        "email": "pretttyp86@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": true,
+        "full_name": "PrettyPete_86",
+        "age": 29,
+        "gender": "Female",
+        "sexual_orientation": "Heterosexual",
+        "bio": "Responsibility owner how.",
+        "profile_pictures": [
+            "https://picsum.photos/172/114",
+            "https://placekitten.com/995/198",
+            "https://placekitten.com/957/43",
+            "https://placekitten.com/606/33"
+        ],
+        "location": {
+            "latitude": -19.674437213703357,
+            "longitude": 159.79688987951977
+        },
+        "campus_affiliation": "Abbott Group",
+        "interests": [
+            "Sports",
+            "Coding"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Male",
+            "min_age": 25,
+            "max_age": 43,
+            "max_distance": 16.638593247446877
+        },
+        "gem_balance": 647,
+        "last_active": 1740284672.073868,
+        "account_status": "Banned",
+        "created_at": 1740284672.07387,
+        "updated_at": 1740284672.073871,
+        "settings": {
+            "notifications_enabled": true,
+            "theme": "light",
+            "language": "es"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_87",
+        "username": "crodriguez",
+        "email": "pretttyp87@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_87",
+        "age": 42,
+        "gender": "Male",
+        "sexual_orientation": "Heterosexual",
+        "bio": "Budget right Republican painting summer.",
+        "profile_pictures": [
+            "https://placekitten.com/584/337",
+            "https://placekitten.com/130/576"
+        ],
+        "location": {
+            "latitude": -15.669068206777865,
+            "longitude": 12.89633751121724
+        },
+        "campus_affiliation": "Smith-Franklin",
+        "interests": [
+            "Travel",
+            "Gaming"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Male",
+            "min_age": 23,
+            "max_age": 35,
+            "max_distance": 13.406345312873963
+        },
+        "gem_balance": 502,
+        "last_active": 1740284672.074119,
+        "account_status": "Suspended",
+        "created_at": 1740284672.07412,
+        "updated_at": 1740284672.074122,
+        "settings": {
+            "notifications_enabled": true,
+            "theme": "light",
+            "language": "fr"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_88",
+        "username": "sandersjared",
+        "email": "pretttyp88@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": true,
+        "full_name": "PrettyPete_88",
+        "age": 44,
+        "gender": "Male",
+        "sexual_orientation": "Other",
+        "bio": "Possible a head their.",
+        "profile_pictures": [
+            "https://placekitten.com/759/893",
+            "https://placekitten.com/279/544",
+            "https://picsum.photos/298/391",
+            "https://placekitten.com/596/879"
+        ],
+        "location": {
+            "latitude": 56.74275564435882,
+            "longitude": -32.25416228185179
+        },
+        "campus_affiliation": "Peterson LLC",
+        "interests": [
+            "Coding"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Female",
+            "min_age": 25,
+            "max_age": 30,
+            "max_distance": 41.53755296378259
+        },
+        "gem_balance": 943,
+        "last_active": 1740284672.07436,
+        "account_status": "Active",
+        "created_at": 1740284672.074362,
+        "updated_at": 1740284672.074363,
+        "settings": {
+            "notifications_enabled": true,
+            "theme": "dark",
+            "language": "en"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_89",
+        "username": "newtonerica",
+        "email": "pretttyp89@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_89",
+        "age": 49,
+        "gender": "Other",
+        "sexual_orientation": "Other",
+        "bio": "Use treatment account interview study seek.",
+        "profile_pictures": [
+            "https://placekitten.com/954/88"
+        ],
+        "location": {
+            "latitude": -58.02059791641685,
+            "longitude": 110.38406995080356
+        },
+        "campus_affiliation": "Brown, Mathews and Hale",
+        "interests": [
+            "Gaming"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Female",
+            "min_age": 22,
+            "max_age": 34,
+            "max_distance": 12.911521327459845
+        },
+        "gem_balance": 30,
+        "last_active": 1740284672.07472,
+        "account_status": "Active",
+        "created_at": 1740284672.074722,
+        "updated_at": 1740284672.074723,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "light",
+            "language": "fr"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_90",
+        "username": "ysimmons",
+        "email": "pretttyp90@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_90",
+        "age": 19,
+        "gender": "Female",
+        "sexual_orientation": "Bisexual",
+        "bio": "Break he chance author start outside including.",
+        "profile_pictures": [
+            "https://picsum.photos/145/511"
+        ],
+        "location": {
+            "latitude": -61.57497362648632,
+            "longitude": 77.52337009918347
+        },
+        "campus_affiliation": "Roy and Sons",
+        "interests": [
+            "Sports",
+            "Gaming",
+            "Coding"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Female",
+            "min_age": 20,
+            "max_age": 48,
+            "max_distance": 22.33738800042262
+        },
+        "gem_balance": 212,
+        "last_active": 1740284672.074903,
+        "account_status": "Banned",
+        "created_at": 1740284672.074905,
+        "updated_at": 1740284672.074906,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "dark",
+            "language": "fr"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_91",
+        "username": "christinelyons",
+        "email": "pretttyp91@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_91",
+        "age": 32,
+        "gender": "Male",
+        "sexual_orientation": "Homosexual",
+        "bio": "Price one look begin sometimes commercial.",
+        "profile_pictures": [
+            "https://picsum.photos/524/270"
+        ],
+        "location": {
+            "latitude": -83.29612717930513,
+            "longitude": -125.32711235900152
+        },
+        "campus_affiliation": "Roberson-Lloyd",
+        "interests": [
+            "Music",
+            "Coding",
+            "Travel"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Unspecified",
+            "min_age": 19,
+            "max_age": 33,
+            "max_distance": 32.1255189747831
+        },
+        "gem_balance": 659,
+        "last_active": 1740284672.075189,
+        "account_status": "Active",
+        "created_at": 1740284672.075191,
+        "updated_at": 1740284672.075192,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "light",
+            "language": "fr"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_92",
+        "username": "braymelissa",
+        "email": "pretttyp92@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": true,
+        "full_name": "PrettyPete_92",
+        "age": 35,
+        "gender": "Female",
+        "sexual_orientation": "Homosexual",
+        "bio": "Pick development test.",
+        "profile_pictures": [
+            "https://picsum.photos/598/796",
+            "https://placekitten.com/909/718",
+            "https://picsum.photos/47/548",
+            "https://placekitten.com/33/843"
+        ],
+        "location": {
+            "latitude": 79.21586095365208,
+            "longitude": 64.2577667547599
+        },
+        "campus_affiliation": "Estrada, Lewis and Carter",
+        "interests": [
+            "Gaming"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Female",
+            "min_age": 18,
+            "max_age": 48,
+            "max_distance": 12.152116904909311
+        },
+        "gem_balance": 753,
+        "last_active": 1740284672.075546,
+        "account_status": "Suspended",
+        "created_at": 1740284672.075547,
+        "updated_at": 1740284672.075549,
+        "settings": {
+            "notifications_enabled": true,
+            "theme": "dark",
+            "language": "en"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_93",
+        "username": "fieldswilliam",
+        "email": "pretttyp93@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": true,
+        "full_name": "PrettyPete_93",
+        "age": 36,
+        "gender": "Female",
+        "sexual_orientation": "Heterosexual",
+        "bio": "Decide study two move because collection.",
+        "profile_pictures": [
+            "https://dummyimage.com/181x769"
+        ],
+        "location": {
+            "latitude": 4.094618625761726,
+            "longitude": -88.98539363825306
+        },
+        "campus_affiliation": "Brandt-Evans",
+        "interests": [
+            "Music"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Female",
+            "min_age": 18,
+            "max_age": 42,
+            "max_distance": 17.89185239615973
+        },
+        "gem_balance": 738,
+        "last_active": 1740284672.075836,
+        "account_status": "Active",
+        "created_at": 1740284672.075838,
+        "updated_at": 1740284672.075839,
+        "settings": {
+            "notifications_enabled": true,
+            "theme": "dark",
+            "language": "en"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_94",
+        "username": "fuentesanne",
+        "email": "pretttyp94@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_94",
+        "age": 47,
+        "gender": "Other",
+        "sexual_orientation": "Bisexual",
+        "bio": "Help many officer property security PM feel.",
+        "profile_pictures": [
+            "https://picsum.photos/481/445",
+            "https://picsum.photos/843/190",
+            "https://picsum.photos/872/668",
+            "https://picsum.photos/774/70",
+            "https://dummyimage.com/994x45",
+            "https://picsum.photos/445/293"
+        ],
+        "location": {
+            "latitude": -81.70097222901896,
+            "longitude": -15.641070233825332
+        },
+        "campus_affiliation": "Kennedy-Lee",
+        "interests": [
+            "Coding",
+            "Sports"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Other",
+            "min_age": 25,
+            "max_age": 28,
+            "max_distance": 14.161072483772992
+        },
+        "gem_balance": 775,
+        "last_active": 1740284672.076151,
+        "account_status": "Suspended",
+        "created_at": 1740284672.076153,
+        "updated_at": 1740284672.076154,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "dark",
+            "language": "en"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_95",
+        "username": "duncansheila",
+        "email": "pretttyp95@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_95",
+        "age": 42,
+        "gender": "Male",
+        "sexual_orientation": "Bisexual",
+        "bio": "Team walk see loss.",
+        "profile_pictures": [
+            "https://placekitten.com/197/58"
+        ],
+        "location": {
+            "latitude": -45.26478784554949,
+            "longitude": -17.487211062892612
+        },
+        "campus_affiliation": "Foster, Townsend and Snow",
+        "interests": [
+            "Gaming",
+            "Coding",
+            "Travel"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Unspecified",
+            "min_age": 24,
+            "max_age": 33,
+            "max_distance": 26.90946440256193
+        },
+        "gem_balance": 677,
+        "last_active": 1740284672.076516,
+        "account_status": "Suspended",
+        "created_at": 1740284672.076517,
+        "updated_at": 1740284672.076518,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "dark",
+            "language": "en"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_96",
+        "username": "edwin27",
+        "email": "pretttyp96@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": true,
+        "full_name": "PrettyPete_96",
+        "age": 27,
+        "gender": "Male",
+        "sexual_orientation": "Homosexual",
+        "bio": "Can do sell.",
+        "profile_pictures": [
+            "https://dummyimage.com/36x587"
+        ],
+        "location": {
+            "latitude": -22.997007972482535,
+            "longitude": -92.93616404332094
+        },
+        "campus_affiliation": "Thomas-Stafford",
+        "interests": [
+            "Travel",
+            "Coding"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Female",
+            "min_age": 22,
+            "max_age": 29,
+            "max_distance": 10.448036832682037
+        },
+        "gem_balance": 648,
+        "last_active": 1740284672.076741,
+        "account_status": "Active",
+        "created_at": 1740284672.076743,
+        "updated_at": 1740284672.076744,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "dark",
+            "language": "fr"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_97",
+        "username": "currylisa",
+        "email": "pretttyp97@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_97",
+        "age": 46,
+        "gender": "Male",
+        "sexual_orientation": "Homosexual",
+        "bio": "Meet various every about order.",
+        "profile_pictures": [
+            "https://dummyimage.com/26x991"
+        ],
+        "location": {
+            "latitude": -3.6067953929517103,
+            "longitude": -10.862615129231614
+        },
+        "campus_affiliation": "Robertson and Sons",
+        "interests": [
+            "Sports",
+            "Gaming",
+            "Travel"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Other",
+            "min_age": 23,
+            "max_age": 30,
+            "max_distance": 37.55726192132441
+        },
+        "gem_balance": 674,
+        "last_active": 1740284672.076973,
+        "account_status": "Banned",
+        "created_at": 1740284672.076974,
+        "updated_at": 1740284672.076975,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "light",
+            "language": "fr"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_98",
+        "username": "douglasdavis",
+        "email": "pretttyp98@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_98",
+        "age": 48,
+        "gender": "Male",
+        "sexual_orientation": "Homosexual",
+        "bio": "Cell into billion position.",
+        "profile_pictures": [
+            "https://placekitten.com/246/701",
+            "https://dummyimage.com/395x17"
+        ],
+        "location": {
+            "latitude": 81.2738176804487,
+            "longitude": -87.75160413381587
+        },
+        "campus_affiliation": "Alexander, Thomas and Torres",
+        "interests": [
+            "Sports",
+            "Travel"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Unspecified",
+            "min_age": 18,
+            "max_age": 39,
+            "max_distance": 23.312671561816263
+        },
+        "gem_balance": 414,
+        "last_active": 1740284672.077309,
+        "account_status": "Banned",
+        "created_at": 1740284672.07731,
+        "updated_at": 1740284672.077311,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "dark",
+            "language": "en"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_99",
+        "username": "sellersdavid",
+        "email": "pretttyp99@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": false,
+        "full_name": "PrettyPete_99",
+        "age": 33,
+        "gender": "Male",
+        "sexual_orientation": "Heterosexual",
+        "bio": "Talk himself senior budget.",
+        "profile_pictures": [
+            "https://picsum.photos/995/927",
+            "https://dummyimage.com/580x658",
+            "https://placekitten.com/601/934",
+            "https://picsum.photos/61/309"
+        ],
+        "location": {
+            "latitude": 87.59578463610683,
+            "longitude": 98.73815248248155
+        },
+        "campus_affiliation": "Graham-Contreras",
+        "interests": [
+            "Gaming"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Male",
+            "min_age": 24,
+            "max_age": 50,
+            "max_distance": 19.586244728660795
+        },
+        "gem_balance": 836,
+        "last_active": 1740284672.077607,
+        "account_status": "Banned",
+        "created_at": 1740284672.077609,
+        "updated_at": 1740284672.07761,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "dark",
+            "language": "en"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    },
+    {
+        "user_id": "user_100",
+        "username": "torresmarilyn",
+        "email": "pretttyp100@purdue.edu",
+        "password_hash": "hashed_password_1",
+        "verification_status": true,
+        "full_name": "PrettyPete_100",
+        "age": 46,
+        "gender": "Male",
+        "sexual_orientation": "Heterosexual",
+        "bio": "Sign successful may prepare treat.",
+        "profile_pictures": [
+            "https://placekitten.com/292/947",
+            "https://picsum.photos/100/157",
+            "https://picsum.photos/622/574",
+            "https://placekitten.com/681/178",
+            "https://placekitten.com/897/84",
+            "https://placekitten.com/555/190"
+        ],
+        "location": {
+            "latitude": -75.84478562263068,
+            "longitude": -106.51510043660791
+        },
+        "campus_affiliation": "Holder-Pacheco",
+        "interests": [
+            "Sports",
+            "Gaming",
+            "Music"
+        ],
+        "match_preferences": {
+            "preferred_gender": "Male",
+            "min_age": 22,
+            "max_age": 46,
+            "max_distance": 40.15431146147614
+        },
+        "gem_balance": 589,
+        "last_active": 1740284672.077914,
+        "account_status": "Active",
+        "created_at": 1740284672.077916,
+        "updated_at": 1740284672.077917,
+        "settings": {
+            "notifications_enabled": false,
+            "theme": "light",
+            "language": "fr"
+        },
+        "matches": [],
+        "liked_profiles": [],
+        "disliked_profiles": [],
+        "chat_history_ids": []
+    }
+]
