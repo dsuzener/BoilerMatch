@@ -1,13 +1,7 @@
 import SwiftUI
 
 struct MatchesView: View {
-    @State private var matches: [Match] = [
-        Match(id: "1", userId: "User 1", unread: "2", createdAt: Date(), status: "Matched"),
-        Match(id: "2", userId: "User 2", unread: "0", createdAt: Date(), status: "Matched"),
-        Match(id: "3", userId: "User 3", unread: "5", createdAt: Date(), status: "Matched"),
-        Match(id: "4", userId: "User 4", unread: "0", createdAt: Date(), status: "Matched"),
-        Match(id: "5", userId: "User 5", unread: "1", createdAt: Date(), status: "Matched")
-    ]
+    @StateObject private var viewModel = MatchesViewModel()
     
     var body: some View {
         NavigationView {
@@ -22,7 +16,7 @@ struct MatchesView: View {
                 // Matches Grid
                 ScrollView {
                     LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 20) {
-                        ForEach(matches) { match in
+                        ForEach(viewModel.matches) { match in
                             MatchCard(match: match)
                         }
                     }
@@ -31,14 +25,17 @@ struct MatchesView: View {
             }
             .background(
                 LinearGradient(
-                    gradient: Gradient(colors: [AppColors.coolGray.opacity(0.1), Color.white]),
+                    gradient: Gradient(colors: [AppColors.coolGray, Color.white]),
                     startPoint: .top,
                     endPoint: .bottom
                 )
                 .edgesIgnoringSafeArea(.all)
             )
-            .navigationTitle("Matches")
-            .navigationBarTitleDisplayMode(.inline)
+            .onAppear {
+                viewModel.fetchMatches() // Fetch matches when the view appears
+            }
+//            .navigationTitle("Matches")
+//            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }
@@ -58,7 +55,7 @@ struct MatchCard: View {
                     .shadow(radius: 5)
                 
                 // User Name
-                Text(match.userId)
+                Text(match.id)
                     .font(.headline)
                     .foregroundColor(AppColors.black)
                 
@@ -73,22 +70,22 @@ struct MatchCard: View {
             .shadow(color: AppColors.coolGray.opacity(0.5), radius: 4, x: 0, y: 2)
             
             // Unread Messages Badge
-            if let unreadCount = Int(match.unread), unreadCount > 0 {
-                Text("\(unreadCount)")
-                    .font(.caption2)
-                    .fontWeight(.bold)
-                    .foregroundColor(.white)
-                    .padding(6)
-                    .background(Color.red)
-                    .clipShape(Circle())
-                    .offset(x: -10, y: 10) // Position badge at the top-right corner
-            }
+//            if let unreadCount = Int(match.unread), unreadCount > 0 {
+//                Text("\(unreadCount)")
+//                    .font(.caption2)
+//                    .fontWeight(.bold)
+//                    .foregroundColor(.white)
+//                    .padding(6)
+//                    .background(Color.red)
+//                    .clipShape(Circle())
+//                    .offset(x: -10, y: 10) // Position badge at the top-right corner
+//            }
         }
         // Add subtle animation on tap
         .scaleEffect(1.0)
         .onTapGesture {
             withAnimation(.easeInOut(duration: 0.2)) {
-                print("Tapped on \(match.userId)")
+                print("Tapped on \(match.id)")
             }
         }
     }
