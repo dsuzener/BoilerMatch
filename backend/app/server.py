@@ -1,17 +1,18 @@
 # Add this login endpoint above your existing routers
 from fastapi import APIRouter, HTTPException, status
+from auth import hash_password
 from base_models import LoginRequest, SignupRequest
-import database
+from database import db
+from obj import User
 
 api_router = APIRouter()
 
 @api_router.post("/login")
 async def login(credentials: LoginRequest):
-    # Replace with actual database check
     print(f"Login attempt: {credentials.username} / {credentials.password}")
-    if credentials.username == "test" and credentials.password == "password":
-        return {"token": "generated_jwt_token", "user_id": 123}
-
+    if db.find_user({"username": credentials.username, "password_hash": hash_password(credentials.password)}):
+        return {"token": "generated_jwt_token"}
+    
     raise HTTPException(
         status_code=status.HTTP_401_UNAUTHORIZED,
         detail="Invalid credentials",
@@ -21,23 +22,25 @@ async def login(credentials: LoginRequest):
 @api_router.post("/signup")
 async def signup(user_data: SignupRequest):
     print(f"Signup attempt: {user_data.username} / {user_data.email} / {user_data.password}")
-    # existing_user = database.find_user({"email": user_data.email})
-    # if existing_user:
-    #     raise HTTPException(
-    #         status_code=status.HTTP_400_BAD_REQUEST,
-    #         detail="Email already registered"
-    #     )
+    existing_user = db.find_user({"email": user_data.email})
+
+    if existing_user:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="Email already registered",
+            headers={"WWW-Authenticate": "Bearer"},
+        )
     
     # Create new user
     hashed_password = hash(user_data.password)
-    # new_user = User(
-    #     user_id=str(len(database.users) + 1),
-    #     username=user_data.username,
-    #     email=user_data.email,
-    #     password_hash=hashed_password,
-    #     full_name=user_data.full_name,
-    #     verification_status=False  # Add real verification later
-    # )
+    new_user = User(
+        user_id=str(len(db.users) + 1),
+        username=user_data.username,
+        email=user_data.email,
+        password_hash=str(hashed_password),
+        # full_name=user_data.full_name,
+        verification_status=False  # Add real verification later
+    )
     
-    # database.add_user(new_user)
-    return {"token": "generated_jwt_token", "user_id": 123}
+    db.add_user(new_user)
+    return {"token": "generated_jwt_token"}

@@ -1,59 +1,61 @@
 import json
 import os
 from typing import List, Dict, Any
+from obj import User, Conversation
+
 
 class MockDatabase:
     def __init__(self):
-        self.data_dir = "mock_data"
+        self.data_dir = "data"
         os.makedirs(self.data_dir, exist_ok=True)
+        
+        # Initialize collections
+        self.users: List[User] = self._load_collection("users", User)
+        self.conversations: List[Conversation] = self._load_collection("conversations", Conversation)
 
-    def _get_file_path(self, collection: str) -> str:
-        return os.path.join(self.data_dir, f"{collection}.json")
-
-    def _load_data(self, collection: str) -> List[Dict[str, Any]]:
-        file_path = self._get_file_path(collection)
+    def _load_collection(self, collection_name: str, model_class: Any) -> List[Any]:
+        file_path = os.path.join(self.data_dir, f"{collection_name}.json")
         if not os.path.exists(file_path):
             return []
-        with open(file_path, 'r') as f:
-            return json.load(f)
+        with open(file_path, "r") as f:
+            raw_data = json.load(f)
+        return [model_class.from_dict(item) for item in raw_data]
 
-    def _save_data(self, collection: str, data: List[Dict[str, Any]]):
-        file_path = self._get_file_path(collection)
-        with open(file_path, 'w') as f:
-            json.dump(data, f, indent=2)
+    def _save_collection(self, collection_name: str, data: List[Any]):
+        file_path = os.path.join(self.data_dir, f"{collection_name}.json")
+        with open(file_path, "w") as f:
+            json.dump([item.to_dict() for item in data], f, indent=2)
 
-    def find_one(self, collection: str, query: Dict[str, Any]) -> Dict[str, Any]:
-        data = self._load_data(collection)
-        return next((item for item in data if all(item.get(k) == v for k, v in query.items())), None)
+    # User Operations
+    def find_user(self, query: Dict) -> User:
+        for user in self.users:
+            if all(getattr(user, key) == value for key, value in query.items()):
+                return user
+        return None
 
-    def find(self, collection: str, query: Dict[str, Any]) -> List[Dict[str, Any]]:
-        data = self._load_data(collection)
-        return [item for item in data if all(item.get(k) == v for k, v in query.items())]
+    def add_user(self, user: User):
+        self.users.append(user)
+        self._save_collection("users", self.users)
 
-    def insert_one(self, collection: str, document: Dict[str, Any]) -> str:
-        data = self._load_data(collection)
-        document['id'] = str(len(data) + 1)  # Simple ID generation
-        data.append(document)
-        self._save_data(collection, data)
-        return document['id']
-
-    def update_one(self, collection: str, query: Dict[str, Any], update: Dict[str, Any]) -> bool:
-        data = self._load_data(collection)
-        for item in data:
-            if all(item.get(k) == v for k, v in query.items()):
-                item.update(update)
-                self._save_data(collection, data)
+    def update_user(self, user_id: str, update_data: Dict) -> bool:
+        for user in self.users:
+            if user.user_id == user_id:
+                for key, value in update_data.items():
+                    setattr(user, key, value)
+                self._save_collection("users", self.users)
                 return True
         return False
 
-    def delete_one(self, collection: str, query: Dict[str, Any]) -> bool:
-        data = self._load_data(collection)
-        initial_length = len(data)
-        data = [item for item in data if not all(item.get(k) == v for k, v in query.items())]
-        if len(data) < initial_length:
-            self._save_data(collection, data)
-            return True
-        return False
+    # Conversation Operations
+    def find_conversation(self, chat_id: str) -> Conversation:
+        for conv in self.conversations:
+            if conv.chat_id == chat_id:
+                return conv
+        return None
 
-# Create a global instance of the mock database
+    def add_conversation(self, conversation: Conversation):
+        self.conversations.append(conversation)
+        self._save_collection("conversations", self.conversations)
+
+# Global Database Instance
 db = MockDatabase()

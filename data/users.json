@@ -1,0 +1,119 @@
+[
+  {
+    "user_id": "1",
+    "username": "hi",
+    "email": "hi",
+    "password_hash": 6896548697237267612,
+    "verification_status": false,
+    "full_name": "",
+    "age": 0,
+    "gender": "Unspecified",
+    "sexual_orientation": "Unspecified",
+    "bio": "",
+    "profile_pictures": [],
+    "location": {
+      "latitude": 0.0,
+      "longitude": 0.0
+    },
+    "campus_affiliation": "",
+    "interests": [],
+    "match_preferences": {
+      "preferred_gender": "Unspecified",
+      "min_age": 18,
+      "max_age": 100,
+      "max_distance": 10.0
+    },
+    "gem_balance": 0,
+    "last_active": 1740287925.683992,
+    "account_status": "Active",
+    "created_at": 1740287925.684014,
+    "updated_at": 1740287925.684018,
+    "settings": {
+      "notifications_enabled": true,
+      "theme": "light",
+      "language": "en"
+    },
+    "matches": [],
+    "liked_profiles": [],
+    "disliked_profiles": [],
+    "chat_history_ids": []
+  },
+  {
+    "user_id": "2",
+    "username": "1",
+    "email": "1",
+    "password_hash": "7057989889654772166",
+    "verification_status": false,
+    "full_name": "",
+    "age": 0,
+    "gender": "Unspecified",
+    "sexual_orientation": "Unspecified",
+    "bio": "",
+    "profile_pictures": [],
+    "location": {
+      "latitude": 0.0,
+      "longitude": 0.0
+    },
+    "campus_affiliation": "",
+    "interests": [],
+    "match_preferences": {
+      "preferred_gender": "Unspecified",
+      "min_age": 18,
+      "max_age": 100,
+      "max_distance": 10.0
+    },
+    "gem_balance": 0,
+    "last_active": 1740288157.016541,
+    "account_status": "Active",
+    "created_at": 1740288157.01657,
+    "updated_at": 1740288157.016573,
+    "settings": {
+      "notifications_enabled": true,
+      "theme": "light",
+      "language": "en"
+    },
+    "matches": [],
+    "liked_profiles": [],
+    "disliked_profiles": [],
+    "chat_history_ids": []
+  },
+  {
+    "user_id": "3",
+    "username": "2",
+    "email": "2",
+    "password_hash": "-8325614367095848707",
+    "verification_status": false,
+    "full_name": "",
+    "age": 0,
+    "gender": "Unspecified",
+    "sexual_orientation": "Unspecified",
+    "bio": "",
+    "profile_pictures": [],
+    "location": {
+      "latitude": 0.0,
+      "longitude": 0.0
+    },
+    "campus_affiliation": "",
+    "interests": [],
+    "match_preferences": {
+      "preferred_gender": "Unspecified",
+      "min_age": 18,
+      "max_age": 100,
+      "max_distance": 10.0
+    },
+    "gem_balance": 0,
+    "last_active": 1740288248.365912,
+    "account_status": "Active",
+    "created_at": 1740288248.365933,
+    "updated_at": 1740288248.365935,
+    "settings": {
+      "notifications_enabled": true,
+      "theme": "light",
+      "language": "en"
+    },
+    "matches": [],
+    "liked_profiles": [],
+    "disliked_profiles": [],
+    "chat_history_ids": []
+  }
+]

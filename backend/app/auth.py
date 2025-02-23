@@ -31,6 +31,8 @@ import hashlib
 import os
 import secrets
 import uuid
+# import jwt
+# from datetime import datetime, timedelta
 
 DEFAULT_ITERATIONS = 310_000  # OWASP 2023 recommendation
 
@@ -96,3 +98,30 @@ def generate_user_id() -> int:
         (int): A 9-digit positive integer representing the unique user ID.
     """
     return abs(int(uuid.uuid4().int) % (10 ** 9))
+
+# Secret key for signing the JWT
+# SECRET_KEY = "your_secret_key"
+# ALGORITHM = "HS256"  # Algorithm used for signing the token
+# ACCESS_TOKEN_EXPIRE_MINUTES = 30  # Token expiration time in minutes
+
+# def create_jwt_token(data: dict) -> str:
+#     """
+#     Generate a JWT token with an expiration time.
+
+#     Args:
+#         data (dict): The payload data to include in the token.
+
+#     Returns:
+#         str: The encoded JWT token.
+#     """
+#     # Copy the payload data to avoid modifying the original
+#     to_encode = data.copy()
+    
+#     # Set the expiration time for the token
+#     expire = datetime.utcnow() + timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
+#     to_encode.update({"exp": expire})
+    
+#     # Encode the token with the secret key and algorithm
+#     encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
+    
+#     return encoded_jwt
