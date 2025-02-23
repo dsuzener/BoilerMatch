@@ -46,8 +46,24 @@ async def signup(user_data: SignupRequest):
     db.add_user(new_user)
     return {"token": user_data.username}
 
-@api_router.get("/feed")
-async def feed_users(token: Token):
-    matched_users = MatchingService.find_potential_matches(token.access_token)
+# @api_router.get("/feed")
+# async def feed_users(token: Token):
+#     matched_users = MatchingService.find_potential_matches(token.access_token)
 
+#     return [user.to_dict for user in matched_users]
+
+from fastapi import APIRouter, Depends, Header, HTTPException
+
+api_router = APIRouter()
+
+@api_router.get("/feed")
+async def feed_users(authorization: str = Header(...)):
+    # The `authorization` header contains the username
+    username = authorization  # Extract username from the Authorization header
+    if not username:
+        raise HTTPException(status_code=400, detail="Authorization header is missing")
+    
+    # Use the username to find potential matches
+    user = db.find_user({"username": username})
+    matched_users = MatchingService.find_potential_matches(user)
     return [user.to_dict for user in matched_users]
