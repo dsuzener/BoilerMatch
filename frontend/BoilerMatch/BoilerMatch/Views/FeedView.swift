@@ -117,39 +117,6 @@ struct FeedItemView: View {
     }
 }
 
-//struct HeaderView: View {
-//    let remainingViews: Int
-//    
-//    var body: some View {
-//        HStack {
-////            Text("Discover")
-////                .font(.largeTitle)
-////                .fontWeight(.bold)
-////                .foregroundColor(AppColors.mediumBeige) // Black for header text
-////
-////            Spacer()
-//
-//            HStack(spacing: 8) {
-//                Image(systemName: "eye.fill")
-//                    .foregroundColor(AppColors.black)
-//
-//                Text("\(remainingViews) left")
-//                    .fontWeight(.medium)
-//                    .foregroundColor(AppColors.black) // Black for remaining views indicator
-//            }
-//            .padding(8)
-//            .background(Color.black.opacity(0.3))
-//            .cornerRadius(12)
-//        }
-//        .padding(.horizontal, 16)
-//        .padding(.vertical, 12)
-//        // Add subtle background for header
-//        .background(AppColors.boilermakerGold.opacity(0.2))
-//        // Add rounded corners to header background
-//        .cornerRadius(16)
-//    }
-//}
-
 struct FeedView_Previews: PreviewProvider {
     static var previews: some View {
         FeedView()
