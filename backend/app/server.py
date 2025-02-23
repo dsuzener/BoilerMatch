@@ -62,7 +62,7 @@ async def feed_users(authorization: str = Header(...)):
     # Use the username to find potential matches
     user = db.find_user({"username": username})
     matched_users = MatchingService.find_potential_matches(user)
-    return [user.to_dict for user in matched_users]
+    return [user.to_dict() for user in matched_users]
 
 @api_router.get("/matches")
 async def matched_users(authorization: str = Header(...)):
@@ -74,3 +74,26 @@ async def matched_users(authorization: str = Header(...)):
     # Use the username to find potential matches
     user = db.find_user({"username": username})
     return MatchingService._matched_users(user)
+
+@api_router.get("/like")
+async def match_request(sender: str = Header(...), receiver: str = Header(...)):
+    # The `authorization` header contains the username
+    if not sender:
+        raise HTTPException(status_code=400, detail="sender header is missing")
+    if not receiver:
+        raise HTTPException(status_code=400, detail="receiver header is missing")
+    
+    # Use the username to find potential matches
+    sender_obj = db.find_user({"username": sender})
+    receiver_obj = db.find_user({"username": receiver})
+
+    receiver_obj.liked_profiles.append(sender)
+    status = "continue"
+
+    # match!
+    if receiver in sender_obj.liked_profiles:
+        sender_obj.matches.append(receiver)
+        receiver_obj.matches.append(receiver)
+        status = "MATCH!"
+
+    return status
