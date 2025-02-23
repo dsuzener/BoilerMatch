@@ -46,7 +46,18 @@ func signUpUser(username: String, email: String, password: String, completion: @
         }
         
         switch httpResponse.statusCode {
-        case 201: // HTTP 201 Created
+        case 200:
+            guard let data = data,
+                  let json = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
+                  let token = json["token"] as? String else {
+                DispatchQueue.main.async {
+                    completion(false, "Invalid response format")
+                }
+                return
+            }
+            
+            // Save token to Keychain (simplified example)
+            UserDefaults.standard.set(token, forKey: "authToken")
             DispatchQueue.main.async {
                 completion(true, nil)
             }
