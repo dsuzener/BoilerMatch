@@ -2,6 +2,7 @@ import SwiftUI
 
 struct MatchesView: View {
     @StateObject private var viewModel = MatchesViewModel()
+    @State private var selectedMatch: Match? // Track the selected match for navigation
     
     var body: some View {
         NavigationView {
@@ -17,7 +18,12 @@ struct MatchesView: View {
                 ScrollView {
                     LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 20) {
                         ForEach(viewModel.matches) { match in
-                            MatchCard(match: match)
+                            NavigationLink(
+                                destination: ChatView(),
+                                label: {
+                                    MatchCard(match: match)
+                                }
+                            )
                         }
                     }
                     .padding()
@@ -34,8 +40,6 @@ struct MatchesView: View {
             .onAppear {
                 viewModel.fetchMatches() // Fetch matches when the view appears
             }
-//            .navigationTitle("Matches")
-//            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }
@@ -68,28 +72,10 @@ struct MatchCard: View {
             .background(Color.white)
             .cornerRadius(12)
             .shadow(color: AppColors.coolGray.opacity(0.5), radius: 4, x: 0, y: 2)
-            
-            // Unread Messages Badge
-//            if let unreadCount = Int(match.unread), unreadCount > 0 {
-//                Text("\(unreadCount)")
-//                    .font(.caption2)
-//                    .fontWeight(.bold)
-//                    .foregroundColor(.white)
-//                    .padding(6)
-//                    .background(Color.red)
-//                    .clipShape(Circle())
-//                    .offset(x: -10, y: 10) // Position badge at the top-right corner
-//            }
-        }
-        // Add subtle animation on tap
-        .scaleEffect(1.0)
-        .onTapGesture {
-            withAnimation(.easeInOut(duration: 0.2)) {
-                print("Tapped on \(match.id)")
-            }
         }
     }
 }
+
 
 #Preview {
     MatchesView()
