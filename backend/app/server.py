@@ -75,7 +75,7 @@ async def matched_users(authorization: str = Header(...)):
     user = db.find_user({"username": username})
     return MatchingService._matched_users(user)
 
-@api_router.get("/like")
+@api_router.post("/like")
 async def match_request(sender: str = Header(...), receiver: str = Header(...)):
     # The `authorization` header contains the username
     if not sender:
@@ -97,3 +97,4 @@ async def match_request(sender: str = Header(...), receiver: str = Header(...)):
         status = "MATCH!"
 
     return status
+
