@@ -11,7 +11,7 @@ api_router = APIRouter()
 async def login(credentials: LoginRequest):
     print(f"Login attempt: {credentials.username} / {credentials.password}")
     if db.find_user({"username": credentials.username, "password_hash": credentials.password}):
-        return {"token": "generated_jwt_token"}
+        return {"token": credentials.username}
 
     raise HTTPException(
         status_code=status.HTTP_401_UNAUTHORIZED,
@@ -42,4 +42,4 @@ async def signup(user_data: SignupRequest):
     )
     
     db.add_user(new_user)
-    return {"token": "generated_jwt_token"}
+    return {"token": user_data.username}
